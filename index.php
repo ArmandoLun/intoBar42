@@ -28,7 +28,7 @@ $conn = mysqli_connect($cleardb_server, $cleardb_username, $cleardb_password, $c
             <td>email:</td>
             <td>ciudad:</td>
         </tr>
-        <p>hola</p>
+        <p>hola ARMANDO</p>
         <?php
             $sql="SELECT * from usuarios";
             $result=mysqli_query($conn, $sql);
