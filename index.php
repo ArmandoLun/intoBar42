@@ -10,6 +10,8 @@ $active_group = 'default';
 $query_builder = TRUE;
 // Connect to DB
 $conn = mysqli_connect($cleardb_server, $cleardb_username, $cleardb_password, $cleardb_db);
+//conexion para probar una bd local
+//$conn = mysqli_connect('localhost','root','','pruebas');
 ?>
 <!DOCTYPE html>
 <html lang="en">
