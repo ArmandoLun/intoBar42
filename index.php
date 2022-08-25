@@ -29,6 +29,13 @@ $conn = mysqli_connect($cleardb_server, $cleardb_username, $cleardb_password, $c
             <td>ciudad:</td>
         </tr>
         <p>hola ARMANDO</p>
+        <div class = "estilos">
+            <style>
+            </style>
+        </div>
+        <h1 class = "prueba">
+            probando aqui unas cosillas
+        </h1>
         <?php
             $sql="SELECT * from usuarios";
             $result=mysqli_query($conn, $sql);
