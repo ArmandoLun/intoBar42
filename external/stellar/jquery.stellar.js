@@ -56,8 +56,8 @@
 			}
 		},
 
-		// Returns a function which adds a vendor prefix to any CSS property name
-		vendorPrefix = (function() {
+		// Returns a function which adds a external prefix to any CSS property name
+		externalPrefix = (function() {
 			var prefixes = /^(Moz|Webkit|Khtml|O|ms|Icab)(?=[A-Z])/,
 				style = $('script')[0].style,
 				prefix = '',
@@ -78,7 +78,7 @@
 			};
 		}()),
 
-		prefixedTransform = vendorPrefix('transform'),
+		prefixedTransform = externalPrefix('transform'),
 
 		supportsBackgroundPositionXY = $('<div />', { style: 'background:#fff' }).css('background-position-x') !== undefined,
 
