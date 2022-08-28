@@ -42,7 +42,19 @@ $conn = mysqli_connect($cleardb_server, $cleardb_username, $cleardb_password, $c
 
     <!-- Modernizr JS for IE8 support of HTML5 elements and media queries -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
+    <?php
+            $sql="SELECT * from usuarios";
+            $result=mysqli_query($conn, $sql);
 
+            while($mostrar=mysqli_fetch_array($result)){
+        ?>
+        <tr>
+            <td><?php echo $mostrar['id'] ?></td>
+            <td><?php echo $mostrar['nombre'] ?></td>
+            <td><?php echo $mostrar['email'] ?></td>
+            <td><?php echo $mostrar['ciudad'] ?></td>
+        </tr>
+        <?php }?>
 </head>
 <body data-spy="scroll" data-target="#navbar" class="static-layout">
 <div id="side-nav" class="sidenav">
