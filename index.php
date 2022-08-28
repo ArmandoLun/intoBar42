@@ -743,7 +743,7 @@ $conn = mysqli_connect($cleardb_server, $cleardb_username, $cleardb_password, $c
 	<script src="external/popper.min.js"></script>
 	<script src="external/bootstrap.min.js"></script>
 	<script src="external/select2.min.js "></script>
-	<script src="external/owlcarousel/owl.carousel.min.js"></script>
+	<script src="external/owl.carousel.min.js"></script>
 	<script src="https://cdn.rawgit.com/noelboss/featherlight/1.7.13/release/featherlight.min.js"></script>
 	<script src="external/jquery.stellar.js" type="text/javascript" charset="utf-8"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.0.1/js/tempusdominus-bootstrap-4.min.js"></script>
