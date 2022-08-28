@@ -26,8 +26,8 @@ $conn = mysqli_connect($cleardb_server, $cleardb_username, $cleardb_password, $c
     
     <!-- External CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-    <link rel="stylesheet" href="./vendor/select2.min.css">
-    <link rel="stylesheet" href="./vendor/owl.carousel.min.css">
+    <link rel="stylesheet" href="external/select2.min.css">
+    <link rel="stylesheet" href="external/owl.carousel.min.css">
     <link rel="stylesheet" href="https://cdn.rawgit.com/noelboss/featherlight/1.7.13/release/featherlight.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.0.1/css/tempusdominus-bootstrap-4.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.1/css/brands.css">
@@ -740,12 +740,12 @@ $conn = mysqli_connect($cleardb_server, $cleardb_username, $cleardb_password, $c
     <!-- External JS -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
-	<script src="./vendor/popper.min.js"></script>
-	<script src="./vendor/bootstrap.min.js"></script>
-	<script src="./vendor/select2.min.js "></script>
-	<script src="./vendor/owlcarousel/owl.carousel.min.js"></script>
+	<script src="external/popper.min.js"></script>
+	<script src="external/bootstrap.min.js"></script>
+	<script src="external/select2.min.js "></script>
+	<script src="external/owlcarousel/owl.carousel.min.js"></script>
 	<script src="https://cdn.rawgit.com/noelboss/featherlight/1.7.13/release/featherlight.min.js"></script>
-	<script src="./vendor/jquery.stellar.js" type="text/javascript" charset="utf-8"></script>
+	<script src="external/jquery.stellar.js" type="text/javascript" charset="utf-8"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.0.1/js/tempusdominus-bootstrap-4.min.js"></script>
 
 	<!-- Main JS -->
