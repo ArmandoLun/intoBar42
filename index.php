@@ -118,8 +118,8 @@ $conn = mysqli_connect($cleardb_server, $cleardb_username, $cleardb_password, $c
                           Platos Especiales
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                          <a class="dropdown-item" href="special-dishes.html">Beef Steak Sauce</a>
-                          <a class="dropdown-item" href="special-dishes.html">Salmon Zucchini</a>
+                          <a class="dropdown-item" href="special-dishes.html">Plato 1</a>
+                          <a class="dropdown-item" href="special-dishes.html">Plato 2</a>
                         </div>
                     </li>
                 </div>
@@ -162,7 +162,7 @@ $conn = mysqli_connect($cleardb_server, $cleardb_username, $cleardb_password, $c
 		    	<a class="btn btn-primary btn-shadow btn-lg" href="#" role="button">Explorar Menú</a>
 			    <a class="btn btn-icon btn-lg" href="https://player.vimeo.com/video/33110953" data-featherlight="iframe" data-featherlight-iframe-allowfullscreen="true">
 			    	<span class="lnr lnr-film-play"></span>
-			    	Play Video
+			    	Conocenos!
 			    </a>
 		    </div>
 		   
@@ -217,29 +217,31 @@ $conn = mysqli_connect($cleardb_server, $cleardb_username, $cleardb_password, $c
                             Acerca de
                         </span>
                         <h2>
-                            Welcome to Resto
+                            Sentidos
                         </h2>
                     </div>
                     <div class="pl-lg-5 ml-md-5">
-                        <p>On her way she met a copy. The copy warned the Little Blind Text, that where it came from it would have been rewritten a thousand times and everything that was left from its origin would be the word "and" and the Little Blind Text should turn around and return to its own, safe country. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
-                        <h3 class="mt-5">Recetas Especiales</h3>
+                        <p>
+                            Buscamos atraer la atención de nuestros clientes a través de experiencias inspiradas en la seducción de los sentidos para que disfrute de un momento de bienestar, en total armonía.
+                        </p>
+                        <h3 class="mt-5">Menú clásico</h3>
                         <div class="row">
                             <div class="col-4">
                                 <a href="#" class="thumb-menu">
                                     <img class="img-fluid img-cover" src="img/hero-1.jpg" />
-                                    <h6>Australian Organic Beef</h6>
+                                    <h6>Hora del té</h6>
                                 </a>
                             </div>
                             <div class="col-4">
                                 <a href="#" class="thumb-menu">
                                     <img class="img-fluid img-cover" src="img/hero-1.jpg" />
-                                    <h6>Australian Organic Beef</h6>
+                                    <h6>Almuerzo</h6>
                                 </a>
                             </div>
                             <div class="col-4">
                                 <a href="#" class="thumb-menu">
                                     <img class="img-fluid img-cover" src="img/hero-1.jpg"/>
-                                    <h6>Australian Organic Beef</h6>
+                                    <h6>Catering</h6>
                                 </a>
                             </div>
                         </div>
@@ -258,17 +260,17 @@ $conn = mysqli_connect($cleardb_server, $cleardb_username, $cleardb_password, $c
                     Especialidades
                 </span>
                 <h2>
-                    Platos Especiales
+                    Nuestros servicios
                 </h2>
             </div>
             <div class="row mt-5">
                 <div class="col-lg-5 col-md-6 align-self-center py-5">
                     <h2 class="special-number">01.</h2>
                     <div class="dishes-text">
-                        <h3><span>Beef</span><br> Steak Sauce</h3>
-                        <p class="pt-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, ea vero alias perferendis quas animi doloribus voluptates. Atque explicabo ea nesciunt provident libero qui eum, corporis esse quos excepturi soluta?</p>
-                        <h3 class="special-dishes-price">$15.00</h3>
-                        <a href="#" class="btn-primary mt-3">book a table</a>
+                        <h3><span>Catering</span><br>Mesa de postres</h3>
+                        <p class="pt-3">Reserva nuestro completo servicio de catering para los eventos más especiales!</p>
+                        <h3 class="special-dishes-price">$1500.00</h3>
+                        <a href="#" class="btn-primary mt-3">Reserva aquí</a>
                     </div>
                 </div>
                 <div class="col-lg-5 offset-lg-2 col-md-6 align-self-center mt-4 mt-md-0">
@@ -282,10 +284,10 @@ $conn = mysqli_connect($cleardb_server, $cleardb_username, $cleardb_password, $c
                 <div class="col-lg-5 offset-lg-2 col-md-6 align-self-center order-1 order-md-2 py-5">
                     <h2 class="special-number">02.</h2>
                     <div class="dishes-text">
-                        <h3><span>Salmon</span><br> Zucchini</h3>
-                        <p class="pt-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, accusamus culpa quam amet ipsam odit ea doloremque accusantium quo, itaque possimus eius. In a quis quibusdam omnis atque vero dolores!</p>
-                        <h3 class="special-dishes-price">$12.00</h3>
-                        <a href="#" class="btn-primary mt-3">book a table <span><i class="fa fa-long-arrow-right"></i></span></a>
+                        <h3><span>Restaurante</span><br></h3>
+                        <p class="pt-3">Reserva una mesa en nuestro lujoso restaurante y disfrutá de nuestro menú</p>
+                        <h3 class="special-dishes-price">$500.00</h3>
+                        <a href="#" class="btn-primary mt-3">Reserva aquí <span><i class="fa fa-long-arrow-right"></i></span></a>
                     </div>
                 </div>
             </div>
@@ -311,7 +313,7 @@ $conn = mysqli_connect($cleardb_server, $cleardb_username, $cleardb_password, $c
             <div class="row">
                 <div class="col-lg-4 menu-wrap">
                     <div class="heading-menu">
-                        <h3 class="text-center mb-5">Breakfast</h3>
+                        <h3 class="text-center mb-5">Desayuno</h3>
                     </div>
                     <div class="menus d-flex align-items-center">
                         <div class="menu-img rounded-circle">
@@ -320,10 +322,10 @@ $conn = mysqli_connect($cleardb_server, $cleardb_username, $cleardb_password, $c
                         <div class="text-wrap">
                             <div class="row align-items-start">
                                 <div class="col-8">
-                                    <h4>Egg Sandwich</h4>
+                                    <h4>Té Negro</h4>
                                 </div>
                                 <div class="col-4">
-                                    <h4 class="text-muted menu-price">$30</h4>
+                                    <h4 class="text-muted menu-price">$180</h4>
                                 </div>
                             </div>
                             <p>Meat Ball, Mie</p>
@@ -336,10 +338,10 @@ $conn = mysqli_connect($cleardb_server, $cleardb_username, $cleardb_password, $c
                         <div class="text-wrap">
                             <div class="row align-items-start">
                                 <div class="col-8">
-                                    <h4>Egg Sandwich</h4>
+                                    <h4>Té Verde</h4>
                                 </div>
                                 <div class="col-4">
-                                    <h4 class="text-muted menu-price">$30</h4>
+                                    <h4 class="text-muted menu-price">$180</h4>
                                 </div>
                             </div>
                             <p>Meat Ball, Mie</p>
@@ -352,64 +354,10 @@ $conn = mysqli_connect($cleardb_server, $cleardb_username, $cleardb_password, $c
                         <div class="text-wrap">
                             <div class="row align-items-start">
                                 <div class="col-8">
-                                    <h4>Egg Sandwich</h4>
+                                    <h4>Té de Hierbas</h4>
                                 </div>
                                 <div class="col-4">
-                                    <h4 class="text-muted menu-price">$30</h4>
-                                </div>
-                            </div>
-                            <p>Meat Ball, Mie</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 menu-wrap">
-                    <div class="heading-menu">
-                        <h3 class="text-center mb-5">Breakfast</h3>
-                    </div>
-                    <div class="menus d-flex align-items-center">
-                        <div class="menu-img rounded-circle">
-                            <img class="img-fluid" src="img/breakfast-1.jpg" alt="">
-                        </div>
-                        <div class="text-wrap">
-                            <div class="row align-items-start">
-                                <div class="col-8">
-                                    <h4>Egg Sandwich</h4>
-                                </div>
-                                <div class="col-4">
-                                    <h4 class="text-muted menu-price">$30</h4>
-                                </div>
-                            </div>
-                            <p>Meat Ball, Mie</p>
-                        </div>
-                    </div>
-                    <div class="menus d-flex align-items-center">
-                        <div class="menu-img rounded-circle">
-                            <img class="img-fluid" src="img/breakfast-1.jpg" alt="">
-                        </div>
-                        <div class="text-wrap">
-                            <div class="row align-items-start">
-                                <div class="col-8">
-                                    <h4>Egg Sandwich</h4>
-                                </div>
-                                <div class="col-4">
-                                    <h4 class="text-muted menu-price">$30</h4>
-                                </div>
-                            </div>
-                            <p>Meat Ball, Mie</p>
-                        </div>
-                    </div>
-                    <div class="menus d-flex align-items-center">
-                        <div class="menu-img rounded-circle">
-                            <img class="img-fluid" src="img/breakfast-1.jpg" alt="">
-                        </div>
-                        <div class="text-wrap">
-                            <div class="row align-items-start">
-                                <div class="col-8">
-                                    <h4>Egg Sandwich</h4>
-                                </div>
-                                <div class="col-4">
-                                    <h4 class="text-muted menu-price">$30</h4>
+                                    <h4 class="text-muted menu-price">$200</h4>
                                 </div>
                             </div>
                             <p>Meat Ball, Mie</p>
@@ -419,7 +367,7 @@ $conn = mysqli_connect($cleardb_server, $cleardb_username, $cleardb_password, $c
 
                 <div class="col-lg-4 menu-wrap">
                     <div class="heading-menu">
-                        <h3 class="text-center mb-5">Breakfast</h3>
+                        <h3 class="text-center mb-5">Almuerzo</h3>
                     </div>
                     <div class="menus d-flex align-items-center">
                         <div class="menu-img rounded-circle">
@@ -428,10 +376,10 @@ $conn = mysqli_connect($cleardb_server, $cleardb_username, $cleardb_password, $c
                         <div class="text-wrap">
                             <div class="row align-items-start">
                                 <div class="col-8">
-                                    <h4>Egg Sandwich</h4>
+                                    <h4>Perro a la estaca</h4>
                                 </div>
                                 <div class="col-4">
-                                    <h4 class="text-muted menu-price">$30</h4>
+                                    <h4 class="text-muted menu-price">$3000000</h4>
                                 </div>
                             </div>
                             <p>Meat Ball, Mie</p>
@@ -444,10 +392,10 @@ $conn = mysqli_connect($cleardb_server, $cleardb_username, $cleardb_password, $c
                         <div class="text-wrap">
                             <div class="row align-items-start">
                                 <div class="col-8">
-                                    <h4>Egg Sandwich</h4>
+                                    <h4>Asado y vino de la casa</h4>
                                 </div>
                                 <div class="col-4">
-                                    <h4 class="text-muted menu-price">$30</h4>
+                                    <h4 class="text-muted menu-price">$1800</h4>
                                 </div>
                             </div>
                             <p>Meat Ball, Mie</p>
@@ -460,10 +408,64 @@ $conn = mysqli_connect($cleardb_server, $cleardb_username, $cleardb_password, $c
                         <div class="text-wrap">
                             <div class="row align-items-start">
                                 <div class="col-8">
-                                    <h4>Egg Sandwich</h4>
+                                    <h4>pata de grulla</h4>
                                 </div>
                                 <div class="col-4">
-                                    <h4 class="text-muted menu-price">$30</h4>
+                                    <h4 class="text-muted menu-price">$1</h4>
+                                </div>
+                            </div>
+                            <p>Meat Ball, Mie</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 menu-wrap">
+                    <div class="heading-menu">
+                        <h3 class="text-center mb-5">Catering</h3>
+                    </div>
+                    <div class="menus d-flex align-items-center">
+                        <div class="menu-img rounded-circle">
+                            <img class="img-fluid" src="img/breakfast-1.jpg" alt="">
+                        </div>
+                        <div class="text-wrap">
+                            <div class="row align-items-start">
+                                <div class="col-8">
+                                    <h4>sanguchitos para 12 personas</h4>
+                                </div>
+                                <div class="col-4">
+                                    <h4 class="text-muted menu-price">$3000</h4>
+                                </div>
+                            </div>
+                            <p>Meat Ball, Mie</p>
+                        </div>
+                    </div>
+                    <div class="menus d-flex align-items-center">
+                        <div class="menu-img rounded-circle">
+                            <img class="img-fluid" src="img/breakfast-1.jpg" alt="">
+                        </div>
+                        <div class="text-wrap">
+                            <div class="row align-items-start">
+                                <div class="col-8">
+                                    <h4>mesa de postres</h4>
+                                </div>
+                                <div class="col-4">
+                                    <h4 class="text-muted menu-price">$1900</h4>
+                                </div>
+                            </div>
+                            <p>Meat Ball, Mie</p>
+                        </div>
+                    </div>
+                    <div class="menus d-flex align-items-center">
+                        <div class="menu-img rounded-circle">
+                            <img class="img-fluid" src="img/breakfast-1.jpg" alt="">
+                        </div>
+                        <div class="text-wrap">
+                            <div class="row align-items-start">
+                                <div class="col-8">
+                                    <h4>pernil para 12 personas</h4>
+                                </div>
+                                <div class="col-4">
+                                    <h4 class="text-muted menu-price">$5000</h4>
                                 </div>
                             </div>
                             <p>Meat Ball, Mie</p>
@@ -483,7 +485,7 @@ $conn = mysqli_connect($cleardb_server, $cleardb_username, $cleardb_password, $c
                     Testimonio
                 </span>
                 <h2>
-                    Cliente Feliz
+                    Cliente triste
                 </h2>
             </div>
             <div class="row">
@@ -491,15 +493,15 @@ $conn = mysqli_connect($cleardb_server, $cleardb_username, $cleardb_password, $c
                 <div class="testi-content testi-carousel owl-carousel">
                     <div class="testi-item">
                         <i class="testi-icon fa fa-3x fa-quote-left"></i>
-                        <p class="testi-text">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                        <p class="testi-author">John Doe</p>
-                        <p class="testi-desc">CEO of <span>GetTemplates</span></p>
+                        <p class="testi-text">impresionante</p>
+                        <p class="testi-author">Enzo Virgona</p>
+                        <p class="testi-desc">CEO of <span>chacarita</span></p>
                     </div>
                     <div class="testi-item">
                         <i class="testi-icon fa fa-3x fa-quote-left"></i>
-                        <p class="testi-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci non doloribus ut, alias doloremque perspiciatis.</p>
-                        <p class="testi-author">Mary Jane</p>
-                        <p class="testi-desc">CTO of <span>Unidentity Inc</span></p>
+                        <p class="testi-text">XDD</p>
+                        <p class="testi-author">luca</p>
+                        <p class="testi-desc">CTO of <span>mi casa</span></p>
                     </div>
                 </div>
                 <!-- End of Testimonial -->
@@ -523,10 +525,10 @@ $conn = mysqli_connect($cleardb_server, $cleardb_username, $cleardb_password, $c
             <div class="row">
                 <div class="col-md-4">
                     <div class="team-card mb-5">
-                        <img class="img-fluid" src="img/chef-1.jpg" alt="">
+                        <img class="img-fluid" src="img\nuestras_fotos\3ba67c_2de14a17467548f4bf870d8aee1db100_mv2.webp" alt="">
                         <div class="team-desc">
-                            <h4 class="mb-0">Aaron Patel</h4>
-                            <p class="mb-1">CEO</p>
+                            <h4 class="mb-0">Luca Bergamaschi</h4>
+                            <p class="mb-1">Chef Ejecutivo</p>
                             <ul class="list-inline mb-0 team-social-links">
                                 <li class="list-inline-item">
                                     <a href="#">
@@ -554,10 +556,10 @@ $conn = mysqli_connect($cleardb_server, $cleardb_username, $cleardb_password, $c
                 </div>
                 <div class="col-md-4">
                     <div class="team-card mb-5">
-                        <img class="img-fluid" src="img/chef-2.jpg" alt="">
+                        <img class="img-fluid" src="img\nuestras_fotos\da1d807a-7da3-408a-b499-03315d254dd3.jpg" alt="">
                         <div class="team-desc">
-                            <h4 class="mb-0">Daniel Tebas</h4>
-                            <p class="mb-1">Chef</p>
+                            <h4 class="mb-0">Barrios Matias</h4>
+                            <p class="mb-1">Pastelero</p>
                             <ul class="list-inline mb-0 team-social-links">
                                 <li class="list-inline-item">
                                     <a href="#">
@@ -585,10 +587,10 @@ $conn = mysqli_connect($cleardb_server, $cleardb_username, $cleardb_password, $c
                 </div>
                 <div class="col-md-4">
                     <div class="team-card mb-5">
-                        <img class="img-fluid" src="img/chef-3.jpg" alt="">
+                        <img class="img-fluid" src="img\nuestras_fotos\da1d807a-7da3-408a-b499-03315d254dd3.jpg" alt="">
                         <div class="team-desc">
-                            <h4 class="mb-0">Jon Snow</h4>
-                            <p class="mb-1">Chef</p>
+                            <h4 class="mb-0">Luna Armando</h4>
+                            <p class="mb-1">Barrendero</p>
                             <ul class="list-inline mb-0 team-social-links">
                                 <li class="list-inline-item">
                                     <a href="#">
