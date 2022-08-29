@@ -92,7 +92,7 @@ $conn = mysqli_connect($cleardb_server, $cleardb_username, $cleardb_password, $c
 		<nav id="navbar-header" class="navbar navbar-expand-lg">
     <div class="container">
         <a class="navbar-brand navbar-brand-center d-flex align-items-center p-0 only-mobile" href="/">
-            <img src="img/logo.png" alt="">
+            <img src="img\nuestras_fotos\restauranteeee.png" alt="">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="lnr lnr-menu"></span>
@@ -126,7 +126,7 @@ $conn = mysqli_connect($cleardb_server, $cleardb_username, $cleardb_password, $c
             </ul>
             
             <a class="navbar-brand navbar-brand-center d-flex align-items-center only-desktop" href="#">
-                <img src="img/logo.png" alt="">
+                <img src="img\nuestras_fotos\restauranteeee.png" alt="">
             </a>
             <ul class="navbar-nav d-flex justify-content-between">
                 <div class="d-flex flex-lg-row flex-column">
@@ -157,7 +157,7 @@ $conn = mysqli_connect($cleardb_server, $cleardb_username, $cleardb_password, $c
   <div class="container">
 	<div class="row d-flex align-items-center">
 		<div class="col-lg-6 hero-left">
-		    <h1 class="display-4 mb-5">¡Nosotros Amamos la <br>Comida Deleitable!</h1>
+		    <h1 class="display-4 mb-5">Sentidos<br>Resto y Casa de Té</h1>
 		    <div class="mb-2">
 		    	<a class="btn btn-primary btn-shadow btn-lg" href="#" role="button">Explorar Menú</a>
 			    <a class="btn btn-icon btn-lg" href="https://player.vimeo.com/video/33110953" data-featherlight="iframe" data-featherlight-iframe-allowfullscreen="true">
@@ -191,13 +191,13 @@ $conn = mysqli_connect($cleardb_server, $cleardb_username, $cleardb_password, $c
 	    <div class="col-lg-6 hero-right">
 	    	<div class="owl-carousel owl-theme hero-carousel">
 			    <div class="item">
-			    	<img class="img-fluid" src="img/hero-1.jpg" alt="">
+			    	<img class="img-fluid" src="img\nuestras_fotos\WhatsApp Image 2022-08-09 at 21.38.59 (1).jpeg" alt="">
 			    </div>
 			    <div class="item">
-			    	<img class="img-fluid" src="img/hero-2.jpg" alt="">
+			    	<img class="img-fluid" src="img\nuestras_fotos\WhatsApp Image 2022-08-09 at 21.38.59 (2).jpeg" alt="">
 			    </div>
 			    <div class="item">
-			    	<img class="img-fluid" src="img/hero-3.jpg" alt="">
+			    	<img class="img-fluid" src="img\nuestras_fotos\WhatsApp Image 2022-08-09 at 21.38.59.jpeg" alt="">
 			    </div>
 			</div>
 	    </div>
@@ -228,19 +228,19 @@ $conn = mysqli_connect($cleardb_server, $cleardb_username, $cleardb_password, $c
                         <div class="row">
                             <div class="col-4">
                                 <a href="#" class="thumb-menu">
-                                    <img class="img-fluid img-cover" src="img/hero-1.jpg" />
+                                    <img class="img-fluid img-cover" src="img\nuestras_fotos\WhatsApp Image 2022-08-09 at 21.39.00 (1).jpeg" />
                                     <h6>Hora del té</h6>
                                 </a>
                             </div>
                             <div class="col-4">
                                 <a href="#" class="thumb-menu">
-                                    <img class="img-fluid img-cover" src="img/hero-1.jpg" />
+                                    <img class="img-fluid img-cover" src="img\nuestras_fotos\WhatsApp Image 2022-08-09 at 21.39.00 (2).jpeg" />
                                     <h6>Almuerzo</h6>
                                 </a>
                             </div>
                             <div class="col-4">
                                 <a href="#" class="thumb-menu">
-                                    <img class="img-fluid img-cover" src="img/hero-1.jpg"/>
+                                    <img class="img-fluid img-cover" src="img\nuestras_fotos\WhatsApp Image 2022-08-09 at 21.39.00 (3).jpeg"/>
                                     <h6>Catering</h6>
                                 </a>
                             </div>
@@ -274,12 +274,12 @@ $conn = mysqli_connect($cleardb_server, $cleardb_username, $cleardb_password, $c
                     </div>
                 </div>
                 <div class="col-lg-5 offset-lg-2 col-md-6 align-self-center mt-4 mt-md-0">
-                    <img src="img/steak.jpg" alt="" class="img-fluid shadow w-100">
+                    <img src="img\nuestras_fotos\WhatsApp Image 2022-08-09 at 21.38.59 (1).jpeg" alt="" class="img-fluid shadow w-100">
                 </div>
             </div>
             <div class="row mt-5">
                 <div class="col-lg-5 col-md-6 align-self-center order-2 order-md-1 mt-4 mt-md-0">
-                    <img src="img/salmon-zucchini.jpg" alt="" class="img-fluid shadow w-100">
+                    <img src="img\nuestras_fotos\WhatsApp Image 2022-08-09 at 21.38.59 (1).jpeg" alt="" class="img-fluid shadow w-100">
                 </div>
                 <div class="col-lg-5 offset-lg-2 col-md-6 align-self-center order-1 order-md-2 py-5">
                     <h2 class="special-number">02.</h2>
@@ -317,7 +317,7 @@ $conn = mysqli_connect($cleardb_server, $cleardb_username, $cleardb_password, $c
                     </div>
                     <div class="menus d-flex align-items-center">
                         <div class="menu-img rounded-circle">
-                            <img class="img-fluid" src="img/breakfast-1.jpg" alt="">
+                            <img class="img-fluid" src="img\nuestras_fotos\WhatsApp Image 2022-08-09 at 21.38.59 (1).jpeg" alt="">
                         </div>
                         <div class="text-wrap">
                             <div class="row align-items-start">
@@ -333,7 +333,7 @@ $conn = mysqli_connect($cleardb_server, $cleardb_username, $cleardb_password, $c
                     </div>
                     <div class="menus d-flex align-items-center">
                         <div class="menu-img rounded-circle">
-                            <img class="img-fluid" src="img/breakfast-1.jpg" alt="">
+                            <img class="img-fluid" src="img\nuestras_fotos\WhatsApp Image 2022-08-09 at 21.38.59 (1).jpeg" alt="">
                         </div>
                         <div class="text-wrap">
                             <div class="row align-items-start">
@@ -349,7 +349,7 @@ $conn = mysqli_connect($cleardb_server, $cleardb_username, $cleardb_password, $c
                     </div>
                     <div class="menus d-flex align-items-center">
                         <div class="menu-img rounded-circle">
-                            <img class="img-fluid" src="img/breakfast-1.jpg" alt="">
+                            <img class="img-fluid" src="img\nuestras_fotos\WhatsApp Image 2022-08-09 at 21.38.59 (1).jpeg" alt="">
                         </div>
                         <div class="text-wrap">
                             <div class="row align-items-start">
@@ -371,7 +371,7 @@ $conn = mysqli_connect($cleardb_server, $cleardb_username, $cleardb_password, $c
                     </div>
                     <div class="menus d-flex align-items-center">
                         <div class="menu-img rounded-circle">
-                            <img class="img-fluid" src="img/breakfast-1.jpg" alt="">
+                            <img class="img-fluid" src="img\nuestras_fotos\WhatsApp Image 2022-08-09 at 21.38.59 (1).jpeg" alt="">
                         </div>
                         <div class="text-wrap">
                             <div class="row align-items-start">
@@ -387,7 +387,7 @@ $conn = mysqli_connect($cleardb_server, $cleardb_username, $cleardb_password, $c
                     </div>
                     <div class="menus d-flex align-items-center">
                         <div class="menu-img rounded-circle">
-                            <img class="img-fluid" src="img/breakfast-1.jpg" alt="">
+                            <img class="img-fluid" src="img\nuestras_fotos\WhatsApp Image 2022-08-09 at 21.38.59 (1).jpeg" alt="">
                         </div>
                         <div class="text-wrap">
                             <div class="row align-items-start">
@@ -403,7 +403,7 @@ $conn = mysqli_connect($cleardb_server, $cleardb_username, $cleardb_password, $c
                     </div>
                     <div class="menus d-flex align-items-center">
                         <div class="menu-img rounded-circle">
-                            <img class="img-fluid" src="img/breakfast-1.jpg" alt="">
+                            <img class="img-fluid" src="img\nuestras_fotos\WhatsApp Image 2022-08-09 at 21.38.59 (1).jpeg" alt="">
                         </div>
                         <div class="text-wrap">
                             <div class="row align-items-start">
@@ -425,7 +425,7 @@ $conn = mysqli_connect($cleardb_server, $cleardb_username, $cleardb_password, $c
                     </div>
                     <div class="menus d-flex align-items-center">
                         <div class="menu-img rounded-circle">
-                            <img class="img-fluid" src="img/breakfast-1.jpg" alt="">
+                            <img class="img-fluid" src="img\nuestras_fotos\WhatsApp Image 2022-08-09 at 21.38.59 (1).jpeg" alt="">
                         </div>
                         <div class="text-wrap">
                             <div class="row align-items-start">
@@ -441,7 +441,7 @@ $conn = mysqli_connect($cleardb_server, $cleardb_username, $cleardb_password, $c
                     </div>
                     <div class="menus d-flex align-items-center">
                         <div class="menu-img rounded-circle">
-                            <img class="img-fluid" src="img/breakfast-1.jpg" alt="">
+                            <img class="img-fluid" src="img\nuestras_fotos\WhatsApp Image 2022-08-09 at 21.38.59 (1).jpeg" alt="">
                         </div>
                         <div class="text-wrap">
                             <div class="row align-items-start">
@@ -457,7 +457,7 @@ $conn = mysqli_connect($cleardb_server, $cleardb_username, $cleardb_password, $c
                     </div>
                     <div class="menus d-flex align-items-center">
                         <div class="menu-img rounded-circle">
-                            <img class="img-fluid" src="img/breakfast-1.jpg" alt="">
+                            <img class="img-fluid" src="img\nuestras_fotos\WhatsApp Image 2022-08-09 at 21.38.59 (1).jpeg" alt="">
                         </div>
                         <div class="text-wrap">
                             <div class="row align-items-start">
@@ -477,7 +477,7 @@ $conn = mysqli_connect($cleardb_server, $cleardb_username, $cleardb_password, $c
     </div>
 </section>
 <!-- End of menu Section -->		<!-- Testimonial Section-->
-<section id="gtco-testimonial" class="overlay bg-fixed section-padding" style="background-image: url(img/testi-bg.jpg);">
+<section id="gtco-testimonial" class="overlay bg-fixed section-padding" style="background-image: url(img\nuestras_fotos\WhatsApp Image 2022-08-09 at 21.38.59.jpeg);">
     <div class="container">
         <div class="section-content">
             <div class="heading-section text-center">
@@ -516,7 +516,7 @@ $conn = mysqli_connect($cleardb_server, $cleardb_username, $cleardb_password, $c
         <div class="section-content">
             <div class="heading-section text-center">
                 <span class="subheading">
-                    Especialidades
+                    Sentidos
                 </span>
                 <h2>
                     Nuestro Equipo
@@ -587,7 +587,7 @@ $conn = mysqli_connect($cleardb_server, $cleardb_username, $cleardb_password, $c
                 </div>
                 <div class="col-md-4">
                     <div class="team-card mb-5">
-                        <img class="img-fluid" src="img\nuestras_fotos\da1d807a-7da3-408a-b499-03315d254dd3.jpg" alt="">
+                        <img class="img-fluid" src="img\nuestras_fotos\3ba67c_791133282465447d85ee5903fa454983_mv2.webp" alt="">
                         <div class="team-desc">
                             <h4 class="mb-0">Luna Armando</h4>
                             <p class="mb-1">Barrendero</p>
@@ -700,7 +700,7 @@ $conn = mysqli_connect($cleardb_server, $cleardb_username, $cleardb_password, $c
          <div class="row">
          	<div class="col-lg-4">
          		<div class="footer-widget pr-lg-5 pr-0">
-         			<img src="img/logo.png" class="img-fluid footer-logo mb-3" alt="">
+         			<img src="img\nuestras_fotos\restauranteeee.png" class="img-fluid footer-logo mb-3" alt="">
 	         		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et obcaecati quisquam id sit omnis explicabo voluptate aut placeat, soluta, nisi ea magni facere, itaque incidunt modi? Magni, et voluptatum dolorem.</p>
 	         		<nav class="nav nav-mastfoot justify-content-start">
 		                <a class="nav-link" href="#">
