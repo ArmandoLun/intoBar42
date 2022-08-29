@@ -376,10 +376,10 @@ $conn = mysqli_connect($cleardb_server, $cleardb_username, $cleardb_password, $c
                         <div class="text-wrap">
                             <div class="row align-items-start">
                                 <div class="col-8">
-                                    <h4>Perro a la estaca</h4>
+                                    <h4>Hamburguesa clásica</h4>
                                 </div>
                                 <div class="col-4">
-                                    <h4 class="text-muted menu-price">$3000000</h4>
+                                    <h4 class="text-muted menu-price">$800</h4>
                                 </div>
                             </div>
                             <p>Meat Ball, Mie</p>
@@ -408,10 +408,10 @@ $conn = mysqli_connect($cleardb_server, $cleardb_username, $cleardb_password, $c
                         <div class="text-wrap">
                             <div class="row align-items-start">
                                 <div class="col-8">
-                                    <h4>pata de grulla</h4>
+                                    <h4>Fideos con salsa blanca</h4>
                                 </div>
                                 <div class="col-4">
-                                    <h4 class="text-muted menu-price">$1</h4>
+                                    <h4 class="text-muted menu-price">$1000</h4>
                                 </div>
                             </div>
                             <p>Meat Ball, Mie</p>
@@ -482,10 +482,10 @@ $conn = mysqli_connect($cleardb_server, $cleardb_username, $cleardb_password, $c
         <div class="section-content">
             <div class="heading-section text-center">
                 <span class="subheading">
-                    Testimonio
+                    Testimonio de nuestros
                 </span>
                 <h2>
-                    Cliente triste
+                    Clientes
                 </h2>
             </div>
             <div class="row">
@@ -493,15 +493,15 @@ $conn = mysqli_connect($cleardb_server, $cleardb_username, $cleardb_password, $c
                 <div class="testi-content testi-carousel owl-carousel">
                     <div class="testi-item">
                         <i class="testi-icon fa fa-3x fa-quote-left"></i>
-                        <p class="testi-text">impresionante</p>
+                        <p class="testi-text">Muy satisfecho con su menu.</p>
                         <p class="testi-author">Enzo Virgona</p>
-                        <p class="testi-desc">CEO of <span>chacarita</span></p>
+                        <p class="testi-desc">CEO of <span>ECOM</span></p>
                     </div>
                     <div class="testi-item">
                         <i class="testi-icon fa fa-3x fa-quote-left"></i>
-                        <p class="testi-text">XDD</p>
-                        <p class="testi-author">luca</p>
-                        <p class="testi-desc">CTO of <span>mi casa</span></p>
+                        <p class="testi-text">Buen sabor a un precio accesible.</p>
+                        <p class="testi-author">Griselda Gonzalez</p>
+                        <p class="testi-desc">Maestra de <span>musica</span></p>
                     </div>
                 </div>
                 <!-- End of Testimonial -->
@@ -587,10 +587,10 @@ $conn = mysqli_connect($cleardb_server, $cleardb_username, $cleardb_password, $c
                 </div>
                 <div class="col-md-4">
                     <div class="team-card mb-5">
-                        <img class="img-fluid" src="img\nuestras_fotos\3ba67c_791133282465447d85ee5903fa454983_mv2.webp" alt="">
+                        <img class="img-fluid" src="img\nuestras_fotos\62290321.png" alt="">
                         <div class="team-desc">
                             <h4 class="mb-0">Luna Armando</h4>
-                            <p class="mb-1">Barrendero</p>
+                            <p class="mb-1">Chef full stack</p>
                             <ul class="list-inline mb-0 team-social-links">
                                 <li class="list-inline-item">
                                     <a href="#">
@@ -718,7 +718,7 @@ $conn = mysqli_connect($cleardb_server, $cleardb_username, $cleardb_password, $c
          	</div>
          	<div class="col-lg-4">
          		<div class="footer-widget px-lg-5 px-0">
-         			<h4>Horas Abierto</h4>
+         			<h4>Horarios</h4>
 	         		<ul class="list-unstyled open-hours">
 		                <li class="d-flex justify-content-between"><span>Lunes</span><span>9:00 - 24:00</span></li>
 		                <li class="d-flex justify-content-between"><span>Martes</span><span>9:00 - 24:00</span></li>
