@@ -91,13 +91,13 @@ $conn = mysqli_connect($cleardb_server, $cleardb_username, $cleardb_password, $c
             <div class="container">
                 <div class="row d-flex align-items-center">
                     <div class="col-lg-6 hero-left">
-                        <h1 class="display-4 mb-5">¡Nosotros Amamos la <br>Comida Deleitable!</h1>
+                        <h1 class="display-4 mb-5">¡Bienvenidos a <br>Sentidos!</h1>
                         <div class="mb-2">
                             <a class="btn btn-primary btn-shadow btn-lg" href="#" role="button">Explorar Menú</a>
                             <a class="btn btn-icon btn-lg" href="https://player.vimeo.com/video/33110953"
                                 data-featherlight="iframe" data-featherlight-iframe-allowfullscreen="true">
                                 <span class="lnr lnr-film-play"></span>
-                                Play Video
+                                Ver Video
                             </a>
                         </div>
 
@@ -126,13 +126,13 @@ $conn = mysqli_connect($cleardb_server, $cleardb_username, $cleardb_password, $c
                     <div class="col-lg-6 hero-right">
                         <div class="owl-carousel owl-theme hero-carousel">
                             <div class="item">
-                                <img class="img-fluid" src="img/hero-1.jpg" alt="">
+                                <img class="img-fluid" src="img\nuestras_fotos\WhatsApp Image 2022-08-09 at 21.38.59 (2).jpeg" alt="">
                             </div>
                             <div class="item">
-                                <img class="img-fluid" src="img/hero-2.jpg" alt="">
+                                <img class="img-fluid" src="img\nuestras_fotos\WhatsApp Image 2022-08-09 at 21.38.59.jpeg" alt="">
                             </div>
                             <div class="item">
-                                <img class="img-fluid" src="img/hero-3.jpg" alt="">
+                                <img class="img-fluid" src="img\nuestras_fotos\WhatsApp Image 2022-08-09 at 21.38.59.jpeg" alt="">
                             </div>
                         </div>
                     </div>
@@ -150,37 +150,35 @@ $conn = mysqli_connect($cleardb_server, $cleardb_username, $cleardb_password, $c
                         <div class="col-sm-7 py-5 pl-md-0 pl-4">
                             <div class="heading-section pl-lg-5 ml-md-5">
                                 <span class="subheading">
-                                    Acerca de
+                                    Sobre nosotros
                                 </span>
                                 <h2>
-                                    Welcome to Resto
+                                    Sentidos
                                 </h2>
                             </div>
                             <div class="pl-lg-5 ml-md-5">
-                                <p>On her way she met a copy. The copy warned the Little Blind Text, that where it came
-                                    from it would have been rewritten a thousand times and everything that was left from
-                                    its origin would be the word "and" and the Little Blind Text should turn around and
-                                    return to its own, safe country. A small river named Duden flows by their place and
-                                    supplies it with the necessary regelialia. It is a paradisematic country, in which
-                                    roasted parts of sentences fly into your mouth.</p>
-                                <h3 class="mt-5">Recetas Especiales</h3>
+                                <p> Buscamos atraer la atención de nuestros clientes 
+                                    a través de experiencias inspiradas en la seducción de los sentidos 
+                                    para que disfrute 
+                                    de un momento de bienestar, en total armonía.</p>
+                                <h3 class="mt-5">Nuestros servicios</h3>
                                 <div class="row">
                                     <div class="col-4">
                                         <a href="#" class="thumb-menu">
-                                            <img class="img-fluid img-cover" src="img/hero-1.jpg" />
-                                            <h6>Australian Organic Beef</h6>
+                                            <img class="img-fluid img-cover" src="img\nuestras_fotos\photo-1523906630133-f6934a1ab2b9.jpg" />
+                                            <h6>Té</h6>
                                         </a>
                                     </div>
                                     <div class="col-4">
                                         <a href="#" class="thumb-menu">
-                                            <img class="img-fluid img-cover" src="img/hero-1.jpg" />
-                                            <h6>Australian Organic Beef</h6>
+                                            <img class="img-fluid img-cover" src="img\nuestras_fotos\WhatsApp Image 2022-08-09 at 21.38.59 (1).jpeg" />
+                                            <h6>Resto</h6>
                                         </a>
                                     </div>
                                     <div class="col-4">
                                         <a href="#" class="thumb-menu">
-                                            <img class="img-fluid img-cover" src="img/hero-1.jpg" />
-                                            <h6>Australian Organic Beef</h6>
+                                            <img class="img-fluid img-cover" src="img\nuestras_fotos\WhatsApp Image 2022-08-09 at 21.39.00.jpeg" />
+                                            <h6>Catering</h6>
                                         </a>
                                     </div>
                                 </div>
@@ -200,19 +198,17 @@ $conn = mysqli_connect($cleardb_server, $cleardb_username, $cleardb_password, $c
                             Especialidades
                         </span>
                         <h2>
-                            Platos Especiales
+                            El mejor sabor
                         </h2>
                     </div>
                     <div class="row mt-5">
                         <div class="col-lg-5 col-md-6 align-self-center py-5">
                             <h2 class="special-number">01.</h2>
                             <div class="dishes-text">
-                                <h3><span>Beef</span><br> Steak Sauce</h3>
-                                <p class="pt-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, ea
-                                    vero alias perferendis quas animi doloribus voluptates. Atque explicabo ea nesciunt
-                                    provident libero qui eum, corporis esse quos excepturi soluta?</p>
-                                <h3 class="special-dishes-price">$15.00</h3>
-                                <a href="#" class="btn-primary mt-3">book a table</a>
+                                <h3><span>Carnes</span><br>Bistec a la salsa</h3>
+                                <p class="pt-3">Uno de los platos más elegidos por nuestros clientes.</p>
+                                <h3 class="special-dishes-price">$1500.00</h3>
+                                <a href="#" class="btn-primary mt-3">Pedilo ahora</a>
                             </div>
                         </div>
                         <div class="col-lg-5 offset-lg-2 col-md-6 align-self-center mt-4 mt-md-0">
@@ -226,12 +222,10 @@ $conn = mysqli_connect($cleardb_server, $cleardb_username, $cleardb_password, $c
                         <div class="col-lg-5 offset-lg-2 col-md-6 align-self-center order-1 order-md-2 py-5">
                             <h2 class="special-number">02.</h2>
                             <div class="dishes-text">
-                                <h3><span>Salmon</span><br> Zucchini</h3>
-                                <p class="pt-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis,
-                                    accusamus culpa quam amet ipsam odit ea doloremque accusantium quo, itaque possimus
-                                    eius. In a quis quibusdam omnis atque vero dolores!</p>
-                                <h3 class="special-dishes-price">$12.00</h3>
-                                <a href="#" class="btn-primary mt-3">book a table <span><i
+                                <h3><span>Salmon y</span><br> Zucchini</h3>
+                                <p class="pt-3">Buen precio y sabor.</p>
+                                <h3 class="special-dishes-price">$1200.00</h3>
+                                <a href="#" class="btn-primary mt-3">Pedilo ahora <span><i
                                             class="fa fa-long-arrow-right"></i></span></a>
                             </div>
                         </div>
@@ -248,7 +242,7 @@ $conn = mysqli_connect($cleardb_server, $cleardb_username, $cleardb_password, $c
                         <div class="col-md-12">
                             <div class="heading-section text-center">
                                 <span class="subheading">
-                                    Epecialidades
+                                    Especialidades
                                 </span>
                                 <h2>
                                     Nuestro Menú
@@ -259,162 +253,162 @@ $conn = mysqli_connect($cleardb_server, $cleardb_username, $cleardb_password, $c
                     <div class="row">
                         <div class="col-lg-4 menu-wrap">
                             <div class="heading-menu">
-                                <h3 class="text-center mb-5">Breakfast</h3>
+                                <h3 class="text-center mb-5">Desayuno</h3>
                             </div>
                             <div class="menus d-flex align-items-center">
                                 <div class="menu-img rounded-circle">
-                                    <img class="img-fluid" src="img/breakfast-1.jpg" alt="">
+                                    <img class="img-fluid" src="img\nuestras_fotos\te-hierbas-tostadas-como-desayuno_525574-13329.jpg" alt="">
                                 </div>
                                 <div class="text-wrap">
                                     <div class="row align-items-start">
                                         <div class="col-8">
-                                            <h4>Egg Sandwich</h4>
+                                            <h4>Té de hierbas con tostadas</h4>
                                         </div>
                                         <div class="col-4">
-                                            <h4 class="text-muted menu-price">$30</h4>
+                                            <h4 class="text-muted menu-price">$700</h4>
                                         </div>
                                     </div>
-                                    <p>Meat Ball, Mie</p>
+                                    <p>Pedir aparte: Manteca, Mermelada</p>
                                 </div>
                             </div>
                             <div class="menus d-flex align-items-center">
                                 <div class="menu-img rounded-circle">
-                                    <img class="img-fluid" src="img/breakfast-1.jpg" alt="">
+                                    <img class="img-fluid" src="img\nuestras_fotos\download.jpg" alt="">
                                 </div>
                                 <div class="text-wrap">
                                     <div class="row align-items-start">
                                         <div class="col-8">
-                                            <h4>Egg Sandwich</h4>
+                                            <h4>Té negro con limón</h4>
                                         </div>
                                         <div class="col-4">
-                                            <h4 class="text-muted menu-price">$30</h4>
+                                            <h4 class="text-muted menu-price">$400</h4>
                                         </div>
                                     </div>
-                                    <p>Meat Ball, Mie</p>
+                                    <p>Acompañamiento aparte.</p>
                                 </div>
                             </div>
                             <div class="menus d-flex align-items-center">
                                 <div class="menu-img rounded-circle">
-                                    <img class="img-fluid" src="img/breakfast-1.jpg" alt="">
+                                    <img class="img-fluid" src="img\nuestras_fotos\te-verde.jpg" alt="">
                                 </div>
                                 <div class="text-wrap">
                                     <div class="row align-items-start">
                                         <div class="col-8">
-                                            <h4>Egg Sandwich</h4>
+                                            <h4>Té verde</h4>
                                         </div>
                                         <div class="col-4">
-                                            <h4 class="text-muted menu-price">$30</h4>
+                                            <h4 class="text-muted menu-price">$300</h4>
                                         </div>
                                     </div>
-                                    <p>Meat Ball, Mie</p>
+                                    <p>Acompañamiento aparte.</p>
                                 </div>
                             </div>
                         </div>
 
                         <div class="col-lg-4 menu-wrap">
                             <div class="heading-menu">
-                                <h3 class="text-center mb-5">Breakfast</h3>
+                                <h3 class="text-center mb-5">Almuerzo</h3>
                             </div>
                             <div class="menus d-flex align-items-center">
                                 <div class="menu-img rounded-circle">
-                                    <img class="img-fluid" src="img/breakfast-1.jpg" alt="">
+                                    <img class="img-fluid" src="img\nuestras_fotos\WhatsApp Image 2022-08-09 at 21.38.59 (1).jpeg" alt="">
                                 </div>
                                 <div class="text-wrap">
                                     <div class="row align-items-start">
                                         <div class="col-8">
-                                            <h4>Egg Sandwich</h4>
+                                            <h4>Vino de la casa mas bistec a la plancha</h4>
                                         </div>
                                         <div class="col-4">
-                                            <h4 class="text-muted menu-price">$30</h4>
+                                            <h4 class="text-muted menu-price">$1600</h4>
                                         </div>
                                     </div>
-                                    <p>Meat Ball, Mie</p>
+                                    <p>Pedir punto de la carne.</p>
                                 </div>
                             </div>
                             <div class="menus d-flex align-items-center">
                                 <div class="menu-img rounded-circle">
-                                    <img class="img-fluid" src="img/breakfast-1.jpg" alt="">
+                                    <img class="img-fluid" src="img\nuestras_fotos\hamburguesas-alto-angulo-papas-fritas-salsa-cerveza-espacio-copia_23-2148784437.jpg" alt="">
                                 </div>
                                 <div class="text-wrap">
                                     <div class="row align-items-start">
                                         <div class="col-8">
-                                            <h4>Egg Sandwich</h4>
+                                            <h4>Hamburguesa y papas con cerveza</h4>
                                         </div>
                                         <div class="col-4">
-                                            <h4 class="text-muted menu-price">$30</h4>
+                                            <h4 class="text-muted menu-price">$1300</h4>
                                         </div>
                                     </div>
-                                    <p>Meat Ball, Mie</p>
+                                    <p>Carne de res, lechuga, tomate, papas fritas, cerveza a elección.</p>
                                 </div>
                             </div>
                             <div class="menus d-flex align-items-center">
                                 <div class="menu-img rounded-circle">
-                                    <img class="img-fluid" src="img/breakfast-1.jpg" alt="">
+                                    <img class="img-fluid" src="img\salmon-zucchini.jpg" alt="">
                                 </div>
                                 <div class="text-wrap">
                                     <div class="row align-items-start">
                                         <div class="col-8">
-                                            <h4>Egg Sandwich</h4>
+                                            <h4>Salmon con Zucchini</h4>
                                         </div>
                                         <div class="col-4">
-                                            <h4 class="text-muted menu-price">$30</h4>
+                                            <h4 class="text-muted menu-price">$1800</h4>
                                         </div>
                                     </div>
-                                    <p>Meat Ball, Mie</p>
+                                    <p>Salmón a la plancha con zuchinni</p>
                                 </div>
                             </div>
                         </div>
 
                         <div class="col-lg-4 menu-wrap">
                             <div class="heading-menu">
-                                <h3 class="text-center mb-5">Breakfast</h3>
+                                <h3 class="text-center mb-5">Postres</h3>
                             </div>
                             <div class="menus d-flex align-items-center">
                                 <div class="menu-img rounded-circle">
-                                    <img class="img-fluid" src="img/breakfast-1.jpg" alt="">
+                                    <img class="img-fluid" src="img\nuestras_fotos\WhatsApp Image 2022-08-09 at 21.39.01 (1).jpeg" alt="">
                                 </div>
                                 <div class="text-wrap">
                                     <div class="row align-items-start">
                                         <div class="col-8">
-                                            <h4>Egg Sandwich</h4>
+                                            <h4>Porción de torta</h4>
                                         </div>
                                         <div class="col-4">
-                                            <h4 class="text-muted menu-price">$30</h4>
+                                            <h4 class="text-muted menu-price">$200 c/u</h4>
                                         </div>
                                     </div>
-                                    <p>Meat Ball, Mie</p>
+                                    <p>Frutilla, dulce de leche, chocolate.</p>
                                 </div>
                             </div>
                             <div class="menus d-flex align-items-center">
                                 <div class="menu-img rounded-circle">
-                                    <img class="img-fluid" src="img/breakfast-1.jpg" alt="">
+                                    <img class="img-fluid" src="img\nuestras_fotos\polo-red-velvet-5-scaled.jpg" alt="">
                                 </div>
                                 <div class="text-wrap">
                                     <div class="row align-items-start">
                                         <div class="col-8">
-                                            <h4>Egg Sandwich</h4>
+                                            <h4>Palito helado Red Velvet</h4>
                                         </div>
                                         <div class="col-4">
-                                            <h4 class="text-muted menu-price">$30</h4>
+                                            <h4 class="text-muted menu-price">$800</h4>
                                         </div>
                                     </div>
-                                    <p>Meat Ball, Mie</p>
+                                    <p>Relleno de Red Velvet cubierto de chocolate.</p>
                                 </div>
                             </div>
                             <div class="menus d-flex align-items-center">
                                 <div class="menu-img rounded-circle">
-                                    <img class="img-fluid" src="img/breakfast-1.jpg" alt="">
+                                    <img class="img-fluid" src="img\queso-y-dulce.jpg" alt="">
                                 </div>
                                 <div class="text-wrap">
                                     <div class="row align-items-start">
                                         <div class="col-8">
-                                            <h4>Egg Sandwich</h4>
+                                            <h4>Queso con dulce</h4>
                                         </div>
                                         <div class="col-4">
-                                            <h4 class="text-muted menu-price">$30</h4>
+                                            <h4 class="text-muted menu-price">$600</h4>
                                         </div>
                                     </div>
-                                    <p>Meat Ball, Mie</p>
+                                    <p>Dulce de membrillo o batata con queso.</p>
                                 </div>
                             </div>
                         </div>
