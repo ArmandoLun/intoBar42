@@ -1,20 +1,3 @@
-<?php
-//Get Heroku ClearDB connection information
-$cleardb_url = parse_url(getenv("CLEARDB_DATABASE_URL"));
-$cleardb_server = $cleardb_url["host"];
-$cleardb_username = $cleardb_url["user"];
-$cleardb_password = $cleardb_url["pass"];
-$cleardb_db = substr($cleardb_url["path"], 1);
-$active_group = 'default';
-$query_builder = TRUE;
-// Connect to DB
-//descomentar esto al commitearlo XDDDDDDD
-$conn = mysqli_connect($cleardb_server, $cleardb_username, $cleardb_password, $cleardb_db);
-//descomentar esto al commitearlo XDDDDDDD
-//conexion para probar una bd local
-//$conn = mysqli_connect('localhost','root','','pruebas');
-//conexion para probar una bd local
-?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -50,7 +33,9 @@ $conn = mysqli_connect($cleardb_server, $cleardb_username, $cleardb_password, $c
 </head>
 
 <body data-spy="scroll" data-target="#navbar" class="static-layout">
-    <?php include('platillo.php');?>
+    <?php include('modelo/restaurante/platillo.php');
+    $platillo = new Platillo();
+    ?>
     <div id="side-nav" class="sidenav">
         <a href="javascript:void(0)" id="side-nav-close">&times;</a>
 
