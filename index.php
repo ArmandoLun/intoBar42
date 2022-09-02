@@ -34,7 +34,8 @@
 
 <body data-spy="scroll" data-target="#navbar" class="static-layout">
     <?php include('modelo/restaurante/platillo.php');
-    $platillo = new Platillo();
+    $nuevoplatito = new Platillo();
+    echo json_encode($nuevoplatito->leer_todos());
     ?>
     <div id="side-nav" class="sidenav">
         <a href="javascript:void(0)" id="side-nav-close">&times;</a>

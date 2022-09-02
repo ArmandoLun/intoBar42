@@ -39,7 +39,7 @@
 
         public function leer_todos(){
             try{
-                return $this->db_connect->query("SELECT platillo, tiempo_coccion, precio FROM menu")->fetchAll();
+                return $this->db_connect->query("SELECT platillo, precio, tipo, tiempo_coccion FROM menu INNER JOIN tiposPlatillos ON id_TiposPlatillos = tiposPlatillos.id")->fetchAll();
             }catch(Exception $e){
                 echo $e;
             }
