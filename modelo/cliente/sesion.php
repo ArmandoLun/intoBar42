@@ -46,7 +46,7 @@
 
         public function leer_todos(){
             try{
-                return $this->query("SELECT nombre, apellido, DNI, correo FROM usuarios")->fetchAll();
+                return $this->db_connect->query("SELECT nombre, apellido, DNI, correo FROM usuarios")->fetchAll();
             }catch(Exception $e){
                 echo $e;
             }

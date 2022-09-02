@@ -50,6 +50,7 @@ $conn = mysqli_connect($cleardb_server, $cleardb_username, $cleardb_password, $c
 </head>
 
 <body data-spy="scroll" data-target="#navbar" class="static-layout">
+    <?php include('platillo.php');?>
     <div id="side-nav" class="sidenav">
         <a href="javascript:void(0)" id="side-nav-close">&times;</a>
 

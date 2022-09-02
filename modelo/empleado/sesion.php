@@ -63,7 +63,7 @@
 
         public function leer_todos(){
             try{
-                return $this->query("SELECT usuario, contrasenia, perfil FROM empleados INNER JOIN perfiles
+                return $this->db_connect->query("SELECT usuario, contrasenia, perfil FROM empleados INNER JOIN perfiles
                 ON id_perfil = perfiles.id")->fetchAll();
             }catch(Exception $e){
                 echo $e;

@@ -28,7 +28,7 @@
         public function leer_de_usuario($correo){
             try{
                 $resultado = $this->db_connect->prepare("CALL leer_pedidos_usuario(:correo)");
-                return $resultado->execute(array(":correo"=>$correo))->fetchAll();
+                return $this->$resultado->execute(array(":correo"=>$correo))->fetchAll();
             }catch(Exception $e){
                 echo $e;
             }
@@ -36,7 +36,7 @@
         
         public function leer_todos(){
             try{
-                return $this->query("CALL leer_pedidos_todos()")->fetchAll();
+                return $this->db_connect->query("CALL leer_pedidos_todos()")->fetchAll();
             }catch(Exception $e){
                 echo $e;
             }

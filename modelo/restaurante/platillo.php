@@ -39,7 +39,7 @@
 
         public function leer_todos(){
             try{
-                return $this->query("SELECT platillo, tiempo_coccion, precio FROM menu")->fetchAll();
+                return $this->db_connect->query("SELECT platillo, tiempo_coccion, precio FROM menu")->fetchAll();
             }catch(Exception $e){
                 echo $e;
             }

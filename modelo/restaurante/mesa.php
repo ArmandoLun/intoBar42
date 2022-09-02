@@ -30,7 +30,7 @@
 
         public function leer_todos(){
             try{
-                return $this->query("SELECT nombre, sillas FROM mesas")->fetchAll();
+                return $this->db_connect->query("SELECT nombre, sillas FROM mesas")->fetchAll();
             }catch(Exception $e){
                 echo $e;
             }
