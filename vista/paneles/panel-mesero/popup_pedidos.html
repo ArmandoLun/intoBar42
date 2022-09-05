@@ -1,0 +1,24 @@
+<link rel="stylesheet" href="vista/paneles/popups.css">
+<div id="fondo">
+    <div class="popup">
+        <div class="cerrar" onclick="document.getElementById('fondo').style.display = 'none'">X</div>
+        <div class="contenido">
+            <form action="">
+                <label for="platillo">Platillo</label>
+                <select name="platillo">
+                    <option value="plato 1">Plato 1</option>
+                    <option value="plato 2">Plato 2</option>
+                </select>
+                <label for="mesa">Mesa</label>
+                <select name="mesa">
+                    <option value="plato 1">Mesa 1</option>
+                    <option value="plato 2">Mesa 2</option>
+                </select>
+                <label for="hora_entrega">Fecha y hora de entrega</label>
+                <input type="datetime-local" name="hora_entrega" placeholder="Hora de entrega">
+                <button>Aplicar cambios</button>
+                <p class="exito">Texto de confirmación</p>
+            </form>
+        </div>
+    </div>
+</div>

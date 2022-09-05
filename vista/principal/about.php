@@ -14,9 +14,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- External CSS -->
-    <link rel="stylesheet" href="external/bootstrap/bootstrap.min.css">
-    <link rel="stylesheet" href="external/select2/select2.min.css">
-    <link rel="stylesheet" href="external/owlcarousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="vista/principal/external/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="vista/principal/external/select2/select2.min.css">
+    <link rel="stylesheet" href="vista/principal/external/owlcarousel/owl.carousel.min.css">
     <link rel="stylesheet" href="https://cdn.rawgit.com/noelboss/featherlight/1.7.13/release/featherlight.min.css">
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.0.1/css/tempusdominus-bootstrap-4.min.css">
@@ -30,7 +30,7 @@
         integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
     <!-- CSS -->
-    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="vista/principal/css/style.min.css">
 
     <!-- Modernizr JS for IE8 support of HTML5 elements and media queries -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
@@ -74,14 +74,14 @@
     <div id="canvas-overlay"></div>
     <div class="boxed-page">
         <!-- NAVBAR -->
-        <?php include('navbar.php'); ?>
+        <?php include('vista/principal/navbar.php'); ?>
         <!-- Welcome Section -->
         <section id="gtco-welcome" class="bg-white section-padding">
             <div class="container">
                 <div class="section-content">
                     <div class="row">
                         <div class="col-sm-5 img-bg d-flex shadow align-items-center justify-content-center justify-content-md-end img-2"
-                            style="background-image: url(img/hero-2.jpg);">
+                            style="background-image: url(vista/principal/img/hero-2.jpg);">
 
                         </div>
                         <div class="col-sm-7 py-5 pl-md-0 pl-4">
@@ -104,19 +104,19 @@
                                 <div class="row">
                                     <div class="col-4">
                                         <a href="#" class="thumb-menu">
-                                            <img class="img-fluid img-cover" src="img/hero-1.jpg" />
+                                            <img class="img-fluid img-cover" src="vista/principal/img/hero-1.jpg" />
                                             <h6>Australian Organic Beef</h6>
                                         </a>
                                     </div>
                                     <div class="col-4">
                                         <a href="#" class="thumb-menu">
-                                            <img class="img-fluid img-cover" src="img/hero-1.jpg" />
+                                            <img class="img-fluid img-cover" src="vista/principal/img/hero-1.jpg" />
                                             <h6>Australian Organic Beef</h6>
                                         </a>
                                     </div>
                                     <div class="col-4">
                                         <a href="#" class="thumb-menu">
-                                            <img class="img-fluid img-cover" src="img/hero-1.jpg" />
+                                            <img class="img-fluid img-cover" src="vista/principal/img/hero-1.jpg" />
                                             <h6>Australian Organic Beef</h6>
                                         </a>
                                     </div>
@@ -133,7 +133,7 @@
                 <div class="row">
                     <div class="col-lg-4">
                         <div class="footer-widget pr-lg-5 pr-0">
-                            <img src="img/logo.png" class="img-fluid footer-logo mb-3" alt="">
+                            <img src="vista/principal/img/logo.png" class="img-fluid footer-logo mb-3" alt="">
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et obcaecati quisquam id sit
                                 omnis explicabo voluptate aut placeat, soluta, nisi ea magni facere, itaque incidunt
                                 modi? Magni, et voluptatum dolorem.</p>
@@ -202,17 +202,17 @@
     <!-- External JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
-    <script src="external/bootstrap/popper.min.js"></script>
-    <script src="external/bootstrap/bootstrap.min.js"></script>
-    <script src="external/select2/select2.min.js "></script>
-    <script src="external/owlcarousel/owl.carousel.min.js"></script>
+    <script src="vista/principal/external/bootstrap/popper.min.js"></script>
+    <script src="vista/principal/external/bootstrap/bootstrap.min.js"></script>
+    <script src="vista/principal/external/select2/select2.min.js "></script>
+    <script src="vista/principal/external/owlcarousel/owl.carousel.min.js"></script>
     <script src="https://cdn.rawgit.com/noelboss/featherlight/1.7.13/release/featherlight.min.js"></script>
-    <script src="external/stellar/jquery.stellar.js" type="text/javascript" charset="utf-8"></script>
+    <script src="vista/principal/external/stellar/jquery.stellar.js" type="text/javascript" charset="utf-8"></script>
     <script
         src="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.0.1/js/tempusdominus-bootstrap-4.min.js"></script>
 
     <!-- Main JS -->
-    <script src="js/app.min.js "></script>
+    <script src="vista/principal/js/app.min.js "></script>
 </body>
 
 </html>

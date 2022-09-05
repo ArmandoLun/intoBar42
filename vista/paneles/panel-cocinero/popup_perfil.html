@@ -1,0 +1,32 @@
+<link rel="stylesheet" href="vista/paneles/popups.css">
+<div id="fondo">
+    <div class="popup">
+        <div class="cerrar" onclick="document.getElementById('fondo').style.display = 'none'">X</div>
+        <div class="contenido">
+            <form action="">
+                <img src="vista/paneles/perfil.jpg" width="100px" height="100px" style="border: 5px solid black">
+                <input type="file" id="foto-perfil" name="foto_perfil" style="display: none"
+                    accept="image/png, image/jpg, image/gif, image/jpeg, image/webp, image/bmp"
+                    onchange="cambiar_foto()">
+                <button onclick="elegir_foto()">Cambiar foto de perfil</button>
+                <label for="usuario">Usuario</label>
+                <input type="text" name="usuario" placeholder="Nombre de usuario">
+                <label for="contrasenia">Contraseña</label>
+                <input type="password" name="contrasenia" placeholder="Contraseña">
+                <label for="descripcion">Descripción</label>
+                <textarea name="descripcion" placeholder="Descripción"></textarea>
+                <button>Aplicar cambios</button>
+                <p class="exito">Texto de confirmación</p>
+            </form>
+        </div>
+    </div>
+</div>
+<script>
+    function elegir_foto(){
+        event.preventDefault();
+        document.getElementById("foto-perfil").click();
+    }
+    function cambiar_foto(){
+        document.querySelector(".contenido img").src = URL.createObjectURL(event.target.files[0]);
+    }
+</script>

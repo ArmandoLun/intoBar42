@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            height: 100vh;
+            margin: 0px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        form{
+            width: 400px;
+        }
+        table{
+            width: 100%;
+        }
+        input{
+            width: calc(100% - 8px);
+            font-size: 16px;
+        }
+        h1{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1></h1>
+    <form action="">
+        <h1>Iniciar sesión</h1>
+        <br>
+        <br>
+        <table>
+            <tr>
+                <td><input type="text" name="usuario" placeholder="usuario" required></td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="password" name="contrasenia" placeholder="contraseña" required>
+                    <div style="height: 20px;"></div>
+                </td>
+            </tr>
+            <tr>
+                <td><input type="submit" value="Acceder" style="width: 100%"></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

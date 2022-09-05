@@ -1,0 +1,72 @@
+#fondo{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+}
+.popup{
+    width: 70%;
+    height: 70%;
+    background: white;
+    border-radius: 50px;
+}
+.cerrar{
+    width: 20px;
+    height: 20px;
+    background: darkred;
+    border-top-right-radius: 50px;
+    position: relative;
+    left: calc(100% - 50px);
+    padding: 15px;
+    font-size: 20px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+}
+.cerrar:hover{
+    background: red;
+    cursor: pointer;
+}
+.contenido{
+    width: calc(100% - 100px);
+    height: calc(100% - 100px);
+    margin: 0px 50px;
+    background: #ddd;
+    overflow: auto;
+    display: flex;
+    justify-content: center;
+}
+.contenido form{
+    width: 80%;
+    height: fit-content;
+    margin-top: 50px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+.contenido label{
+    width: 100%;
+    margin-top: 10px;
+    text-align: left;
+}
+.contenido input, .contenido textarea, .contenido select{
+    width: 100%;
+    resize: vertical;
+}
+.contenido button{
+    margin: 10px;
+}
+.contenido p{
+    padding: 15px;
+    border-radius: 25px;
+}
+.contenido .exito{
+    background-color: #0f0;
+}
+.contenido .error{
+    background-color: red;
+}

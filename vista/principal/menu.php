@@ -14,9 +14,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- External CSS -->
-    <link rel="stylesheet" href="external/bootstrap/bootstrap.min.css">
-    <link rel="stylesheet" href="external/select2/select2.min.css">
-    <link rel="stylesheet" href="external/owlcarousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="vista/principal/external/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="vista/principal/external/select2/select2.min.css">
+    <link rel="stylesheet" href="vista/principal/external/owlcarousel/owl.carousel.min.css">
     <link rel="stylesheet" href="https://cdn.rawgit.com/noelboss/featherlight/1.7.13/release/featherlight.min.css">
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.0.1/css/tempusdominus-bootstrap-4.min.css">
@@ -30,7 +30,7 @@
         integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
     <!-- CSS -->
-    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="vista/principal/css/style.min.css">
 
     <!-- Modernizr JS for IE8 support of HTML5 elements and media queries -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
@@ -74,7 +74,7 @@
     <div id="canvas-overlay"></div>
     <div class="boxed-page">
         <!-- NAVBAR -->
-        <?php include('navbar.php'); ?>
+        <?php include('vista/principal/navbar.php'); ?>
         <!-- Menu Section -->
         <section id="gtco-menu" class="section-padding">
             <div class="container">
@@ -98,7 +98,7 @@
                             </div>
                             <div class="menus d-flex align-items-center">
                                 <div class="menu-img rounded-circle">
-                                    <img class="img-fluid" src="img/breakfast-1.jpg" alt="">
+                                    <img class="img-fluid" src="vista/principal/img/breakfast-1.jpg" alt="">
                                 </div>
                                 <div class="text-wrap">
                                     <div class="row align-items-start">
@@ -114,7 +114,7 @@
                             </div>
                             <div class="menus d-flex align-items-center">
                                 <div class="menu-img rounded-circle">
-                                    <img class="img-fluid" src="img/breakfast-1.jpg" alt="">
+                                    <img class="img-fluid" src="vista/principal/img/breakfast-1.jpg" alt="">
                                 </div>
                                 <div class="text-wrap">
                                     <div class="row align-items-start">
@@ -130,61 +130,7 @@
                             </div>
                             <div class="menus d-flex align-items-center">
                                 <div class="menu-img rounded-circle">
-                                    <img class="img-fluid" src="img/breakfast-1.jpg" alt="">
-                                </div>
-                                <div class="text-wrap">
-                                    <div class="row align-items-start">
-                                        <div class="col-8">
-                                            <h4>Egg Sandwich</h4>
-                                        </div>
-                                        <div class="col-4">
-                                            <h4 class="text-muted menu-price">$30</h4>
-                                        </div>
-                                    </div>
-                                    <p>Meat Ball, Mie</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-4 menu-wrap">
-                            <div class="heading-menu">
-                                <h3 class="text-center mb-5">Breakfast</h3>
-                            </div>
-                            <div class="menus d-flex align-items-center">
-                                <div class="menu-img rounded-circle">
-                                    <img class="img-fluid" src="img/breakfast-1.jpg" alt="">
-                                </div>
-                                <div class="text-wrap">
-                                    <div class="row align-items-start">
-                                        <div class="col-8">
-                                            <h4>Egg Sandwich</h4>
-                                        </div>
-                                        <div class="col-4">
-                                            <h4 class="text-muted menu-price">$30</h4>
-                                        </div>
-                                    </div>
-                                    <p>Meat Ball, Mie</p>
-                                </div>
-                            </div>
-                            <div class="menus d-flex align-items-center">
-                                <div class="menu-img rounded-circle">
-                                    <img class="img-fluid" src="img/breakfast-1.jpg" alt="">
-                                </div>
-                                <div class="text-wrap">
-                                    <div class="row align-items-start">
-                                        <div class="col-8">
-                                            <h4>Egg Sandwich</h4>
-                                        </div>
-                                        <div class="col-4">
-                                            <h4 class="text-muted menu-price">$30</h4>
-                                        </div>
-                                    </div>
-                                    <p>Meat Ball, Mie</p>
-                                </div>
-                            </div>
-                            <div class="menus d-flex align-items-center">
-                                <div class="menu-img rounded-circle">
-                                    <img class="img-fluid" src="img/breakfast-1.jpg" alt="">
+                                    <img class="img-fluid" src="vista/principal/img/breakfast-1.jpg" alt="">
                                 </div>
                                 <div class="text-wrap">
                                     <div class="row align-items-start">
@@ -206,7 +152,7 @@
                             </div>
                             <div class="menus d-flex align-items-center">
                                 <div class="menu-img rounded-circle">
-                                    <img class="img-fluid" src="img/breakfast-1.jpg" alt="">
+                                    <img class="img-fluid" src="vista/principal/img/breakfast-1.jpg" alt="">
                                 </div>
                                 <div class="text-wrap">
                                     <div class="row align-items-start">
@@ -222,7 +168,7 @@
                             </div>
                             <div class="menus d-flex align-items-center">
                                 <div class="menu-img rounded-circle">
-                                    <img class="img-fluid" src="img/breakfast-1.jpg" alt="">
+                                    <img class="img-fluid" src="vista/principal/img/breakfast-1.jpg" alt="">
                                 </div>
                                 <div class="text-wrap">
                                     <div class="row align-items-start">
@@ -238,7 +184,61 @@
                             </div>
                             <div class="menus d-flex align-items-center">
                                 <div class="menu-img rounded-circle">
-                                    <img class="img-fluid" src="img/breakfast-1.jpg" alt="">
+                                    <img class="img-fluid" src="vista/principal/img/breakfast-1.jpg" alt="">
+                                </div>
+                                <div class="text-wrap">
+                                    <div class="row align-items-start">
+                                        <div class="col-8">
+                                            <h4>Egg Sandwich</h4>
+                                        </div>
+                                        <div class="col-4">
+                                            <h4 class="text-muted menu-price">$30</h4>
+                                        </div>
+                                    </div>
+                                    <p>Meat Ball, Mie</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 menu-wrap">
+                            <div class="heading-menu">
+                                <h3 class="text-center mb-5">Breakfast</h3>
+                            </div>
+                            <div class="menus d-flex align-items-center">
+                                <div class="menu-img rounded-circle">
+                                    <img class="img-fluid" src="vista/principal/img/breakfast-1.jpg" alt="">
+                                </div>
+                                <div class="text-wrap">
+                                    <div class="row align-items-start">
+                                        <div class="col-8">
+                                            <h4>Egg Sandwich</h4>
+                                        </div>
+                                        <div class="col-4">
+                                            <h4 class="text-muted menu-price">$30</h4>
+                                        </div>
+                                    </div>
+                                    <p>Meat Ball, Mie</p>
+                                </div>
+                            </div>
+                            <div class="menus d-flex align-items-center">
+                                <div class="menu-img rounded-circle">
+                                    <img class="img-fluid" src="vista/principal/img/breakfast-1.jpg" alt="">
+                                </div>
+                                <div class="text-wrap">
+                                    <div class="row align-items-start">
+                                        <div class="col-8">
+                                            <h4>Egg Sandwich</h4>
+                                        </div>
+                                        <div class="col-4">
+                                            <h4 class="text-muted menu-price">$30</h4>
+                                        </div>
+                                    </div>
+                                    <p>Meat Ball, Mie</p>
+                                </div>
+                            </div>
+                            <div class="menus d-flex align-items-center">
+                                <div class="menu-img rounded-circle">
+                                    <img class="img-fluid" src="vista/principal/img/breakfast-1.jpg" alt="">
                                 </div>
                                 <div class="text-wrap">
                                     <div class="row align-items-start">
@@ -263,7 +263,7 @@
                 <div class="row">
                     <div class="col-lg-4">
                         <div class="footer-widget pr-lg-5 pr-0">
-                            <img src="img/logo.png" class="img-fluid footer-logo mb-3" alt="">
+                            <img src="vista/principal/img/logo.png" class="img-fluid footer-logo mb-3" alt="">
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et obcaecati quisquam id sit
                                 omnis explicabo voluptate aut placeat, soluta, nisi ea magni facere, itaque incidunt
                                 modi? Magni, et voluptatum dolorem.</p>
@@ -332,17 +332,17 @@
     <!-- External JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
-    <script src="external/bootstrap/popper.min.js"></script>
-    <script src="external/bootstrap/bootstrap.min.js"></script>
-    <script src="external/select2/select2.min.js "></script>
-    <script src="external/owlcarousel/owl.carousel.min.js"></script>
+    <script src="vista/principal/external/bootstrap/popper.min.js"></script>
+    <script src="vista/principal/external/bootstrap/bootstrap.min.js"></script>
+    <script src="vista/principal/external/select2/select2.min.js "></script>
+    <script src="vista/principal/external/owlcarousel/owl.carousel.min.js"></script>
     <script src="https://cdn.rawgit.com/noelboss/featherlight/1.7.13/release/featherlight.min.js"></script>
-    <script src="external/stellar/jquery.stellar.js" type="text/javascript" charset="utf-8"></script>
+    <script src="vista/principal/external/stellar/jquery.stellar.js" type="text/javascript" charset="utf-8"></script>
     <script
         src="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.0.1/js/tempusdominus-bootstrap-4.min.js"></script>
 
     <!-- Main JS -->
-    <script src="js/app.min.js "></script>
+    <script src="vista/principal/js/app.min.js "></script>
 </body>
 
 </html>

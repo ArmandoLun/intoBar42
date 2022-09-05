@@ -14,9 +14,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- External CSS -->
-    <link rel="stylesheet" href="external/bootstrap/bootstrap.min.css">
-    <link rel="stylesheet" href="external/select2/select2.min.css">
-    <link rel="stylesheet" href="external/owlcarousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="vista/principal/external/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="vista/principal/external/select2/select2.min.css">
+    <link rel="stylesheet" href="vista/principal/external/owlcarousel/owl.carousel.min.css">
     <link rel="stylesheet" href="https://cdn.rawgit.com/noelboss/featherlight/1.7.13/release/featherlight.min.css">
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.0.1/css/tempusdominus-bootstrap-4.min.css">
@@ -30,7 +30,7 @@
         integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
     <!-- CSS -->
-    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="vista/principal/css/style.min.css">
 
     <!-- Modernizr JS for IE8 support of HTML5 elements and media queries -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
@@ -74,9 +74,9 @@
     <div id="canvas-overlay"></div>
     <div class="boxed-page">
         <!-- NAVBAR -->
-        <?php include('navbar.php'); ?>
-        <!-- Special Dishes Section -->
-        <section id="gtco-special-dishes" class="bg-grey section-padding">
+        <?php include('vista/principal/navbar.php'); ?>
+        <!-- Team Section -->
+        <section id="gtco-team" class="bg-white section-padding">
             <div class="container">
                 <div class="section-content">
                     <div class="heading-section text-center">
@@ -84,52 +84,114 @@
                             Especialidades
                         </span>
                         <h2>
-                            Platos Especiales
+                            Nuestro Equipo
                         </h2>
                     </div>
-                    <div class="row mt-5">
-                        <div class="col-lg-5 col-md-6 align-self-center py-5">
-                            <h2 class="special-number">01.</h2>
-                            <div class="dishes-text">
-                                <h3><span>Beef</span><br> Steak Sauce</h3>
-                                <p class="pt-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, ea
-                                    vero alias perferendis quas animi doloribus voluptates. Atque explicabo ea nesciunt
-                                    provident libero qui eum, corporis esse quos excepturi soluta?</p>
-                                <h3 class="special-dishes-price">$15.00</h3>
-                                <a href="#" class="btn-primary mt-3">book a table</a>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="team-card mb-5">
+                                <img class="img-fluid" src="vista/principal/img/chef-1.jpg" alt="">
+                                <div class="team-desc">
+                                    <h4 class="mb-0">Aaron Patel</h4>
+                                    <p class="mb-1">CEO</p>
+                                    <ul class="list-inline mb-0 team-social-links">
+                                        <li class="list-inline-item">
+                                            <a href="#">
+                                                <i class="fab fa-facebook-f"></i>
+                                            </a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a href="#">
+                                                <i class="fab fa-twitter"></i>
+                                            </a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a href="#">
+                                                <i class="fab fa-instagram"></i>
+                                            </a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a href="#">
+                                                <i class="fab fa-google-plus-g"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
-                        <div class="col-lg-5 offset-lg-2 col-md-6 align-self-center mt-4 mt-md-0">
-                            <img src="img/steak.jpg" alt="" class="img-fluid shadow w-100">
+                        <div class="col-md-4">
+                            <div class="team-card mb-5">
+                                <img class="img-fluid" src="vista/principal/img/chef-2.jpg" alt="">
+                                <div class="team-desc">
+                                    <h4 class="mb-0">Daniel Tebas</h4>
+                                    <p class="mb-1">Chef</p>
+                                    <ul class="list-inline mb-0 team-social-links">
+                                        <li class="list-inline-item">
+                                            <a href="#">
+                                                <i class="fab fa-facebook-f"></i>
+                                            </a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a href="#">
+                                                <i class="fab fa-twitter"></i>
+                                            </a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a href="#">
+                                                <i class="fab fa-instagram"></i>
+                                            </a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a href="#">
+                                                <i class="fab fa-google-plus-g"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="row mt-5">
-                        <div class="col-lg-5 col-md-6 align-self-center order-2 order-md-1 mt-4 mt-md-0">
-                            <img src="img/salmon-zucchini.jpg" alt="" class="img-fluid shadow w-100">
-                        </div>
-                        <div class="col-lg-5 offset-lg-2 col-md-6 align-self-center order-1 order-md-2 py-5">
-                            <h2 class="special-number">02.</h2>
-                            <div class="dishes-text">
-                                <h3><span>Salmon</span><br> Zucchini</h3>
-                                <p class="pt-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis,
-                                    accusamus culpa quam amet ipsam odit ea doloremque accusantium quo, itaque possimus
-                                    eius. In a quis quibusdam omnis atque vero dolores!</p>
-                                <h3 class="special-dishes-price">$12.00</h3>
-                                <a href="#" class="btn-primary mt-3">book a table <span><i
-                                            class="fa fa-long-arrow-right"></i></span></a>
+                        <div class="col-md-4">
+                            <div class="team-card mb-5">
+                                <img class="img-fluid" src="vista/principal/img/chef-3.jpg" alt="">
+                                <div class="team-desc">
+                                    <h4 class="mb-0">Jon Snow</h4>
+                                    <p class="mb-1">Chef</p>
+                                    <ul class="list-inline mb-0 team-social-links">
+                                        <li class="list-inline-item">
+                                            <a href="#">
+                                                <i class="fab fa-facebook-f"></i>
+                                            </a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a href="#">
+                                                <i class="fab fa-twitter"></i>
+                                            </a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a href="#">
+                                                <i class="fab fa-instagram"></i>
+                                            </a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a href="#">
+                                                <i class="fab fa-google-plus-g"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <!-- End of Special Dishes Section -->
+        <!-- End of Team Section -->
         <footer class="mastfoot pb-5 bg-white section-padding pb-0">
             <div class="inner container">
                 <div class="row">
                     <div class="col-lg-4">
                         <div class="footer-widget pr-lg-5 pr-0">
-                            <img src="img/logo.png" class="img-fluid footer-logo mb-3" alt="">
+                            <img src="vista/principal/img/logo.png" class="img-fluid footer-logo mb-3" alt="">
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et obcaecati quisquam id sit
                                 omnis explicabo voluptate aut placeat, soluta, nisi ea magni facere, itaque incidunt
                                 modi? Magni, et voluptatum dolorem.</p>
@@ -198,17 +260,17 @@
     <!-- External JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
-    <script src="external/bootstrap/popper.min.js"></script>
-    <script src="external/bootstrap/bootstrap.min.js"></script>
-    <script src="external/select2/select2.min.js "></script>
-    <script src="external/owlcarousel/owl.carousel.min.js"></script>
+    <script src="vista/principal/external/bootstrap/popper.min.js"></script>
+    <script src="vista/principal/external/bootstrap/bootstrap.min.js"></script>
+    <script src="vista/principal/external/select2/select2.min.js "></script>
+    <script src="vista/principal/external/owlcarousel/owl.carousel.min.js"></script>
     <script src="https://cdn.rawgit.com/noelboss/featherlight/1.7.13/release/featherlight.min.js"></script>
-    <script src="external/stellar/jquery.stellar.js" type="text/javascript" charset="utf-8"></script>
+    <script src="vista/principal/external/stellar/jquery.stellar.js" type="text/javascript" charset="utf-8"></script>
     <script
         src="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.0.1/js/tempusdominus-bootstrap-4.min.js"></script>
 
     <!-- Main JS -->
-    <script src="js/app.min.js "></script>
+    <script src="vista/principal/js/app.min.js "></script>
 </body>
 
 </html>

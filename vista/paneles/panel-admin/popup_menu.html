@@ -1,0 +1,20 @@
+<link rel="stylesheet" href="vista/paneles/popups.css">
+<div id="fondo">
+    <div class="popup">
+        <div class="cerrar" onclick="document.getElementById('fondo').style.display = 'none'">X</div>
+        <div class="contenido">
+            <form action="">
+                <label for="nombre">Nombre</label>
+                <input type="text" name="nombre" placeholder="Nombre del platillo">
+                <label for="tiempo_coccion">Tiempo de cocción</label>
+                <input type="time" name="tiempo_coccion" placeholder="Tiempo de cocción">
+                <label for="precio">Precio</label>
+                <input type="number" name="precio" placeholder="Precio">
+                <label for="descripcion">Descripción</label>
+                <textarea name="descripcion" placeholder="Descripción"></textarea>
+                <button>Aplicar cambios</button>
+                <p class="exito">Texto de confirmación</p>
+            </form>
+        </div>
+    </div>
+</div>
