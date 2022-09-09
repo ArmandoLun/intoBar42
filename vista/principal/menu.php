@@ -94,162 +94,162 @@
                     <div class="row">
                         <div class="col-lg-4 menu-wrap">
                             <div class="heading-menu">
-                                <h3 class="text-center mb-5">Breakfast</h3>
+                                <h3 class="text-center mb-5">Desayuno</h3>
                             </div>
                             <div class="menus d-flex align-items-center">
                                 <div class="menu-img rounded-circle">
-                                    <img class="img-fluid" src="vista/principal/img/breakfast-1.jpg" alt="">
+                                    <img class="img-fluid" src="vista/principal/img\nuestras_fotos\te-hierbas-tostadas-como-desayuno_525574-13329.jpg" alt="">
                                 </div>
                                 <div class="text-wrap">
                                     <div class="row align-items-start">
                                         <div class="col-8">
-                                            <h4>Egg Sandwich</h4>
+                                            <h4>Té de hierbas con tostadas</h4>
                                         </div>
                                         <div class="col-4">
-                                            <h4 class="text-muted menu-price">$30</h4>
+                                            <h4 class="text-muted menu-price">$700</h4>
                                         </div>
                                     </div>
-                                    <p>Meat Ball, Mie</p>
+                                    <p>Pedir aparte: Manteca, Mermelada</p>
                                 </div>
                             </div>
                             <div class="menus d-flex align-items-center">
                                 <div class="menu-img rounded-circle">
-                                    <img class="img-fluid" src="vista/principal/img/breakfast-1.jpg" alt="">
+                                    <img class="img-fluid" src="vista/principal/img\nuestras_fotos\download.jpg" alt="">
                                 </div>
                                 <div class="text-wrap">
                                     <div class="row align-items-start">
                                         <div class="col-8">
-                                            <h4>Egg Sandwich</h4>
+                                            <h4>Té negro con limón</h4>
                                         </div>
                                         <div class="col-4">
-                                            <h4 class="text-muted menu-price">$30</h4>
+                                            <h4 class="text-muted menu-price">$400</h4>
                                         </div>
                                     </div>
-                                    <p>Meat Ball, Mie</p>
+                                    <p>Acompañamiento aparte.</p>
                                 </div>
                             </div>
                             <div class="menus d-flex align-items-center">
                                 <div class="menu-img rounded-circle">
-                                    <img class="img-fluid" src="vista/principal/img/breakfast-1.jpg" alt="">
+                                    <img class="img-fluid" src="vista/principal/img\nuestras_fotos\te-verde.jpg" alt="">
                                 </div>
                                 <div class="text-wrap">
                                     <div class="row align-items-start">
                                         <div class="col-8">
-                                            <h4>Egg Sandwich</h4>
+                                            <h4>Té verde</h4>
                                         </div>
                                         <div class="col-4">
-                                            <h4 class="text-muted menu-price">$30</h4>
+                                            <h4 class="text-muted menu-price">$300</h4>
                                         </div>
                                     </div>
-                                    <p>Meat Ball, Mie</p>
+                                    <p>Acompañamiento aparte.</p>
                                 </div>
                             </div>
                         </div>
 
                         <div class="col-lg-4 menu-wrap">
                             <div class="heading-menu">
-                                <h3 class="text-center mb-5">Breakfast</h3>
+                                <h3 class="text-center mb-5">Almuerzo</h3>
                             </div>
                             <div class="menus d-flex align-items-center">
                                 <div class="menu-img rounded-circle">
-                                    <img class="img-fluid" src="vista/principal/img/breakfast-1.jpg" alt="">
+                                    <img class="img-fluid" src="vista/principal/img\nuestras_fotos\WhatsApp Image 2022-08-09 at 21.38.59 (1).jpeg" alt="">
                                 </div>
                                 <div class="text-wrap">
                                     <div class="row align-items-start">
                                         <div class="col-8">
-                                            <h4>Egg Sandwich</h4>
+                                            <h4>Vino de la casa mas bistec a la plancha</h4>
                                         </div>
                                         <div class="col-4">
-                                            <h4 class="text-muted menu-price">$30</h4>
+                                            <h4 class="text-muted menu-price">$1600</h4>
                                         </div>
                                     </div>
-                                    <p>Meat Ball, Mie</p>
+                                    <p>Pedir punto de la carne.</p>
                                 </div>
                             </div>
                             <div class="menus d-flex align-items-center">
                                 <div class="menu-img rounded-circle">
-                                    <img class="img-fluid" src="vista/principal/img/breakfast-1.jpg" alt="">
+                                    <img class="img-fluid" src="vista/principal/img\nuestras_fotos\hamburguesas-alto-angulo-papas-fritas-salsa-cerveza-espacio-copia_23-2148784437.jpg" alt="">
                                 </div>
                                 <div class="text-wrap">
                                     <div class="row align-items-start">
                                         <div class="col-8">
-                                            <h4>Egg Sandwich</h4>
+                                            <h4>Hamburguesa y papas con cerveza</h4>
                                         </div>
                                         <div class="col-4">
-                                            <h4 class="text-muted menu-price">$30</h4>
+                                            <h4 class="text-muted menu-price">$1300</h4>
                                         </div>
                                     </div>
-                                    <p>Meat Ball, Mie</p>
+                                    <p>Carne de res, lechuga, tomate, papas fritas, cerveza a elección.</p>
                                 </div>
                             </div>
                             <div class="menus d-flex align-items-center">
                                 <div class="menu-img rounded-circle">
-                                    <img class="img-fluid" src="vista/principal/img/breakfast-1.jpg" alt="">
+                                    <img class="img-fluid" src="vista/principal/img\salmon-zucchini.jpg" alt="">
                                 </div>
                                 <div class="text-wrap">
                                     <div class="row align-items-start">
                                         <div class="col-8">
-                                            <h4>Egg Sandwich</h4>
+                                            <h4>Salmon con Zucchini</h4>
                                         </div>
                                         <div class="col-4">
-                                            <h4 class="text-muted menu-price">$30</h4>
+                                            <h4 class="text-muted menu-price">$1800</h4>
                                         </div>
                                     </div>
-                                    <p>Meat Ball, Mie</p>
+                                    <p>Salmón a la plancha con zuchinni</p>
                                 </div>
                             </div>
                         </div>
 
                         <div class="col-lg-4 menu-wrap">
                             <div class="heading-menu">
-                                <h3 class="text-center mb-5">Breakfast</h3>
+                                <h3 class="text-center mb-5">Postres</h3>
                             </div>
                             <div class="menus d-flex align-items-center">
                                 <div class="menu-img rounded-circle">
-                                    <img class="img-fluid" src="vista/principal/img/breakfast-1.jpg" alt="">
+                                    <img class="img-fluid" src="vista/principal/img\nuestras_fotos\WhatsApp Image 2022-08-09 at 21.39.01 (1).jpeg" alt="">
                                 </div>
                                 <div class="text-wrap">
                                     <div class="row align-items-start">
                                         <div class="col-8">
-                                            <h4>Egg Sandwich</h4>
+                                            <h4>Porción de torta</h4>
                                         </div>
                                         <div class="col-4">
-                                            <h4 class="text-muted menu-price">$30</h4>
+                                            <h4 class="text-muted menu-price">$200 c/u</h4>
                                         </div>
                                     </div>
-                                    <p>Meat Ball, Mie</p>
+                                    <p>Frutilla, dulce de leche, chocolate.</p>
                                 </div>
                             </div>
                             <div class="menus d-flex align-items-center">
                                 <div class="menu-img rounded-circle">
-                                    <img class="img-fluid" src="vista/principal/img/breakfast-1.jpg" alt="">
+                                    <img class="img-fluid" src="vista/principal/img\nuestras_fotos\polo-red-velvet-5-scaled.jpg" alt="">
                                 </div>
                                 <div class="text-wrap">
                                     <div class="row align-items-start">
                                         <div class="col-8">
-                                            <h4>Egg Sandwich</h4>
+                                            <h4>Palito helado Red Velvet</h4>
                                         </div>
                                         <div class="col-4">
-                                            <h4 class="text-muted menu-price">$30</h4>
+                                            <h4 class="text-muted menu-price">$800</h4>
                                         </div>
                                     </div>
-                                    <p>Meat Ball, Mie</p>
+                                    <p>Relleno de Red Velvet cubierto de chocolate.</p>
                                 </div>
                             </div>
                             <div class="menus d-flex align-items-center">
                                 <div class="menu-img rounded-circle">
-                                    <img class="img-fluid" src="vista/principal/img/breakfast-1.jpg" alt="">
+                                    <img class="img-fluid" src="vista/principal/img\queso-y-dulce.jpg" alt="">
                                 </div>
                                 <div class="text-wrap">
                                     <div class="row align-items-start">
                                         <div class="col-8">
-                                            <h4>Egg Sandwich</h4>
+                                            <h4>Queso con dulce</h4>
                                         </div>
                                         <div class="col-4">
-                                            <h4 class="text-muted menu-price">$30</h4>
+                                            <h4 class="text-muted menu-price">$600</h4>
                                         </div>
                                     </div>
-                                    <p>Meat Ball, Mie</p>
+                                    <p>Dulce de membrillo o batata con queso.</p>
                                 </div>
                             </div>
                         </div>
@@ -258,74 +258,7 @@
             </div>
         </section>
         <!-- End of menu Section -->
-        <footer class="mastfoot pb-5 bg-white section-padding pb-0">
-            <div class="inner container">
-                <div class="row">
-                    <div class="col-lg-4">
-                        <div class="footer-widget pr-lg-5 pr-0">
-                            <img src="vista/principal/img/logo.png" class="img-fluid footer-logo mb-3" alt="">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et obcaecati quisquam id sit
-                                omnis explicabo voluptate aut placeat, soluta, nisi ea magni facere, itaque incidunt
-                                modi? Magni, et voluptatum dolorem.</p>
-                            <nav class="nav nav-mastfoot justify-content-start">
-                                <a class="nav-link" href="#">
-                                    <i class="fab fa-facebook-f"></i>
-                                </a>
-                                <a class="nav-link" href="#">
-                                    <i class="fab fa-twitter"></i>
-                                </a>
-                                <a class="nav-link" href="#">
-                                    <i class="fab fa-instagram"></i>
-                                </a>
-                            </nav>
-                        </div>
-
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="footer-widget px-lg-5 px-0">
-                            <h4>Horas Abierto</h4>
-                            <ul class="list-unstyled open-hours">
-                                <li class="d-flex justify-content-between"><span>Lunes</span><span>9:00 - 24:00</span>
-                                </li>
-                                <li class="d-flex justify-content-between"><span>Martes</span><span>9:00 - 24:00</span>
-                                </li>
-                                <li class="d-flex justify-content-between"><span>Miércoles</span><span>9:00 -
-                                        24:00</span></li>
-                                <li class="d-flex justify-content-between"><span>Jueves</span><span>9:00 - 24:00</span>
-                                </li>
-                                <li class="d-flex justify-content-between"><span>Viernes</span><span>9:00 - 02:00</span>
-                                </li>
-                                <li class="d-flex justify-content-between"><span>Sábado</span><span>9:00 - 02:00</span>
-                                </li>
-                                <li class="d-flex justify-content-between"><span>Domingo</span><span> Cerrado</span>
-                                </li>
-                            </ul>
-                        </div>
-
-                    </div>
-
-                    <div class="col-lg-4">
-                        <div class="footer-widget pl-lg-5 pl-0">
-                            <h4>Boletín Informativo</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                            <form id="newsletter">
-                                <div class="form-group">
-                                    <input type="email" class="form-control" id="emailNewsletter"
-                                        aria-describedby="emailNewsletter" placeholder="Ingresar correo">
-                                </div>
-                                <button type="submit" class="btn btn-primary w-100">Enviar</button>
-                            </form>
-                        </div>
-
-                    </div>
-                    <div class="col-md-12 d-flex align-items-center">
-                        <p class="mx-auto text-center mb-0">Copyright 2019. All Right Reserved. Design by <a
-                                href="https://gettemplates.co" target="_blank">GetTemplates</a></p>
-                    </div>
-
-                </div>
-            </div>
-        </footer>
+        <?php include('vista/principal/talon.php'); ?>
     </div>
 
     </div>

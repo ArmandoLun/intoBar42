@@ -1,0 +1,22 @@
+<link rel="stylesheet" href="vista/paneles/popups.css">
+<div id="fondo">
+    <div class="popup">
+        <div class="cerrar" onclick="document.getElementById('fondo').style.display = 'none'">X</div>
+        <div class="contenido">
+            <form action="">
+                <label for="usuario">Usuario</label>
+                <input type="text" name="usuario" placeholder="Nombre de usuario">
+                <label for="contrasenia">Contraseña</label>
+                <input type="password" name="contrasenia" placeholder="Contraseña">
+                <label for="perfil">Perfil</label>
+                <select name="perfil">
+                    <option value="cocinero">Cocinero</option>
+                    <option value="mesero">Mesero</option>
+                    <option value="administrador">Administrador</option>
+                </select>
+                <button>Aplicar cambios</button>
+                <p class="exito">Texto de confirmación</p>
+            </form>
+        </div>
+    </div>
+</div>

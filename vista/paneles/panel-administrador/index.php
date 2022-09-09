@@ -27,14 +27,14 @@
     </style>
 </head>
 <body>
-    <?php require("vista/paneles/panel-cocinero/header.html") ?>
+    <?php require("vista/paneles/panel-administrador/header.html") ?>
     <p>Bienvenido al panel de administración.</p>
     <p>Haga click en las obciones de la barra de arriba para cambiar de página dentro del panel.</p>
     <p>Este es tu perfil</p>
     <div class="d1">
         <img src="vista/paneles/perfil.jpg" width="100px" height="100px">
         <h1><?php echo $cuenta->{"usuario"} ?></h1>
-        <h3>Cocinero</h3>
+        <h3>Administrador</h3>
         <br>
         <p>
             <?php echo $cuenta->{"descripcion"} ?>
@@ -43,6 +43,6 @@
         <button onclick="mostrar_popup('<?php echo $cuenta->{'usuario'} ?>', '<?php echo $cuenta->{'contrasenia'} ?>',
         '<?php echo $cuenta->{'descripcion'} ?>')">Editar perfil</button>
     </div>
-    <?php require("vista/paneles/panel-cocinero/popup_perfil.html") ?>
+    <?php require("vista/paneles/panel-administrador/popup_perfil.html") ?>
 </body>
 </html>

@@ -1,15 +1,16 @@
 <?php
     require("modelo/conexion.php");
 
-    class Platillo extends Conexion{
+    class Sesion extends Conexion{
         public function __construct(){
             parent::__construct();
         }
 
-        public function nuevo($nombre, $coccion, $precio){
+        public function nuevo($nombre, $coccion, $precio, $tipo){
             try{
-                $resultado = $this->db_connect->prepare("CALL nuevo_platillo(:nombre, :coccion, :precio)");
-                $resultado->execute(array(":nombre"=>$nombre, ":coccion"=>$coccion, ":precio"=>$precio));
+                $resultado = $this->db_connect->prepare("CALL nuevo_platillo(:nombre, :coccion, :precio, :tipo)");
+                $resultado->execute(array(":nombre"=>$nombre, ":coccion"=>$coccion, ":precio"=>$precio,
+                ":tipo"=>$tipo));
                 $exito=$resultado->fetch()[0];
                 
                 if($this->exito == 0) return "{\"exito\":false, \"mensaje\":\"Ya existe el platillo\"}";
@@ -39,7 +40,7 @@
 
         public function leer_todos(){
             try{
-                return $this->db_connect->query("SELECT platillo, precio, tipo, tiempo_coccion FROM menu INNER JOIN tiposPlatillos ON id_TiposPlatillos = tiposPlatillos.id")->fetchAll();
+                return $this->db_connect->query("SELECT platillo, tiempo_coccion, precio FROM menu")->fetchAll();
             }catch(Exception $e){
                 echo $e;
             }

@@ -174,7 +174,7 @@
             
         </div>
     </div>
-</footer>	</div>
+	<?php include('vista/principal/talon.php'); ?>
 	
 </div>
 	<!-- External JS -->

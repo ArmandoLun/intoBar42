@@ -23,15 +23,8 @@
                         <a class="nav-link" href="./?acerca_de">Acerca De</a>
                     </li>
 
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Platos Especiales
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="./?platos_especiales">Beef Steak Sauce</a>
-                            <a class="dropdown-item" href="./?platos_especiales">Salmon Zucchini</a>
-                        </div>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./?platos_especiales">Platos Especiales</a>
                     </li>
                 </div>
             </ul>

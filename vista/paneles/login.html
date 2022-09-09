@@ -26,11 +26,17 @@
         h1{
             text-align: center;
         }
+        p{
+            padding: 10px;
+            border-radius: 15px;
+            background-color: red;
+            text-align: center;
+        }
     </style>
 </head>
 <body>
     <h1></h1>
-    <form action="">
+    <form action="panel.php" method="post">
         <h1>Iniciar sesión</h1>
         <br>
         <br>
@@ -45,7 +51,10 @@
                 </td>
             </tr>
             <tr>
-                <td><input type="submit" value="Acceder" style="width: 100%"></td>
+                <td><input type="submit" value="Acceder" style="width: 100%" onclick="submit()"></td>
+            </tr>
+            <tr>
+                <td id="mensaje"></td>
             </tr>
         </table>
     </form>

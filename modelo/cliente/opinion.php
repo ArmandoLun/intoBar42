@@ -19,7 +19,7 @@
             try{
                 $resultado = $this->db_connect->prepare("SELECT nombre, apellido, puntuacion, texto FROM
                 opiniones INNER JOIN usuarios ON id_usuario = usuarios.id WHERE correo = :correo");
-                return $this->$resultado->execute(array(":correo"=>$correo))->fetch();
+                return $resultado->execute(array(":correo"=>$correo))->fetch();
             }catch(Exception $e){
                 echo $e;
             }

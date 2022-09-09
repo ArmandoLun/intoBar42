@@ -8,9 +8,8 @@
 
         public function reservar($mesa, $correo, $realizado, $reservado){
             try{
-                $resultado = $this->db_connect->prepare("CALL nueva_reserva(:mesa, :correo, :realizado, :reservado)");
-                $resultado->execute(array(":mesa"=>$mesa, ":correo"=>$correo,":realizado" =>$realizado,
-                ":reservado"=>$reservado));
+                $resultado = $this->db_connect->prepare("CALL nueva_reserva(:mesa, :correo, :reservado)");
+                $resultado->execute(array(":mesa"=>$mesa, ":correo"=>$correo, ":reservado"->$reservado));
                 $codigo=$resultado->fetch()[0];
 
                 if($this->codigo == 0) return "{\"exito\":true, \"mensaje\":\"Reservación realizada con éxito\"}";
@@ -49,7 +48,7 @@
         public function leer_de_usuario($correo){
             try{
                 $resultado = $this->db_connect->prepare("CALL leer_reservas_usuario(:correo)");
-                return $this->$resultado->execute(array(":correo"=>$correo))->fetchAll();
+                return $resultado->execute(array(":correo"=>$correo))->fetchAll();
             }catch(Exception $e){
                 echo $e;
             }

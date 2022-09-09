@@ -77,26 +77,24 @@
         <?php include('vista/principal/navbar.php'); ?>
         <!-- Special Dishes Section -->
         <section id="gtco-special-dishes" class="bg-grey section-padding">
-            <div class="container">
+        <div class="container">
                 <div class="section-content">
                     <div class="heading-section text-center">
                         <span class="subheading">
                             Especialidades
                         </span>
                         <h2>
-                            Platos Especiales
+                            El mejor sabor
                         </h2>
                     </div>
                     <div class="row mt-5">
                         <div class="col-lg-5 col-md-6 align-self-center py-5">
                             <h2 class="special-number">01.</h2>
                             <div class="dishes-text">
-                                <h3><span>Beef</span><br> Steak Sauce</h3>
-                                <p class="pt-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, ea
-                                    vero alias perferendis quas animi doloribus voluptates. Atque explicabo ea nesciunt
-                                    provident libero qui eum, corporis esse quos excepturi soluta?</p>
-                                <h3 class="special-dishes-price">$15.00</h3>
-                                <a href="#" class="btn-primary mt-3">book a table</a>
+                                <h3><span>Carnes</span><br>Bistec a la salsa</h3>
+                                <p class="pt-3">Uno de los platos más elegidos por nuestros clientes.</p>
+                                <h3 class="special-dishes-price">$1500.00</h3>
+                                <a href="#" class="btn-primary mt-3">Pedilo ahora</a>
                             </div>
                         </div>
                         <div class="col-lg-5 offset-lg-2 col-md-6 align-self-center mt-4 mt-md-0">
@@ -110,12 +108,10 @@
                         <div class="col-lg-5 offset-lg-2 col-md-6 align-self-center order-1 order-md-2 py-5">
                             <h2 class="special-number">02.</h2>
                             <div class="dishes-text">
-                                <h3><span>Salmon</span><br> Zucchini</h3>
-                                <p class="pt-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis,
-                                    accusamus culpa quam amet ipsam odit ea doloremque accusantium quo, itaque possimus
-                                    eius. In a quis quibusdam omnis atque vero dolores!</p>
-                                <h3 class="special-dishes-price">$12.00</h3>
-                                <a href="#" class="btn-primary mt-3">book a table <span><i
+                                <h3><span>Salmon y</span><br> Zucchini</h3>
+                                <p class="pt-3">Buen precio y sabor.</p>
+                                <h3 class="special-dishes-price">$1200.00</h3>
+                                <a href="#" class="btn-primary mt-3">Pedilo ahora <span><i
                                             class="fa fa-long-arrow-right"></i></span></a>
                             </div>
                         </div>
@@ -124,74 +120,7 @@
             </div>
         </section>
         <!-- End of Special Dishes Section -->
-        <footer class="mastfoot pb-5 bg-white section-padding pb-0">
-            <div class="inner container">
-                <div class="row">
-                    <div class="col-lg-4">
-                        <div class="footer-widget pr-lg-5 pr-0">
-                            <img src="vista/principal/img/logo.png" class="img-fluid footer-logo mb-3" alt="">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et obcaecati quisquam id sit
-                                omnis explicabo voluptate aut placeat, soluta, nisi ea magni facere, itaque incidunt
-                                modi? Magni, et voluptatum dolorem.</p>
-                            <nav class="nav nav-mastfoot justify-content-start">
-                                <a class="nav-link" href="#">
-                                    <i class="fab fa-facebook-f"></i>
-                                </a>
-                                <a class="nav-link" href="#">
-                                    <i class="fab fa-twitter"></i>
-                                </a>
-                                <a class="nav-link" href="#">
-                                    <i class="fab fa-instagram"></i>
-                                </a>
-                            </nav>
-                        </div>
-
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="footer-widget px-lg-5 px-0">
-                            <h4>Horas Abierto</h4>
-                            <ul class="list-unstyled open-hours">
-                                <li class="d-flex justify-content-between"><span>Lunes</span><span>9:00 - 24:00</span>
-                                </li>
-                                <li class="d-flex justify-content-between"><span>Martes</span><span>9:00 - 24:00</span>
-                                </li>
-                                <li class="d-flex justify-content-between"><span>Miércoles</span><span>9:00 -
-                                        24:00</span></li>
-                                <li class="d-flex justify-content-between"><span>Jueves</span><span>9:00 - 24:00</span>
-                                </li>
-                                <li class="d-flex justify-content-between"><span>Viernes</span><span>9:00 - 02:00</span>
-                                </li>
-                                <li class="d-flex justify-content-between"><span>Sábado</span><span>9:00 - 02:00</span>
-                                </li>
-                                <li class="d-flex justify-content-between"><span>Domingo</span><span> Cerrado</span>
-                                </li>
-                            </ul>
-                        </div>
-
-                    </div>
-
-                    <div class="col-lg-4">
-                        <div class="footer-widget pl-lg-5 pl-0">
-                            <h4>Boletín Informativo</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                            <form id="newsletter">
-                                <div class="form-group">
-                                    <input type="email" class="form-control" id="emailNewsletter"
-                                        aria-describedby="emailNewsletter" placeholder="Ingresar correo">
-                                </div>
-                                <button type="submit" class="btn btn-primary w-100">Enviar</button>
-                            </form>
-                        </div>
-
-                    </div>
-                    <div class="col-md-12 d-flex align-items-center">
-                        <p class="mx-auto text-center mb-0">Copyright 2019. All Right Reserved. Design by <a
-                                href="https://gettemplates.co" target="_blank">GetTemplates</a></p>
-                    </div>
-
-                </div>
-            </div>
-        </footer>
+        <?php include('vista/principal/talon.php'); ?>
     </div>
 
     </div>

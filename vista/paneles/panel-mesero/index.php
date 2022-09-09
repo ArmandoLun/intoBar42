@@ -33,17 +33,15 @@
     <p>Este es tu perfil</p>
     <div class="d1">
         <img src="vista/paneles/perfil.jpg" width="100px" height="100px">
-        <h1>Usuario</h1>
-        <h3>Contraseña: 1234</h3>
-        <h3>Perfil: mesero</h3>
+        <h1><?php echo $cuenta->{"usuario"} ?></h1>
+        <h3>Mesero</h3>
         <br>
         <p>
-            Aquí va una descripción personalizada del usuario, esta tendrá un limite de 200 caracteres. Este
-            texto tiene exactamente 200 caracteres de largo y sirve de referencia para ver a cuánto texto
-            equivale.
+            <?php echo $cuenta->{"descripcion"} ?>
         </p>
         <br>
-        <button onclick="document.getElementById('fondo').style.display = 'flex'">Editar perfil</button>
+        <button onclick="mostrar_popup('<?php echo $cuenta->{'usuario'} ?>', '<?php echo $cuenta->{'contrasenia'} ?>',
+        '<?php echo $cuenta->{'descripcion'} ?>')">Editar perfil</button>
     </div>
     <?php require("vista/paneles/panel-mesero/popup_perfil.html") ?>
 </body>
