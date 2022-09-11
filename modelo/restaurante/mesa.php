@@ -1,7 +1,7 @@
 <?php
     require("modelo/conexion.php");
 
-    class Sesion extends Conexion{
+    class Mesa extends Conexion{
         public function __construct(){
             parent::__construct();
         }

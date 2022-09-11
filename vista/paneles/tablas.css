@@ -1,0 +1,30 @@
+table{
+    border: 1px solid lightgray;
+    border-collapse: collapse;
+    width: 100%;
+    white-space: nowrap;
+    text-align: center;
+}
+td{
+    border-top: 1px solid lightgray;
+    margin: 0px;
+    white-space: nowrap;
+}
+.d1{
+    margin: 20px;
+}
+.d1 h6{
+    margin-top: 0;
+    margin-bottom: .5rem;
+    font-size: 1rem;
+    font-family: sans-serif;
+    font-weight: 500;
+}
+.d1 a{
+    text-decoration: none;
+    color: blue;
+    cursor: pointer;
+}
+.d2{
+    display: flex;
+}

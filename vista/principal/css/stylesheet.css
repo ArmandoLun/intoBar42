@@ -1,0 +1,63 @@
+.owl-prev,
+.owl-next {
+    border-radius: 50%;
+    background-color: red;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    animation-name: ReduxOpacity1;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+}
+
+.owl-prev:hover,
+.owl-next:hover {
+    animation-name: IncraseOpacity1;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+}
+
+@keyframes IncraseOpacity1 {
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes ReduxOpacity1 {
+    100% {
+        opacity: 0.5;
+    }
+}
+
+.owl-dot span {
+    background: red;
+}
+
+.owl-dot.active span {
+    background: green;
+}
+
+.owl-carousel .item div {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+}
+#diagrama {
+    width: 100%;
+    padding: 5%;
+    background-color: red;
+}
+
+#diagrama .a {
+    margin: 5% 0%;
+}
+
+#diagrama .a .b {
+    width: 33.33%;
+    margin: 0% 5%;
+    background-color: black;
+}
+

@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        <?php require("vista/paneles/formularios.css") ?>
+        <?php require("vista/paneles/tablas.css") ?>
     </style>
 </head>
 <script>
@@ -19,12 +19,12 @@
     <?php require("vista/paneles/panel-mesero/header.html") ?>
     <h2 style="text-align: center">Pedidos</h2><br>
     <div class="d1">
+        <input type="hidden" name="id" value="3">
+        <div align="right">
+            <input type="text" style="padding:5px;margin-bottom:5px;margin-top:5px">
+            <button class="btn">Buscar</button>
+        </div>
         <form action="" method="get">
-            <input type="hidden" name="id" value="3">
-            <div align="right">
-                <input type="text" style="padding:5px;margin-bottom:5px;margin-top:5px">
-                <input type="submit" value="Buscar" class="btn">
-            </div>
             <div class="d2">
                 <div>
                     <select name="accion">

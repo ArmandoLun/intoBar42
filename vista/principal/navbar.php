@@ -3,8 +3,7 @@
         <a class="navbar-brand navbar-brand-center d-flex align-items-center p-0 only-mobile" href="./">
             <img src="vista/principal/img/nuestras_fotos/restauranteeee.png" alt="">
         </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="lnr lnr-menu"></span>
         </button>
 
@@ -22,9 +21,8 @@
                     <li class="nav-item">
                         <a class="nav-link" href="./?acerca_de">Acerca De</a>
                     </li>
-
                     <li class="nav-item">
-                        <a class="nav-link" href="./?platos_especiales">Platos Especiales</a>
+                        <a class="nav-link" href="./?mis_reservaciones">Mis Reservaciones</a>
                     </li>
                 </div>
             </ul>
@@ -36,17 +34,15 @@
                 <div class="d-flex flex-lg-row flex-column">
                     <li class="nav-item active">
                         <!-- falta agregar las paginas de login -->
-                        <a class="nav-link" href="./?iniciar_sesion">Login</a>
+                        <?php if (!isset($_COOKIE["cliente"])) { ?>
+                            <a class="nav-link" href="./?iniciar_sesion">Login</a>
+                        <?php } else { ?>
+                    <li><a class="nav-link" href="./?cerrar_coockie">Cerrar Sesion</a></li>
                     </li>
+                    <li><a class="nav-link" href="./?reservar">Reservación</a></li>
+                    <?php } ?>
                     <li class="nav-item active">
                         <a class="nav-link" href="./?menu">Menú</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./?equipo">Nuestro Equipo</a>
-                    </li>
-
-                    <li class="nav-item dropdown">
-                        <a class="nav-link" href="./?reservar">Reservación</a>
                     </li>
                 </div>
                 <li class="nav-item">
