@@ -32,13 +32,13 @@
 
             <div class="col-lg-4">
                 <div class="footer-widget pl-lg-5 pl-0">
-                    <h4>Boletín Informativo</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    <h4>Nuestro menú </h4>
+                    <p>Escanéa el QR</p>
                     <form id="newsletter">
-                        <div class="form-group">
-                            <input type="email" class="form-control" id="emailNewsletter" aria-describedby="emailNewsletter" placeholder="Ingresar correo">
-                        </div>
-                        <button type="submit" class="btn btn-primary w-100">Enviar</button>
+                        <!-- <div class="form-group"> -->
+                            <!-- <input type="email" class="form-control" id="emailNewsletter" aria-describedby="emailNewsletter" placeholder="Ingresar correo"> -->
+                        <!-- </div> -->
+                        <img src="vista\principal\img\nuestras_fotos\QRRELOCO.png" class="img-fluid footer-logo mb-3" alt="" style="width:100%;height:100%;">
                     </form>
                 </div>
 
