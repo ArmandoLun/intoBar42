@@ -49,5 +49,14 @@ else if (isset($_GET["cerrar_coockie"])){
     setcookie("cliente","",time()-60);
     echo("<script>location.href='./';</script>");
 }
-else require("vista/principal/index.php");
+else if(isset($_POST["fecha"]))
+{
+    require("modelo/cliente/reserva.php");
+    $_reservacion = new Reserva();
+    //$_reservacion = $_reservacion->reservar("roberto",json_decode($_COOKIE["cliente"][""]),)
+}
+else {
+
+    require("vista/principal/index.php");
+}
 ?>

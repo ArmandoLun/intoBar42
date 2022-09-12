@@ -16,7 +16,7 @@
                     <div class="col-lg-6">
                         <div class="section-content bg-white p-5 shadow" style="margin-top: 150px;">
 
-                            <form action="" style="display: flex; justify-content: center; align-items: center; flex-flow: column;">
+                            <form style="display: flex; justify-content: center; align-items: center; flex-flow: column;">
                                 <Label>Mesas</Label>
                                 <div id="diagrama">
                                     <div class="a" style="display: flex;">
@@ -37,16 +37,22 @@
                                 </div>
                                 <div style="height: 30px;"></div>
                                 <Label>Fecha</Label>
-                                <input type="date" name="fecha" id="fecha" style="width: 100%;">
+                                <input type="date" name="fecha" id="fecha" style="width: 100%;" required>
                                 <Label>Hora</Label>
-                                <select name="hora" id="hora" style="width: 100%;">
+                                <select name="hora" id="hora" style="width: 100%;" required>
                                     <option value="">Horario 1</option>
                                     <option value="">Horario 2</option>
                                     <option value="">Horario 3</option>
                                     <option value="">Horario 4</option>
                                 </select>
+                                <select name="mesa" id="mesa" style="width: 100%;" required>
+                                    <option value="">2 personas</option>
+                                    <option value="">4 personas</option>
+                                    <option value="">6 personas</option>
+                                    <option value="">8 personas</option>
+                                </select>
                                 <div style="height: 30px;"></div>
-                                <input type="submit" value="Reservar">
+                                <button onclick="reservar();">Reservar</button>
                             </form>
                         </div>
                     </div>
@@ -57,6 +63,19 @@
         </section>
         <!-- End of Reservation Section -->
         <?php include('vista/principal/talon.php'); ?>
+        <script>
+            var fecha,hora;
+            fecha=document.getElementById("fecha").value;
+            hora=document.getElementById("hora").value;
+            var xhr;
+            function reservar(){
+                event.preventDefault();
+                alert("?fecha="+fecha.getFullYear()+"/"+fecha.getMonth()+"/"+fecha.getDate()+"&hora="+hora);
+                xhr= new XMLHttpRequest();
+                xhr.open("post","./");
+                xhr.send("?fecha="+fecha.getFullYear()+"/"+fecha.getMonth()+"/"+fecha.getDate()+"&hora="+hora);
+            }
+        </script>
     </div>
 
 </body>

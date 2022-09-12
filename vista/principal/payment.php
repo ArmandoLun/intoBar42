@@ -19,36 +19,30 @@
 								Pagar Reservación
 							</h2>
 						</div>
-
 						<form action="">
 							<div class="col-md-12 form-group">
-								<input type="number" class="form-control" name="numero" placeholder="Número de tarjeta">
+								<input id="card_number" type="tel" class="form-control" name="numero" minlength="19" maxlength="19" oninput="controlar4();" placeholder="Número de tarjeta" required>
 							</div>
 							<div class="col-md-12 form-group">
-								<input type="text" class="form-control" name="nombre" placeholder="Nombre y apellido del titular">
+								<input type="text" class="form-control" name="nombre" placeholder="Nombre y apellido del titular" required>
 							</div>
 
 							<div style="display: flex;">
 								<div class="col-md-6 form-group">
 									<div class="input-group date" id="datepicker4" data-target-input="nearest">
-										<input type="text" id="nearest" name="expiracion" class="form-control datepicker-input" data-target="#datepicker4" placeholder="Fecha de expiración" />
-										<div class="input-group-append" data-target="#datepicker4" data-toggle="datetimepicker">
-											<div class="input-group-text">
-												<span class="lnr lnr-calendar-full"></span>
-											</div>
-										</div>
+										<input type="date" id="nearest" name="expiracion" class="form-control datepicker-input" data-target="#datepicker4" placeholder="Fecha de expiración" required />
 									</div>
 								</div>
 								<div class="col-md-6 form-group">
-									<input type="number" class="form-control" name="codigo" placeholder="Código de seguridad">
+									<input type="tel" minlenght="3" maxlength="4" class="form-control" name="codigo" placeholder="Código de seguridad" required>
 								</div>
 							</div>
 
 							<div class="col-md-12 form-group">
-								<input type="number" class="form-control" name="dni" placeholder="DNI del titular">
+								<input type="number" class="form-control" name="dni" placeholder="DNI del titular" required>
 							</div>
 							<div class="col-md-12 text-center">
-								<input class="btn btn-primary btn-shadow btn-lg" type="submit" name="submit" value="Pagar">
+								<input class="btn btn-primary btn-shadow btn-lg" type="submit" name="submit" value="Pagar" onclick="pagar();">
 							</div>
 						</form>
 					</div>
@@ -64,5 +58,17 @@
 
 <!--js Utilities-->
 <?php include('vista/principal/jsUtilities.php'); ?>
+<script>
+	function controlar4() {
+		var card = document.getElementById("card_number");
+		if ((card.value.length + 1) % 5 == 0 && card.value.length < 19) {
+			card.value += " ";
+		}
+	}
+	var fecha = new Date();
+	document.getElementById("nearest").min = fecha.toISOString().split("T")[0];
+	fecha.setDate(fecha.getDate() + 365 * 5);
+	document.getElementById("nearest").max = fecha.toISOString().split("T")[0];
+</script>
 
 </html>

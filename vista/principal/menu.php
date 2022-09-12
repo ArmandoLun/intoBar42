@@ -43,9 +43,9 @@
                             }
                         }
 
-                        Clasificar($_cena);
-                        Clasificar($_almuerzo);
                         Clasificar($_desayuno);
+                        Clasificar($_almuerzo);
+                        Clasificar($_cena);
                         Clasificar($_postre);
 
                         function Clasificar($_arrayTipo)
