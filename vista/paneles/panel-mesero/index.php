@@ -32,7 +32,7 @@
     <p>Haga click en las obciones de la barra de arriba para cambiar de página dentro del panel.</p>
     <p>Este es tu perfil</p>
     <div class="d1">
-        <img src="vista/paneles/perfil.jpg" width="100px" height="100px">
+        <img src="vista/paneles/imgs-perfil/<?php echo $cuenta->{"usuario"} ?>.jpg" width="100px" height="100px">
         <h1><?php echo $cuenta->{"usuario"} ?></h1>
         <h3>Mesero</h3>
         <br>
@@ -43,6 +43,9 @@
         <button onclick="mostrar_popup('<?php echo $cuenta->{'usuario'} ?>', '<?php echo $cuenta->{'contrasenia'} ?>',
         '<?php echo $cuenta->{'descripcion'} ?>')">Editar perfil</button>
     </div>
+    <script>
+        const usuario = "<?php echo $cuenta->{"usuario"} ?>";
+    </script>
     <?php require("vista/paneles/panel-mesero/popup_perfil.html") ?>
 </body>
 </html>

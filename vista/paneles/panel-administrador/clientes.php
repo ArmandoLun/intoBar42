@@ -15,25 +15,25 @@
     <div class="d1">
         <input type="hidden" name="id" value="3">
         <div align="right">
-            <input type="text" style="padding:5px;margin-bottom:5px;margin-top:5px">
-            <button class="btn">Buscar</button>
+            <input type="text" id="filtrar" style="padding:5px;margin-bottom:5px;margin-top:5px">
+            <button class="btn" onclick="filtrar()">Buscar</button>
         </div>
-        <form action="" method="get">
-            <div class="d2">
-                <div>
-                    <select name="accion">
-                        <option value="0">Acciones en lote</option>
-                    </select>
-                    <input type="submit" value="Aplicar" class="btn" style="margin-right:20px">
-                </div>
+        <div class="d2">
+            <div>
+                <select name="accion" id="accion_lote">
+                    <option value="">Acciones en lote</option>
+                    <option value="banear">Banear</option>
+                    <option value="desbanear">Desbanear</option>
+                </select>
+                <button class="btn" onclick="accion_en_lote()" style="margin-right:20px">Aplicar</button>
             </div>
-            <h6 id="enlaces-tabla" style="text-align: right;">
-            </h6>
-            <table>
-                <tbody>
-                </tbody>
-            </table>
-        </form>
+        </div>
+        <h6 id="enlaces-tabla" style="text-align: right;">
+        </h6>
+        <table>
+            <tbody>
+            </tbody>
+        </table>
     </div>
     <script>
         const datos_tabla = <?php echo json_encode($usuarios) ?>;
@@ -43,8 +43,14 @@
         "<td>Apellido</td>"+
         "<td>DNI</td>"+
         "<td>Correo electrónico</td>"+
+        "<td>Baneado</td>"+
         "</tr>";
-        const datos = ["nombre", "apellido", "DNI", "correo"];
+        const datos = ["nombre", "apellido", "DNI", "correo", "baneado"];
+        const acciones_lote = {
+            "banear":["./panel.php?clientes&banear=", "correo"],
+            "desbanear":["./panel.php?clientes&desbanear=", "correo"]
+        };
+        const filtro = "nombre";
     </script>
     <script src="vista/paneles/tablas.js"></script>
 </body>

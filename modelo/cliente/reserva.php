@@ -12,7 +12,7 @@
                 $resultado->execute(array(":mesa"=>$mesa, ":correo"=>$correo, ":reservado"->$reservado));
                 $codigo=$resultado->fetch()[0];
 
-                if($this->codigo == 0) return "{\"exito\":true, \"mensaje\":\"Reservación realizada con éxito\"}";
+                if($codigo == 1) return "{\"exito\":true, \"mensaje\":\"Reservación realizada con éxito\"}";
                 else return "{\"exito\":false, \"mensaje\":\"Reservación no disponible\"}";
             }catch(Exception $e){
                 echo $e;

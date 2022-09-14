@@ -2,19 +2,76 @@
 <div id="fondo">
     <div class="popup">
         <div class="cerrar" onclick="document.getElementById('fondo').style.display = 'none'">X</div>
-        <div class="contenido">
-            <form action="">
+        <div class="contenido" style="flex-flow: column; align-items: center; justify-content:flex-start;">
+            <div style="margin-top: 50px; margin-bottom: -50px;">
+                <img id="img" width="100px" height="100px" style="border: 5px solid black"><br>
+                <button onclick="elegir_foto()">Cambiar foto</button>
+            </div>
+            <form method="post">
+                <input type="file" id="foto" name="foto" style="display: none" accept="image/*" onchange="cambiar_foto()">
                 <label for="nombre">Nombre</label>
                 <input type="text" name="nombre" placeholder="Nombre del platillo">
                 <label for="tiempo_coccion">Tiempo de cocción</label>
-                <input type="time" name="tiempo_coccion" placeholder="Tiempo de cocción">
+                <input type="time" name="tiempo_coccion" placeholder="Tiempo de cocción" step="1">
                 <label for="precio">Precio</label>
                 <input type="number" name="precio" placeholder="Precio">
+                <label for="tipo">Tipo</label>
+                <select name="tipo">
+                    <option value="desayuno">Desayuno</option>
+                    <option value="almuerzo">Almuerzo</option>
+                    <option value="cena">Cena</option>
+                    <option value="postres">Postres</option>
+                    <option value="bebibas">Bebibas</option>
+                </select>
                 <label for="descripcion">Descripción</label>
-                <textarea name="descripcion" placeholder="Descripción"></textarea>
-                <button>Aplicar cambios</button>
-                <p class="exito">Texto de confirmación</p>
+                <textarea name="descripcion" placeholder="Descripción" maxlength="100"></textarea>
+                <button onclick="crear_platillo()">Aplicar cambios</button>
+                <p id="mensaje"></p>
             </form>
         </div>
     </div>
 </div>
+<script>
+    const elegir_foto = ()=>{
+        event.preventDefault();
+        document.getElementById("foto").click();
+    }
+
+    const cambiar_foto = ()=>{
+        document.querySelector(".contenido img").src = URL.createObjectURL(event.target.files[0]);
+    }
+
+    const mostrar_popup = ()=>{
+        document.getElementsByName("nombre")[0].value = "";
+        document.getElementsByName("tiempo_coccion")[0].value = "";
+        document.getElementsByName("precio")[0].value = "";
+        document.getElementsByName("tipo")[0].value = "desayuno";
+        document.getElementsByName("descripcion")[0].value = "";
+        document.getElementById('fondo').style.display = 'flex';
+    }
+
+    const ocultar_popup = ()=>{
+        document.getElementsByName("nombre")[0].value = "";
+        document.getElementsByName("tiempo_coccion")[0].value = "";
+        document.getElementsByName("precio")[0].value = "";
+        document.getElementsByName("tipo")[0].value = "desayuno";
+        document.getElementsByName("descripcion")[0].value = "";
+        document.getElementById('fondo').style.display = 'none';
+    }
+    
+    const crear_platillo = ()=>{
+        event.preventDefault();
+        var datos = new FormData(document.querySelector(".contenido form"));
+        var xhr = new XMLHttpRequest();
+        xhr.open("POST", "./panel.php?menu");
+        xhr.responseType = "json";
+        xhr.send(datos);
+        xhr.onloadend = ()=>{
+            var texto = document.getElementById("mensaje");
+            texto.className = "exito";
+
+            if(xhr.response["exito"]) texto.innerHTML = xhr.response["mensaje"];
+            else texto.innerHTML = "El platillo ha sido editado con éxito";
+        }
+    }
+</script>

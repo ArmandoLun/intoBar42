@@ -15,36 +15,43 @@
     <div class="d1">
         <input type="hidden" name="id" value="3">
         <div align="right">
-            <input type="text" style="padding:5px;margin-bottom:5px;margin-top:5px">
-            <button class="btn">Buscar</button>
+            <input type="text" id="filtrar" style="padding:5px;margin-bottom:5px;margin-top:5px">
+            <button class="btn" onclick="filtrar()">Buscar por fecha</button>
         </div>
-        <form action="" method="get">
-            <div class="d2">
-                <div>
-                    <select name="accion">
-                        <option value="0">Acciones en lote</option>
-                    </select>
-                    <input type="submit" value="Aplicar" class="btn" style="margin-right:20px">
-                </div>
+        <div class="d2">
+            <div>
+                <select name="perfil" id="cambio_valor">
+                    <option value="">Cambiar estado a...</option>
+                    <option value="en espera">En espera</option>
+                    <option value="cocinando">Cocinando</option>
+                    <option value="listo para entregar">Listo para entregar</option>
+                    <option value="entregado">Entregado</option>
+                    <option value="pagado">Pagado</option>
+                    <option value="pedido incumplido">Pedido incumplido</option>
+                </select>
+                <button class="btn" onclick="cambiar_valor()">Cambiar</button>
             </div>
-            <h6 id="enlaces-tabla" style="text-align: right;">
-            </h6>
-            <table>
-                <tbody>
-                </tbody>
-            </table>
-        </form>
+        </div>
+        <h6 id="enlaces-tabla" style="text-align: right;">
+        </h6>
+        <table>
+            <tbody>
+            </tbody>
+        </table>
     </div>
     <script>
         const datos_tabla = <?php echo json_encode($pedidos) ?>;
         const cabecera_tabla = "<tr class='tr1'>"+
         "<td width='20px'><input type='checkbox' id='SelAll' name='check' onclick='marcarTodos(this)'></td>"+
-        "<td>Platillo</td>"+
+        "<td colspan='2'>Platillo</td>"+
         "<td>Estado</td>"+
         "<td>Mesa</td>"+
         "<td>Fecha y hora entrega</td>"+
         "</tr>";
         const datos = ["platillo", "estado", "mesa", "entrega"];
+        const img = ["vista/principal/img/menu/", "platillo", ".jpg"];
+        const accion_cambiar = ["./panel.php?pedidos&id=", "id", "&estado="];
+        const filtro = "entrega";
     </script>
     <script src="vista/paneles/tablas.js"></script>
 </body>

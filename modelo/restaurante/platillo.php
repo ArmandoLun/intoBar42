@@ -6,14 +6,15 @@
             parent::__construct();
         }
 
-        public function nuevo($nombre, $coccion, $precio, $tipo){
+        public function nuevo($nombre, $coccion, $precio, $tipo, $descripcion){
             try{
-                $resultado = $this->db_connect->prepare("CALL nuevo_platillo(:nombre, :coccion, :precio, :tipo)");
+                $resultado = $this->db_connect->prepare("CALL nuevo_platillo(:nombre, :coccion, :precio,
+                :tipo, :descripcion)");
                 $resultado->execute(array(":nombre"=>$nombre, ":coccion"=>$coccion, ":precio"=>$precio,
-                ":tipo"=>$tipo));
+                ":tipo"=>$tipo, ":descripcion"=>$descripcion));
                 $exito=$resultado->fetch()[0];
                 
-                if($this->exito == 0) return "{\"exito\":false, \"mensaje\":\"Ya existe el platillo\"}";
+                if($exito == 0) return "{\"exito\":false, \"mensaje\":\"Ya existe el platillo\"}";
                 else return "{\"exito\":true, \"mensaje\":\"Platillo agregado con éxito\"}";
             }catch(Exception $e){
                 echo $e;
@@ -29,10 +30,12 @@
             }
         }
 
-        public function cambiar_precio($nombre, $precio){
+        public function editar($nombre, $coccion, $precio, $tipo, $descripcion){
             try{
-                $resultado = $this->db_connect->prepare("UPDATE menu SET precio = :precio WHERE platillo = :nombre");
-                $resultado->execute(array(":nombre"=>$nombre, ":precio"=>$precio));
+                $resultado = $this->db_connect->prepare("CALL editar_platillo(:nombre, :coccion, :precio,
+                :tipo, :descripcion)");
+                $resultado->execute(array(":nombre"=>$nombre, ":coccion"=>$coccion, ":precio"=>$precio,
+                ":tipo"=>$tipo, ":descripcion"=>$descripcion));
             }catch(Exception $e){
                 echo $e;
             }
@@ -40,8 +43,8 @@
 
         public function leer_todos(){
             try{
-                return $this->db_connect->query("SELECT platillo, tiempo_coccion, precio, tipo FROM menu 
-                INNER JOIN tiposplatillos ON id_tiposPlatillos = tiposplatillos.id")->fetchAll();
+                return $this->db_connect->query("SELECT platillo, tiempo_coccion, precio, tipo, descripcion
+                FROM menu INNER JOIN tiposplatillos ON id_tiposPlatillos = tiposplatillos.id")->fetchAll();
             }catch(Exception $e){
                 echo $e;
             }
