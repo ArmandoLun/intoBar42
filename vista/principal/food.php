@@ -16,7 +16,7 @@
                     <div class="col-lg-6">
                         <div class="heading-section text-center">
                             <h2 id="dato_reservacion">
-                                Mis Reservaciones
+                                Mis Platillos
                             </h2>
                         </div>
                         <div class="testi-content testi-carousel owl-carousel ">
@@ -35,7 +35,7 @@
 <?php include('vista/principal/jsUtilities.php'); ?>
 <script>
 var carrusel = document.querySelector(".owl-carousel"),
-    items = <?php echo (json_encode($_reserva)) ?>,
+    items = <?php echo (json_encode($_pedidos)) ?>,
     HTML;
 if (items.length == 0) {
     document.getElementById("dato_reservacion").innerHTML = "No tiene ninguna mesa reservada";
@@ -45,49 +45,16 @@ if (items.length == 0) {
             if (x != 0) carrusel.innerHTML += "<div class='item'>" + HTML + "</div>";
             HTML = "";
         }
-        HTML += "<div><h4>" + items[x]["mesa"] + " reservado para:" + items[x][`reservada_para`] +
+        HTML += "<div><h4>" + items[x]["platillo"] + " estado:" + items[x][`estado`] +
+        " mesa: "+ items[x][`mesa`] + " entrega: " + items[x][`entrega`] +
             "</h4><div style='width: 20px;'></div>";
-        if (items[x]["pagada"] == 0) {
-            HTML += "<button class='btn btn-primary btn-shadow btn-lg' onclick=\"pagar('" + items[x]["mesa"] + "','" +
-                items[x]["reservada_para"] + "');\">pagar</button>";
             HTML += "<button class='btn btn-primary btn-shadow btn-lg' onclick=\"cancelar('" + items[x]["mesa"] +
-                "','" + items[x]["reservada_para"] + "');\">Cancelar</button></div><br>";
-        } else {
-            HTML += "<button class='btn btn-secondary btn-shadow btn-lg' onclick=\"ordenar('" + items[x]["mesa"] +
-                "','" + items[x]["reservada_para"] + "')\">Ordenar</button></div><br>";
-        }
-
+                "','" + items[x]["reservada_para"] + "');\">Quitar</button></div><br>";
     }
-
-
 }
-
 if (items % 10 != 0) {
     carrusel.innerHTML += "<div class='item'>" + HTML + "</div>";
     HTML = "";
-}
-
-function pagar(mesa, reserv) {
-    location.href = './?pagar&fecha_reservacion=' + reserv + '&mesa=' + mesa;
-}
-var xhr;
-
-function cancelar(mesa, reserv) {
-
-    xhr = new XMLHttpRequest();
-    xhr.open("GET", './?cancelar&fecha_reservacion=' + reserv + '&mesa=' + mesa);
-    xhr.send();
-    xhr.responseType = "json";
-    xhr.onloadend = () => {
-        if (xhr.response["exito"]) {
-            location.href = "./?mis_reservaciones";
-        } else {
-            alert(xhr.response["mensaje"]);
-        }
-    }
-}
-function ordenar(mesa,reserv){
-    location.href = "./?menu&mesa="+mesa+"&fecha_reservada="+reserv;
 }
 </script>
 </html>

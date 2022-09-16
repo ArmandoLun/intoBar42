@@ -54,13 +54,35 @@ else if (isset($_GET["cerrar_coockie"])){
     setcookie("cliente","",time()-60);
     echo("<script>location.href='./';</script>");
 }
+else if(isset($_GET["cancelar"])){
+    require("modelo/cliente/reserva.php");
+    $_reserva=new Reserva();
+    $_reserva=$_reserva->cancelar($_GET["mesa"],$_GET["fecha_reservacion"]);
+    echo($_reserva);
+}
+else if(isset($_GET["platillo"])){
+    require("modelo/cliente/pedido.php");
+    $_pedido=new Pedido();
+    $_pedido=$_pedido->realizar($_GET["platillo"],$_GET["mesa"],$_GET["fecha_reservada"]);
+    echo($_GET["platillo"] . " " . $_GET["mesa"] . " "  .$_GET["fecha_reservada"]);
+}else if(isset($_GET["food"])){
+    require("modelo/cliente/pedido.php");
+    $_pedidos=new Pedido();
+    $_pedidos=$_pedidos->leer_de_usuario(json_decode($_COOKIE["cliente"])->{"correo"});
+    require("vista/principal/food.php");
+}
 else if(isset($_POST["fecha"]))
 {
     require("modelo/cliente/reserva.php");
-    $_fecha=$_POST["fecha"];
     $_reservacion = new Reserva();
     $_reservacion = $_reservacion->reservar($_POST["mesa"],json_decode($_COOKIE["cliente"])->{"correo"},$_POST["fecha"]." ".$_POST["hora"]);
     echo("$_reservacion");
+}
+else if(isset($_POST["numeroTarjeta"])){
+    require("modelo/cliente/reserva.php");
+    $_reserva=new Reserva();
+    $_reserva=$_reserva->confirmar($_POST["mesa"],$_POST["fecha_reservacion"]);
+    echo($_reserva);
 }
 else {
 

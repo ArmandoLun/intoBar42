@@ -21,7 +21,7 @@
 						</div>
 						<form id="choclo">
 							<div class="col-md-12 form-group">
-								<input id="card_number" type="tel" class="form-control" name="numero" minlength="19" maxlength="19" oninput="controlar4();" placeholder="Número de tarjeta" required>
+								<input id="card_number" type="tel" class="form-control" name="numeroTarjeta" minlength="19" maxlength="19" oninput="controlar4();" placeholder="Número de tarjeta" required>
 							</div>
 							<div class="col-md-12 form-group">
 								<input type="text" class="form-control" name="nombre" placeholder="Nombre y apellido del titular" required>
@@ -70,12 +70,25 @@
 	fecha.setDate(fecha.getDate() + 365 * 5);
 	document.getElementById("nearest").max = fecha.toISOString().split("T")[0];
 
+	
 	function pagar(){
+		let xhr = new XMLHttpRequest();
 		event.preventDefault();
 		let datitos = new FormData(document.getElementById("choclo"));
-		var daate = new Date();
 		var fecha_mesa ="<?php echo($_GET["fecha_reservacion"]); ?>";
-		alert(fecha_mesa);
+		var mesa="<?php echo($_GET["mesa"]);?>";
+		datitos.append("fecha_reservacion",fecha_mesa);
+		datitos.append("mesa",mesa);
+		xhr.responseType="json";
+		xhr.open("POST","./");
+		xhr.send(datitos);
+		xhr.onloadend = ()=>{
+                    if(xhr.response["exito"]){
+                        location.href="./?mis_reservaciones";
+                    }else{
+                        alert(xhr.response["mensaje"]);
+                    }
+                }
 	}
 </script>
 

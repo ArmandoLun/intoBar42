@@ -7,13 +7,17 @@
     <div class="boxed-page">
         <!-- NAVBAR -->
         <?php include('vista/principal/navbar.php'); ?>
-        <div class="hero">
+        <div class="hero" style=" background: rgb(215,177,109);
+background: linear-gradient(118deg, rgba(215,177,109,0.577468487394958) 3%, rgba(0,0,0,0) 49%, rgba(213,89,217,0.48503151260504207) 90%); border-style:ridge; border-color:#deaeae;">
             <div class="container">
                 <div class="row d-flex align-items-center">
                     <div class="col-lg-6 hero-left">
                         <h1 class="display-4 mb-5">¡Bienvenidos a <br>Sentidos!</h1>
                         <div class="mb-2">
                             <a class="btn btn-primary btn-shadow btn-lg" href="./?menu" role="button">Explorar Menú</a>
+                        </div>
+                        <div class="mb-4" style="margin-top: 10%;">
+                            <a class="btn btn-secondary btn-outline-danger btn-shadow btn-lg" href="./?iniciar_sesion" role="button">Iniciar Sesión</a>
                         </div>
 
                         <ul class="hero-info list-unstyled d-flex text-center mb-0">

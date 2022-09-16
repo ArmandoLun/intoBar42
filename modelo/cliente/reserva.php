@@ -25,7 +25,7 @@
                 $resultado->execute(array(":mesa"=>$mesa, ":reservado"=>$reservado));
                 $codigo=$resultado->fetch()[0];
 
-                if($codigo == 0) return "{\"exito\":true, \"mensaje\":\"Reservación cancelada con éxito\"}";
+                if($codigo) return "{\"exito\":true, \"mensaje\":\"Reservación cancelada con éxito\"}";
                 else return "{\"exito\":false, \"mensaje\":\"Muy tarde para cancelar la reservación\"}";
             }catch(Exception $e){
                 echo $e;
@@ -38,7 +38,7 @@
                 $resultado->execute(array(":mesa"=>$mesa, ":reservado"=>$reservado));
                 $codigo=$resultado->fetch()[0];
 
-                if($codigo == 0) return "{\"exito\":true, \"mensaje\":\"Reservación confirmada con éxito\"}";
+                if($codigo) return "{\"exito\":true, \"mensaje\":\"Reservación confirmada con éxito\"}";
                 else return "{\"exito\":false, \"mensaje\":\"Muy tarde para confirmar la reservación\"}";
             }catch(Exception $e){
                 echo $e;
