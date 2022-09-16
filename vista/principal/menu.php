@@ -101,10 +101,10 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <?php
+                        <?php
                         }
                         ?>
+                    </div>
                     <!--hasta aca es el php :v-->
                 </div>
 

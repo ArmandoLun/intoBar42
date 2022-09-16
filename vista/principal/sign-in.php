@@ -30,10 +30,10 @@
                                         <input type="text" class="form-control" id="apellido" name="apellido" placeholder="Apellido - Obligatorio">
                                     </div>
                                     <div class="col-md-12 form-group">
-                                        <input type="number" class="form-control" id="dni" name="dni" placeholder="DNI - Obligatorio">
+                                        <input type="tel" class="form-control" id="dni" name="dni" placeholder="DNI - Obligatorio">
                                     </div>
                                     <div class="col-md-12 form-group">
-                                        <input type="number" class="form-control" id="telefono" name="telefono" placeholder="Teléfono - opcioAnal">
+                                        <input type="tel" class="form-control" id="telefono" name="telefono" placeholder="Teléfono - opcioAnal">
                                     </div>
                                     <div class="col-md-12 form-group">
                                         <input type="text" class="form-control" id="domicilio" name="domicilio" placeholder="Domicilio - Para observarte">
