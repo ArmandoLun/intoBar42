@@ -5,7 +5,6 @@
                 <div class="footer-widget pr-lg-5 pr-0">
                             <img src="vista/principal/img/innobar42.png" class="img-fluid footer-logo mb-3" alt="" style="width:100%;height:100%;">
                 </div>
-
             </div>
             <div class="col-lg-4">
                 <div class="footer-widget px-lg-5 px-0">
@@ -27,9 +26,7 @@
                         </li>
                     </ul>
                 </div>
-
             </div>
-
             <div class="col-lg-4">
                 <div class="footer-widget pl-lg-5 pl-0">
                     <h4>Nuestro menú </h4>
@@ -41,7 +38,6 @@
                         <img src="vista\principal\img\nuestras_fotos\QRRELOCO.png" class="img-fluid footer-logo mb-3" alt="" style="width:100%;height:100%;">
                     </form>
                 </div>
-
             </div>
         </div>
     </div>

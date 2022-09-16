@@ -32,20 +32,19 @@
     <p>Haga click en las obciones de la barra de arriba para cambiar de página dentro del panel.</p>
     <p>Este es tu perfil</p>
     <div class="d1">
-        <img src="vista/paneles/imgs-perfil/<?php echo $cuenta->{"usuario"} ?>.jpg" width="100px" height="100px">
-        <h1><?php echo $cuenta->{"usuario"} ?></h1>
-        <h3>Cocinero</h3>
+        <img src="vista/paneles/perfil.jpg" width="100px" height="100px">
+        <h1>Usuario</h1>
+        <h3>Contraseña: 1234</h3>
+        <h3>Perfil: cocinero</h3>
         <br>
         <p>
-            <?php echo $cuenta->{"descripcion"} ?>
+            Aquí va una descripción personalizada del usuario, esta tendrá un limite de 200 caracteres. Este
+            texto tiene exactamente 200 caracteres de largo y sirve de referencia para ver a cuánto texto
+            equivale.
         </p>
         <br>
-        <button onclick="mostrar_popup('<?php echo $cuenta->{'usuario'} ?>', '<?php echo $cuenta->{'contrasenia'} ?>',
-        '<?php echo $cuenta->{'descripcion'} ?>')">Editar perfil</button>
+        <button onclick="document.getElementById('fondo').style.display = 'flex'">Editar perfil</button>
     </div>
-    <script>
-        const usuario = "<?php echo $cuenta->{"usuario"} ?>";
-    </script>
     <?php require("vista/paneles/panel-cocinero/popup_perfil.html") ?>
 </body>
 </html>

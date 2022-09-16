@@ -24,25 +24,25 @@
                             <form method="post" name="contact-us" action="">
                                 <div class="row">
                                     <div class="col-md-12 form-group">
-                                        <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Nombre">
+                                        <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Nombre - Obligatorio">
                                     </div>
                                     <div class="col-md-12 form-group">
-                                        <input type="text" class="form-control" id="apellido" name="apellido" placeholder="Apellido">
+                                        <input type="text" class="form-control" id="apellido" name="apellido" placeholder="Apellido - Obligatorio">
                                     </div>
                                     <div class="col-md-12 form-group">
-                                        <input type="number" class="form-control" id="dni" name="dni" placeholder="DNI">
+                                        <input type="number" class="form-control" id="dni" name="dni" placeholder="DNI - Obligatorio">
                                     </div>
                                     <div class="col-md-12 form-group">
-                                        <input type="number" class="form-control" id="telefono" name="telefono" placeholder="Teléfono">
+                                        <input type="number" class="form-control" id="telefono" name="telefono" placeholder="Teléfono - opcioAnal">
                                     </div>
                                     <div class="col-md-12 form-group">
-                                        <input type="text" class="form-control" id="domicilio" name="domicilio" placeholder="Domicilio">
+                                        <input type="text" class="form-control" id="domicilio" name="domicilio" placeholder="Domicilio - Para observarte">
                                     </div>
                                     <div class="col-md-12 form-group">
-                                        <input type="email" class="form-control" id="correo" name="correo" placeholder="Correo">
+                                        <input type="email" class="form-control" id="correo" name="correo" placeholder="Correo - Para llenarte de publicidad pelotud">
                                     </div>
                                     <div class="col-md-12 form-group">
-                                        <input type="password" class="form-control" id="contrasenia" name="contrasenia" placeholder="Contraseña">
+                                        <input type="password" class="form-control" id="contrasenia" name="contrasenia" placeholder="Contraseña - Pone la misma que la de xvideos">
                                     </div>
                                     <div class="col-md-12 text-center">
                                         <button class="btn btn-primary btn-shadow btn-lg" type="submit" name="submit">Enviar</button>

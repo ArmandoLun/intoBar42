@@ -12,10 +12,10 @@
                 $resultado->execute(array(":correo"=>$correo, ":contrasenia"=>$contrasenia));
                 $codigo=$resultado->fetch()[0];
                 
-                if($this->codigo == 0) return "{\"exito\":true, \"mensaje\":\"Sesión iniciada con éxito\"}";
-                else if($this->codigo == 1) return "{\"exito\":false, \"mensaje\":\"No existe el usuario\"}";
-                else if($this->codigo == 2) return "{\"exito\":false, \"mensaje\":\"Contraseña incorrecta\"}";
-                else if($this->codigo == 3) return "{\"exito\":false, \"mensaje\":\"Cuenta baneada\"}";
+                if($codigo == 0) return "{\"exito\":true, \"mensaje\":\"Sesión iniciada con éxito\"}";
+                else if($codigo == 1) return "{\"exito\":false, \"mensaje\":\"No existe el usuario\"}";
+                else if($codigo == 2) return "{\"exito\":false, \"mensaje\":\"Contraseña incorrecta\"}";
+                else if($codigo == 3) return "{\"exito\":false, \"mensaje\":\"Cuenta baneada\"}";
             }catch(Exception $e){
                 echo $e;
             }
@@ -29,7 +29,7 @@
                 ":telefono"=>$telefono, ":domicilio"=>$domicilio, ":correo"=>$correo, ":contrasenia"=>$contrasenia));
                 $exito=$resultado->fetch()[0];
                 
-                if($this->exito == 0) return "{\"exito\":false, \"mensaje\":\"Ya existe un usuario con este correo\"}";
+                if($exito == 0) return "{\"exito\":false, \"mensaje\":\"Ya existe un usuario con este correo\"}";
                 else return "{\"exito\":true, \"mensaje\":\"Usuario creado con éxito\"}";
             }catch(Exception $e){
                 echo $e;
@@ -47,26 +47,7 @@
 
         public function leer_todos(){
             try{
-                $resultado = $this->db_connect->query("SELECT nombre, apellido, DNI, correo, baneado FROM usuarios");
-                return $resultado->fetchAll();
-            }catch(Exception $e){
-                echo $e;
-            }
-        }
-
-        public function banear($correo){
-            try{
-                $resultado = $this->db_connect->prepare("UPDATE usuarios SET baneado = 'si' WHERE correo = :correo");
-                $resultado->execute(array(":correo"=>$correo));
-            }catch(Exception $e){
-                echo $e;
-            }
-        }
-
-        public function desbanear($correo){
-            try{
-                $resultado = $this->db_connect->prepare("UPDATE usuarios SET baneado = 'no' WHERE correo = :correo");
-                $resultado->execute(array(":correo"=>$correo));
+                return $this->db_connect->query("SELECT nombre, apellido, DNI, correo FROM usuarios")->fetchAll();
             }catch(Exception $e){
                 echo $e;
             }

@@ -9,7 +9,10 @@ if (isset($_GET["acerca_de"])) {
         $_jsonsito=json_decode($_sesion);
         if($_jsonsito->{"exito"}){
             setcookie("cliente","{\"correo\":\"".$_POST["correo"]."\", \"contrasenia\":\"".$_POST["contrasenia"]."\"}");
-            echo("<script>location.href='./';</script>");
+            echo("<script>
+            location.href='./';</script>");
+        }else{
+            echo("<script>alert(\"".json_decode($_sesion)->{'mensaje'}."\");</script>");
         }
     }
 
@@ -28,7 +31,9 @@ else if (isset($_GET["mis_reservaciones"])) {
     require("vista/principal/my-reservations.php");
 }
 else if (isset($_GET["pagar"])) require("vista/principal/payment.php");
-else if (isset($_GET["reservar"])) require("vista/principal/reservation.php");
+else if (isset($_GET["reservar"])) {
+    require("vista/principal/reservation.php");
+}
 else if (isset($_GET["registrarse"])) {
     require("modelo/cliente/sesion.php");
     $_sesion=new SesionCliente();
@@ -52,8 +57,11 @@ else if (isset($_GET["cerrar_coockie"])){
 else if(isset($_POST["fecha"]))
 {
     require("modelo/cliente/reserva.php");
+    $_fecha=$_POST["fecha"];
+    echo($_fecha);
     $_reservacion = new Reserva();
-    //$_reservacion = $_reservacion->reservar("roberto",json_decode($_COOKIE["cliente"][""]),)
+    $_reservacion = $_reservacion->reservar($_POST["mesa"],json_decode($_COOKIE["cliente"])->{"correo"},$_POST["fecha"]." ".$_POST["hora"]);
+    echo("$_reservacion");
 }
 else {
 
