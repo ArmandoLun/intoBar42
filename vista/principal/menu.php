@@ -12,7 +12,7 @@
         <section id="gtco-menu" class="section-padding">
             <div class="container">
                 <div class="section-content">
-                    <?php if(isset($_COOKIE["cliente"])){
+                    <?php if(isset($_COOKIE["cliente"]) && isset($_GET["mesa"])){
                         ?>
                     <button class='btn btn-primary btn-shadow btn-lg' onclick="location.href='./?food'">Vista Previa de
                         las Ordenes</button>

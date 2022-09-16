@@ -16,7 +16,7 @@
 					<div class="col-lg-6">
 						<div class="heading-section text-center">
 							<h2>
-								Pagar Reservación
+								Pagar Reservación ($500)
 							</h2>
 						</div>
 						<form id="choclo">

@@ -49,7 +49,7 @@ if (items.length == 0) {
         " mesa: "+ items[x][`mesa`] + " entrega: " + items[x][`entrega`] +
             "</h4><div style='width: 20px;'></div>";
             HTML += "<button class='btn btn-primary btn-shadow btn-lg' onclick=\"cancelar('" + items[x]["mesa"] +
-                "','" + items[x]["reservada_para"] + "');\">Quitar</button></div><br>";
+                "','" + items[x]["reservada_para"] + "');\">Enzo</button></div><br>";
     }
 }
 if (items % 10 != 0) {

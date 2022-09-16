@@ -62,5 +62,6 @@ border: 7px ridge #deaeae;
         border-color: white;
         border-radius: 15%;
         margin-left: 2px;
+        background-color: #deaeae;
     }
 </style>

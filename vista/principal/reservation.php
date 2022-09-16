@@ -61,7 +61,7 @@
             mesa=document.getElementById("mesa").value;
             var xhr;
             function reservar(){
-                //alert(fecha)
+                alert(fecha)
                 let datitos = new FormData(document.getElementById("picho"));
                 event.preventDefault();
                 xhr= new XMLHttpRequest();
