@@ -57,10 +57,13 @@ background: linear-gradient(118deg, rgba(215,177,109,0.577468487394958) 3%, rgba
 border: 7px ridge #deaeae;
         
     }
+<<<<<<< HEAD
     #hola {
         border-style: solid;
         border-color: white;
         border-radius: 15%;
         margin-left: 2px;
     }
+=======
+>>>>>>> 011afb2321a3952aa3f06404488835e5a43c1003
 </style>
