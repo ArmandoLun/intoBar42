@@ -12,7 +12,7 @@
                 $resultado->execute(array(":nombre"=>$nombre, ":sillas"=>$sillas));
                 $exito=$resultado->fetch()[0];
                 
-                if($this->exito == 0) return "{\"exito\":false, \"mensaje\":\"Ya existe la mesa\"}";
+                if($exito == 0) return "{\"exito\":false, \"mensaje\":\"Ya existe la mesa\"}";
                 else return "{\"exito\":true, \"mensaje\":\"Mesa agregada con éxito\"}";
             }catch(Exception $e){
                 echo $e;

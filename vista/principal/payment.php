@@ -19,7 +19,7 @@
 								Pagar Reservación
 							</h2>
 						</div>
-						<form action="">
+						<form id="choclo">
 							<div class="col-md-12 form-group">
 								<input id="card_number" type="tel" class="form-control" name="numero" minlength="19" maxlength="19" oninput="controlar4();" placeholder="Número de tarjeta" required>
 							</div>
@@ -69,6 +69,14 @@
 	document.getElementById("nearest").min = fecha.toISOString().split("T")[0];
 	fecha.setDate(fecha.getDate() + 365 * 5);
 	document.getElementById("nearest").max = fecha.toISOString().split("T")[0];
+
+	function pagar(){
+		event.preventDefault();
+		let datitos = new FormData(document.getElementById("choclo"));
+		var daate = new Date();
+		var fecha_mesa ="<?php echo($_GET["fecha_reservacion"]); ?>";
+		alert(fecha_mesa);
+	}
 </script>
 
 </html>

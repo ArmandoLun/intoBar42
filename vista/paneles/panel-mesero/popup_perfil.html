@@ -1,32 +1,67 @@
 <link rel="stylesheet" href="vista/paneles/popups.css">
 <div id="fondo">
     <div class="popup">
-        <div class="cerrar" onclick="document.getElementById('fondo').style.display = 'none'">X</div>
-        <div class="contenido">
-            <form action="">
-                <img src="vista/paneles/perfil.jpg" width="100px" height="100px" style="border: 5px solid black">
-                <input type="file" id="foto-perfil" name="foto_perfil" style="display: none"
-                    accept="image/png, image/jpg, image/gif, image/jpeg, image/webp, image/bmp"
-                    onchange="cambiar_foto()">
+        <div class="cerrar" onclick="ocultar_popup()">X</div>
+        <div class="contenido" style="flex-flow: column; align-items: center; justify-content:flex-start;">
+            <div style="margin-top: 50px; margin-bottom: -50px;">
+                <img id="img-perfil" width="100px" height="100px" style="border: 5px solid black"><br>
                 <button onclick="elegir_foto()">Cambiar foto de perfil</button>
+            </div>
+            <form action="" method="post" enctype="multipart/form-data">
+                <input type="file" id="foto-perfil" name="foto_perfil" style="display: none" accept="image/*" onchange="cambiar_foto()">
                 <label for="usuario">Usuario</label>
-                <input type="text" name="usuario" placeholder="Nombre de usuario">
+                <input type="text" name="usuario" placeholder="Nombre de usuario" required>
                 <label for="contrasenia">Contraseña</label>
-                <input type="password" name="contrasenia" placeholder="Contraseña">
+                <div style="display: flex; width: calc(100% + 8px);">
+                    <input type="password" name="contrasenia" placeholder="Contraseña" required style="width: 100%">
+                    <button style="width: 22px; height:22px; margin: 0px; background-size: cover;
+                    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfKYsNSDUmSKgLWms5GHV99eJ5y7eu-_ep5BRqg7an00pFz7fBgjXCmN7WU51bcOefwBM&usqp=CAU);"
+                    onclick="mostrar_contrasenia()"></button>
+                </div>
                 <label for="descripcion">Descripción</label>
-                <textarea name="descripcion" placeholder="Descripción"></textarea>
+                <textarea name="descripcion" placeholder="Descripción" maxlength="200"></textarea>
                 <button>Aplicar cambios</button>
-                <p class="exito">Texto de confirmación</p>
             </form>
         </div>
     </div>
 </div>
 <script>
-    function elegir_foto(){
+    document.getElementById("img-perfil").src = "vista/paneles/imgs-perfil/"+usuario+".jpg"
+
+    const elegir_foto = ()=>{
         event.preventDefault();
         document.getElementById("foto-perfil").click();
     }
-    function cambiar_foto(){
+
+    const cambiar_foto = ()=>{
         document.querySelector(".contenido img").src = URL.createObjectURL(event.target.files[0]);
+    }
+
+    const mostrar_contrasenia = ()=>{
+        event.preventDefault();
+        var contrasenia = document.getElementsByName("contrasenia")[0];
+
+        if(contrasenia.type == "password"){
+            contrasenia.type = "text";
+            event.target.style.backgroundImage = "url(https://media.istockphoto.com/illustrations/hide-or-crossed-out-eye-thin-line-icon-in-black-hidden-password-entry-illustration-id1310258977?k=20&m=1310258977&s=170667a&w=0&h=x9OQOX3snN_Gik4P2tGxaIv4QlCjrKiU67jWbyjv0tU=)";
+        }
+        else{
+            contrasenia.type = "password"
+            event.target.style.backgroundImage = "url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfKYsNSDUmSKgLWms5GHV99eJ5y7eu-_ep5BRqg7an00pFz7fBgjXCmN7WU51bcOefwBM&usqp=CAU)";
+        }
+    }
+
+    const mostrar_popup = (usuario, contrasenia, descripcion)=>{
+        document.getElementsByName("usuario")[0].value = usuario;
+        document.getElementsByName("contrasenia")[0].value = contrasenia;
+        document.getElementsByName("descripcion")[0].value = descripcion;
+        document.getElementById('fondo').style.display = 'flex';
+    }
+
+    const ocultar_popup = ()=>{
+        document.getElementsByName("usuario")[0].value = "";
+        document.getElementsByName("contrasenia")[0].value = "";
+        document.getElementsByName("descripcion")[0].value = "";
+        document.getElementById('fondo').style.display = 'none'
     }
 </script>

@@ -28,7 +28,8 @@
         public function leer_de_usuario($correo){
             try{
                 $resultado = $this->db_connect->prepare("CALL leer_pedidos_usuario(:correo)");
-                return $this->$resultado->execute(array(":correo"=>$correo))->fetchAll();
+                $resultado->execute(array(":correo"=>$correo));
+                return $resultado->fetchAll();
             }catch(Exception $e){
                 echo $e;
             }

@@ -6,71 +6,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        <?php require("vista/paneles/formularios.css") ?>
+        <?php require("vista/paneles/tablas.css") ?>
     </style>
 </head>
+<script>
+    function mostrar_popup(){
+        event.preventDefault();
+        document.getElementById('fondo').style.display = 'flex';
+    }
+</script>
 <body>
     <?php require("vista/paneles/panel-cocinero/header.html") ?>
     <h2 style="text-align: center">Menu</h2><br>
     <div class="d1">
-        <form action="" method="get">
-            <input type="hidden" name="id" value="3">
-            <div align="right">
-                <input type="text" style="padding:5px;margin-bottom:5px;margin-top:5px">
-                <input type="submit" value="Buscar" class="btn">
-            </div>
-            <div class="d2">
-                <div>
-                    <select name="accion">
-                        <option value="0">Acciones en lote</option>
-                    </select>
-                    <input type="submit" value="Aplicar" class="btn" style="margin-right:20px">
-                </div>
-            </div>
-            <?php
-                $t=["w","r","e","w","e","r","w","t","r","t","y","t","w","r","e","w","e","r","w","t","r","t","y","t","y"];
-                $usuarios = count($t);
-
-                if(isset($_GET["pag"])) $pag=$_GET["pag"];
-                else $pag=1;
-
-                if($usuarios == 0) $pags=1;
-                else $pags = $usuarios/10;
-
-                if($usuarios >= $pag*10) $usuarios = $pag*10;
-            ?>
-            <h6 style="text-align: right;">
-            <?php
-                if($pag>1){
-                    $pag--; echo "<a href='?id=3&pag=$pag'><<</a>"; $pag++;
-                }
-                echo $pag;
-                if($pag<$pags){ 
-                    $pag++; echo "<a href='?id=3&pag=$pag'>>></a>"; $pag--;
-                }
-            ?>
-            </h6>
-            <table>
-                <tr class="tr1">
-                    <td width="20px"><input type="checkbox" id="SelAll" name="check" onclick="marcar(this)"></td>
-                    <td>Nombre del platillo</td>
-                    <td>Tiempo de cocción</td>
-                    <td>Precio</td>
-                </tr>
-                <?php
-                    for($i=($pag-1)*10; $i<$usuarios; $i++){
-                        if($i%2 == 0) echo "<tr style='background-color: #eee'>";
-                        else echo "<tr style='background-color: white'>";
-
-                        echo "<td><input type='checkbox' class='sel'></td>
-                        <td>esrjeeujfurghh</td>
-                        <td>2 horas</td>
-                        <td>$1000</td>
-                        </tr>";
-                    }
-                ?>
-            </table>
-        </form>
+        <input type="hidden" name="id" value="3">
+        <div align="right">
+            <input type="text" id="filtrar" style="padding:5px;margin-bottom:5px;margin-top:5px">
+            <button class="btn" onclick="filtrar()">Buscar</button>
+        </div>
+        <h6 id="enlaces-tabla" style="text-align: right;">
+        </h6>
+        <table>
+            <tbody>
+            </tbody>
+        </table>
     </div>
+    <script>
+        const datos_tabla = <?php echo json_encode($menu) ?>;
+        const cabecera_tabla = "<tr class='tr1'>"+
+        "<td colspan=2>Nombre del platillo</td>"+
+        "<td>Tiempo de cocción</td>"+
+        "<td>Precio</td>"+
+        "<td>Tipo</td>"+
+        "</tr>";
+        const datos = ["platillo", "tiempo_coccion", "precio", "tipo"];
+        const img = ["vista/principal/img/menu/", "platillo", ".jpg"];
+        const filtro = "platillo";
+    </script>
+    <script src="vista/paneles/tablas.js"></script>
 </body>
 </html>

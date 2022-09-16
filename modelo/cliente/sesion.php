@@ -47,7 +47,26 @@
 
         public function leer_todos(){
             try{
-                return $this->db_connect->query("SELECT nombre, apellido, DNI, correo FROM usuarios")->fetchAll();
+                $resultado = $this->db_connect->query("SELECT nombre, apellido, DNI, correo, baneado FROM usuarios");
+                return $resultado->fetchAll();
+            }catch(Exception $e){
+                echo $e;
+            }
+        }
+
+        public function banear($correo){
+            try{
+                $resultado = $this->db_connect->prepare("UPDATE usuarios SET baneado = 'si' WHERE correo = :correo");
+                $resultado->execute(array(":correo"=>$correo));
+            }catch(Exception $e){
+                echo $e;
+            }
+        }
+
+        public function desbanear($correo){
+            try{
+                $resultado = $this->db_connect->prepare("UPDATE usuarios SET baneado = 'no' WHERE correo = :correo");
+                $resultado->execute(array(":correo"=>$correo));
             }catch(Exception $e){
                 echo $e;
             }

@@ -9,8 +9,7 @@
         public function reservar($mesa, $correo, $reservado){
             try{
                 $resultado = $this->db_connect->prepare("CALL nueva_reserva(:mesa, :correo, :reservado)");
-                $resultado->execute(array(":mesa"=>$mesa, ":correo"=>$correo,
-                ":reservado"=>$reservado));
+                $resultado->execute(array(":mesa"=>$mesa, ":correo"=>$correo, ":reservado"=>$reservado));
                 $codigo=$resultado->fetch()[0];
 
                 if($codigo == 1) return "{\"exito\":true, \"mensaje\":\"Reservación realizada con éxito\"}";

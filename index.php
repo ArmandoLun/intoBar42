@@ -58,7 +58,6 @@ else if(isset($_POST["fecha"]))
 {
     require("modelo/cliente/reserva.php");
     $_fecha=$_POST["fecha"];
-    echo($_fecha);
     $_reservacion = new Reserva();
     $_reservacion = $_reservacion->reservar($_POST["mesa"],json_decode($_COOKIE["cliente"])->{"correo"},$_POST["fecha"]." ".$_POST["hora"]);
     echo("$_reservacion");

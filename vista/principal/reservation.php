@@ -16,7 +16,7 @@
                     <div class="col-lg-8">
                         <div class="section-content bg-white p-3 shadow">
 
-                            <form method="post" action=".\" style="display: flex; justify-content: center; align-items: center; flex-flow: column;">
+                            <form id="picho" method="post" action=".\" style="display: flex; justify-content: center; align-items: center; flex-flow: column;">
                                 <Label>Mesas</Label>
                                 <div id="diagrama">
                                     <img src="vista/principal/img/sillas/chespirito.jpg" alt="" style="max-width: 100%; max-height:100%;">
@@ -62,15 +62,19 @@
             var xhr;
             function reservar(){
                 //alert(fecha)
-                var datitos = new FormData();
-                datitos.append("fecha",(fecha.getFullYear()+"-"+fecha.getMonth()+"-"+fecha.getDate()));
-                datitos.append("hora",hora);
-                datitos.append("mesa",mesa);
+                let datitos = new FormData(document.getElementById("picho"));
                 event.preventDefault();
-                alert(JSON.stringify(datitos));
                 xhr= new XMLHttpRequest();
+                xhr.responseType="json";
                 xhr.open("POST","./");
                 xhr.send(datitos);
+                xhr.onloadend = ()=>{
+                    if(xhr.response["exito"]){
+                        location.href="./?mis_reservaciones";
+                    }else{
+                        alert(xhr.response["mensaje"]);
+                    }
+                }
             }
         </script>
     </div>
