@@ -25,3 +25,12 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
     <!-- pruebas con la bd -->
 </head>
+<style>
+    body
+    {   
+        
+        background: rgb(215,177,109);
+        background: linear-gradient(118deg, rgba(215,177,109,0.577468487394958) 3%, rgba(0,0,0,0) 49%, rgba(213,89,217,0.48503151260504207) 90%);
+    }
+
+</style>

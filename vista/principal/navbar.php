@@ -7,7 +7,7 @@
             <span class="lnr lnr-menu"></span>
         </button>
 
-        <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
+        <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent" style="font-size:23px; font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; font-weight:100;">
             <ul class="navbar-nav d-flex justify-content-between">
                 <li class="nav-item only-desktop">
                     <a class="nav-link" id="side-nav-open" href="#">
@@ -28,7 +28,7 @@
             </ul>
 
             <a class="navbar-brand navbar-brand-center d-flex align-items-center only-desktop" href="./">
-                <img src="vista/principal/img/nuestras_fotos/restauranteeee.png" alt="">
+                <img src="vista\principal\img\zyro-image (1).png" alt="" width="200vw" height="150vh">
             </a>
             <ul class="navbar-nav d-flex justify-content-between">
                 <div class="d-flex flex-lg-row flex-column">
@@ -54,3 +54,12 @@
         </div>
     </div>
 </nav>
+<style>
+    nav
+    {
+        background: rgb(215,177,109);
+background: linear-gradient(118deg, rgba(215,177,109,0.577468487394958) 3%, rgba(0,0,0,0) 49%, rgba(213,89,217,0.48503151260504207) 90%);
+border: 7px ridge #deaeae;
+        
+    }
+</style>
