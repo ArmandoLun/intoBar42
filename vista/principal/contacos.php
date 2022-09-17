@@ -17,10 +17,10 @@
                         <div class="col-md-12">
                             <div class="heading-section text-center">
                                 <span class="subheading">
-                                    Opiniones
+                                    Acerca de
                                 </span>
                                 <h2>
-                                    DEJANOS UNA ESCLAVO DE MIERDA
+                                  Opiniones 
                                 </h2>
                             </div>
                         </div>
@@ -66,10 +66,10 @@
                         ?>
                         <?php if (isset($_COOKIE["cliente"])){ ?>
                         <form method="POST" action="./?contacos" class="col-lg-12 menu-wrap" style="display: flex;flex-flow:column;">
-                            <textarea id="texto" maxlength="1000"  name="texto" id="" cols="30" rows="10" placeholder="descripcion de tu opinion" required></textarea>
-                            <input id="puntaje" style="margin-top: 5px; " type="number" name="puntaje" min="0" max="10" placeholder="puntuacion" required>
-                            <button style="margin-top: 5px;" class='btn btn-danger btn-shadow btn-lg' onclick="dejarOpinion();">Dejanos tu
-                                opinion :3</button>
+                            <textarea id="texto" maxlength="1000"  name="texto" id="" cols="30" rows="10" placeholder="Escriba su opinión..." required></textarea>
+                            <input id="puntaje" style="margin-top: 5px; " type="number" name="puntaje" min="0" max="10" placeholder="Puntúanos (0-10)" required>
+                            <button style="margin-top: 5px;" class='btn btn-danger btn-shadow btn-lg' onclick="dejarOpinion();">Enviar
+                                </button>
                         </form><br>
                     </div>
                     <?php } ?>

@@ -68,7 +68,7 @@ background: linear-gradient(118deg, rgba(215,177,109,0.577468487394958) 3%, rgba
                                 </div>
                                 <a class="MiBoton" href="https://lucafbergamaschi.wixsite.com/empresa-innobar42"
                                     type="button" name="visitar">Click aquí</a>
-                                <a class="MiBoton" href="./?contacos" type="button" name="visitar">Denuncianos</a>
+                                <a class="MiBoton" href="./?contacos" type="button" name="visitar">Opiniones</a>
                             </div>
                         </div>
                     </div>
