@@ -71,6 +71,16 @@ else if(isset($_GET["platillo"])){
     $_pedidos=$_pedidos->leer_de_usuario(json_decode($_COOKIE["cliente"])->{"correo"});
     require("vista/principal/food.php");
 }
+
+else if(isset($_GET["contacos"])){
+    require("modelo/cliente/opinion.php");
+    $_opiniones= new Opinion();
+    if(isset($_POST["puntaje"])){
+        $_opiniones->opinar(json_decode($_COOKIE["cliente"])->{"correo"},$_POST["puntaje"],$_POST["texto"]);
+    }
+    $_opiniones=$_opiniones->leer_todas();
+    require("vista/principal/contacos.php");
+}
 else if(isset($_POST["fecha"]))
 {
     require("modelo/cliente/reserva.php");
