@@ -9,7 +9,7 @@
         <!-- NAVBAR -->
         <?php include('vista/principal/navbar.php'); ?>
         <!-- Reservation Section -->
-        <section id="gtco-reservation" class="bg-fixed bg-white section-padding">
+        <section id="gtco-reservation" class="bg-fixed bg-light section-padding">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-3"></div>
@@ -45,7 +45,7 @@ if (items.length == 0) {
             if (x != 0) carrusel.innerHTML += "<div class='item'>" + HTML + "</div>";
             HTML = "";
         }
-        HTML += "<div><h4>" + items[x]["mesa"] + " reservado para:" + items[x][`reservada_para`] +
+        HTML += "<div><h4> Mesa " + items[x]["mesa"] + " Reservado para: <br>" + items[x][`reservada_para`] +
             "</h4><div style='width: 20px;'></div>";
         if (items[x]["pagada"] == 0) {
             HTML += "<button class='btn btn-primary btn-shadow btn-lg' onclick=\"pagar('" + items[x]["mesa"] + "','" +

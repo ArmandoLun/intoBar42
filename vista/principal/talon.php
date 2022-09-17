@@ -40,7 +40,7 @@
                         <!-- <div class="form-group"> -->
                             <!-- <input type="email" class="form-control" id="emailNewsletter" aria-describedby="emailNewsletter" placeholder="Ingresar correo"> -->
                         <!-- </div> -->
-                        <img src="vista\principal\img\nuestras_fotos\QRRELOCO.png" class="img-fluid footer-logo mb-3" alt="" style="width:100%;height:100%;">
+                        <img src="vista\principal\img\nuestras_fotos\QRRELOCO.png" class="img-fluid footer-logo mb-3" alt="" style="width:100%;height:100%; border-style:groove;">
                     </form>
                 </div>
             </div>
@@ -52,6 +52,7 @@
     {
         background: rgb(215,177,109);
 background: linear-gradient(118deg, rgba(215,177,109,0.577468487394958) 3%, rgba(0,0,0,0) 49%, rgba(213,89,217,0.48503151260504207) 90%);
+    border-style:solid;
     }
     .redes {
 	background-color:transparent;

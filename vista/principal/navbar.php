@@ -28,7 +28,7 @@
             </ul>
 
             <a class="navbar-brand navbar-brand-center d-flex align-items-center only-desktop" href="./">
-                <img src="vista\principal\img\zyro-image (1).png" alt="" width="200vw" height="150vh">
+                <img src="vista\principal\img\3aea37c9-2e5b-497f-9b7b-72d23bfcb2fa.png" alt="">
             </a>
             <ul class="navbar-nav d-flex justify-content-between">
                 <div class="d-flex flex-lg-row flex-column">
