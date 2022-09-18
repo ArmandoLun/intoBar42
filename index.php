@@ -116,6 +116,11 @@ else if(isset($_POST["numeroTarjeta"])){
     $_reserva=$_reserva->confirmar($_POST["mesa"],$_POST["fecha_reservacion"]);
     echo($_reserva);
 }
+else if(isset($_POST["idPedido"])){
+    require("modelo/cliente/pedido.php");
+    $_pedido=new Pedido();
+    $_pedido->eliminar_pedido($_POST["idPedido"]);
+}
 else {
 
     require("vista/principal/index.php");

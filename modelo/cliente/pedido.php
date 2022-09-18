@@ -42,5 +42,14 @@
                 echo $e;
             }
         }
+
+        public function eliminar_pedido($_id){
+            try{
+                $resultado = $this->db_connect->prepare("DELETE FROM pedidos WHERE id=:id ");
+                $resultado->execute(array(":id"=>$_id));
+            }catch(Exception $e){
+                echo $e;
+            }
+        }
     }
 ?>
