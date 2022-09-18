@@ -87,7 +87,7 @@ else if(isset($_GET["contacos"])){
     $_opiniones=$_opiniones->leer_todas();
     require("vista/principal/contacos.php");
 }
-else if(isset($_POST["fecha"]))
+else if(isset($_POST["fecha"]))//ESTE REALIZA LA RESERVACION
 {
     require("modelo/cliente/reserva.php");
     $_reservacion = new Reserva();

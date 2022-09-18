@@ -90,20 +90,25 @@
                                     <div class="col-8">
                                         <p><?php echo ($array_Elemento["descripcion"]) ?></p>
                                     </div>
-                                    <?php
-                                    if(isset($_GET["mesa"]) ){
-                                    ?>
                                     <div class="col-4">
-                                        <button class='btn btn-primary btn-shadow btn-lg'
-                                            onclick="nuevoPedido('<?php echo($array_Elemento['platillo']); ?>');">Ordenar</button><br>
+                                        <h4 class="text-muted menu-price">
+                                            <?php echo ($array_Elemento["tiempo_coccion"]) ?></h4><br>
+                                    </div>
+                                </div>
+                                <div class="row align-items-start">
+                                    <div class="col-8"></div>
+                                    <?php 
+                                    if(isset($_GET["mesa"])){ 
+                                        ?>
+                                    <div id="botoncito" class="col-4">
+                                        <h4 class="text-muted menu-price">
+                                            <?php echo (strtotime($array_Elemento["tiempo_coccion"])); ?></h4><br>
                                     </div>
                                     <?php } ?>
                                 </div>
                             </div>
                         </div>
-                        <?php
-                        }
-                        ?>
+                        <?php } ?>
                     </div>
                     <!--hasta aca es el php :v-->
                 </div>
@@ -118,6 +123,7 @@
     </div>
     <script>
     var xhr;
+
 
     function nuevoPedido(platillo) {
         xhr = new XMLHttpRequest();

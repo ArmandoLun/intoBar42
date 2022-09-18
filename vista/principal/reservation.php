@@ -123,22 +123,6 @@
             }
             horas.innerHTML += html;
         }*/
-
-        /*function reservar() {
-            event.preventDefault();
-            fecha = new Date(document.getElementById("fecha").value);
-            fecha.setDate(fecha.getDate() + 1);
-            fecha.setHours(document.getElementById("hora").value);
-            nowe = new Date();
-            hola = fecha.getTime() - nowe.getTime();
-            hola = hola / (1000 * 60 * 60);
-            alert("fecha actual: " + nowe + " fecha en milisegundos: " + nowe.getTime());
-            alert("fecha seleccionada: " + fecha + " fecha en milisegundos: " + fecha.getTime());
-            alert(Math.abs(hola));
-            if (Math.floor(Math.abs(hola))<24){
-                alert("es en 24 horas o menos :3");
-            }
-        }*/
         </script>
     </div>
 

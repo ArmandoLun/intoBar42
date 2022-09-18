@@ -9,8 +9,15 @@
 <body>
     <?php 
         include("modelo/restaurante/platillo.php");
+        
         $_menu=new Platillo();
         $_menu= $_menu->leer_todos();
+        if(mail("barrios_mati1@outlook.com","hola yo aparezco arriba :v","asjidiosadhasodsadosaiojd")){
+            echo("ESTO ANDUBbbbO");
+        }else{
+            echo("NO FUNCO LPM :v");
+        }
+        
         echo('<p>'.json_encode($_menu).'</p>');
     ?>
 </body>
