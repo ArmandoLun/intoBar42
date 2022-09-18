@@ -45,7 +45,7 @@
                             } elseif ($_queso["tipo"] == 'Desayuno') {
                                 array_push($_desayuno, $_queso);
 
-                            } elseif ($_queso["tipo"] == 'Postre') {
+                            } elseif ($_queso["tipo"] == 'Postres') {
                                 array_push($_postre, $_queso);
                             }
                         }
@@ -53,7 +53,7 @@
                         Clasificar($_desayuno,"Desayuno");
                         Clasificar($_almuerzo,"Almuerzo");
                         Clasificar($_cena,"Cena");
-                        Clasificar($_postre,"Postre");
+                        Clasificar($_postre,"Postres");
 
                         function Clasificar($_arrayTipo,$Tiponombre)
                         {
