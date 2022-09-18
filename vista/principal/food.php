@@ -9,8 +9,12 @@
         <!-- NAVBAR -->
         <?php include('vista/principal/navbar.php'); ?>
         <!-- Reservation Section -->
+<<<<<<< HEAD
         <section id="gtco-reservation" class="bg-fixed section-padding"
             style="background: linear-gradient(74deg, rgba(233,166,148,0.5497549361541492) 8%, rgba(237,172,191,0.41530115464154416) 48%, rgba(238,174,202,0.6029762246695554) 86%); margin-bottom:0% !important;">
+=======
+        <section id="gtco-reservation" class="bg-fixed section-padding"style="background: linear-gradient(74deg, rgba(233,166,148,0.5497549361541492) 8%, rgba(237,172,191,0.41530115464154416) 48%, rgba(238,174,202,0.6029762246695554) 86%); margin-bottom:0% !important;">
+>>>>>>> ba186e1b9119f49d825dacf8e744f30951669ec4
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
@@ -56,6 +60,10 @@ if (items.length == 0) {
             "<br> Mesa: " + items[x][`mesa`] + "<br> Entrega: " + items[x][`entrega`] +
             " hs</h4><div style='width: 20px;'></div>";
         HTML += "<button class='btn btn-primary btn-shadow btn-lg' onclick=\"cancelar("+items[x][`id`]+");\">Quitar</button></div><br>";
+        "<br> Mesa: "+ items[x][`mesa`] + "<br> Entrega: " + items[x][`entrega`] +
+            " hs</h4><div style='width: 20px;'></div>";
+            HTML += "<button class='btn btn-primary btn-shadow btn-lg' onclick=\"cancelar('" + items[x]["mesa"] +
+                "','" + items[x]["reservada_para"] + "');\">Enzo</button></div><br>";
     }
 }
 if (items % 3 != 0) {
