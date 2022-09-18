@@ -59,6 +59,8 @@
             var seleccionMesa = document.querySelector("#mesa");
 
             var fecha = document.getElementById("fecha").value;
+            var seleccionHora = document.querySelector("#hora");
+            seleccionHora.value="";
             xrev = [];
             datosBD.forEach(datos => {
                 if (datos["reservada_para"].includes(fecha)) {
@@ -87,7 +89,7 @@
             })
             seleccionMesa.innerHTML = html;
             seleccionMesa.value="";
-            document.querySelector("#hora").innerHTML="";
+            seleccionHora.innerHTML="";
         }
 
         function seleccionarMesa() {

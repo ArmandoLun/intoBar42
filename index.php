@@ -93,10 +93,19 @@ else if(isset($_POST["fecha"]))//ESTE REALIZA LA RESERVACION
     $_reservacion = new Reserva();
     $_reservacion = $_reservacion->reservar($_POST["mesa"],json_decode($_COOKIE["cliente"])->{"correo"},$_POST["fecha"]." ".$_POST["hora"]);
     $_notif=json_decode($_reservacion);
+    $_FechaReservacion=$_POST['fecha']." ".$_POST["hora"].":00:00";
+    $_tiempo=strtotime($_POST['fecha']." ".($_POST["hora"]+5).":00:00");
+    $_diffHoras=(($_tiempo-time())/3600);
+    //echo("<script>alert(\"resultado de la resta ".($_tiempo-time())."horas de la resta".(($_tiempo-time())/3600)."y time sin nada: ".time()." y tiempo seleccionado".$_tiempo ."\");</script>");
+    //aca hay que poner el codigo que redireccione directamente a payment y payment tiene que poder recibir y escribir la reservacion pagada si en caso de ser positivo
     echo("<script>alert(\"".$_notif->{"mensaje"}."\");</script>");
-    
     if ($_notif->{"exito"}){
-        echo('<script>location.href="./?mis_reservaciones";</script>');
+        if($_diffHoras<24){
+            echo("<script>location.href ='./?pagar&fecha_reservacion=$_FechaReservacion&mesa=".$_POST["mesa"]."';</script>");
+        }else{
+            echo('<script>location.href="./?mis_reservaciones";</script>');
+        }
+
     }else{
         echo('<script>location.href="./?reservar";</script>');
     }

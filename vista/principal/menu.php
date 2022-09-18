@@ -101,8 +101,8 @@
                                     if(isset($_GET["mesa"])){ 
                                         ?>
                                     <div id="botoncito" class="col-4">
-                                        <h4 class="text-muted menu-price">
-                                            <?php echo (strtotime($array_Elemento["tiempo_coccion"])); ?></h4><br>
+                                        <button class='btn btn-primary btn-shadow btn-lg'
+                                            onclick="nuevoPedido('<?php echo($array_Elemento['platillo']); ?>');">Ordenar</button><br>
                                     </div>
                                     <?php } ?>
                                 </div>
