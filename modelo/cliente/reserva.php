@@ -55,7 +55,7 @@
             }
         }
 
-        public function leer_todos($correo){
+        public function leer_todos(){
             try{
                 return $this->db_connect->query("CALL leer_reservas_todos()")->fetchAll();
             }catch(Exception $e){

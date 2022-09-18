@@ -41,7 +41,7 @@ if (items.length == 0) {
     document.getElementById("dato_reservacion").innerHTML = "No tiene ninguna mesa reservada";
 } else {
     for (var x = 0; x < items.length; x++) {
-        if (x % 10 == 0) {
+        if (x % 5 == 0) {
             if (x != 0) carrusel.innerHTML += "<div class='item'>" + HTML + "</div>";
             HTML = "";
         }

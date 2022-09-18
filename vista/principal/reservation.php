@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -10,41 +9,35 @@
         <!-- NAVBAR -->
         <?php include('vista/principal/navbar.php'); ?>
         <!-- Reservation Section -->
-        <section id="gtco-reservation" class="" style="">
+        <section id="gtco-reservation" class="">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-2"></div>
                     <div class="col-lg-8">
-                        <div class="p-3 mb-2 bg-light text-dark" style="">
+                        <div class="p-3 mb-2 bg-light text-dark">
 
-                            <form id="picho" method="post" action=".\" style="display: flex; justify-content: center; align-items: center; flex-flow: column; border-style:groove; border-radius:30px;">
+                            <form action="./" method="post"
+                                style="display: flex; justify-content: center; align-items: center; flex-flow: column; border-style:groove; border-radius:30px;">
                                 <h1>Mesas</h1>
                                 <div id="diagrama">
-                                    <img src="vista/principal/img/sillas/chespirito.jpg" alt="" style="max-width: 100%; max-height:100%;">
+                                    <img src="vista/principal/img/sillas/chespirito.jpg" alt=""
+                                        style="max-width: 100%; max-height:100%;">
                                 </div>
                                 <div style="height: 30px;"></div>
                                 <h4>Fecha</h4>
-                                <input type="date" name="fecha" id="fecha" style="width: 100%;" required>
+                                <input onchange="seleccionarDia();" type="date" name="fecha" id="fecha"
+                                    style="width: 100%;" required>
+                                <h4>Tipo de Mesa</h4>
+                                <select onclick="seleccionarMesa();" onchange="seleccionarMesa();" name="mesa" id="mesa" style="width: 100%;">
+                                    <!--innerHtml("mesa")-->
+                                </select>
                                 <h4>Hora</h4>
                                 <select name="hora" id="hora" style="width: 100%;" required>
-                                    <option value="08:00:00">Horario 1(8:00 am)</option>
-                                    <option value="10:00:00">Horario 2(10:00 am)</option>
-                                    <option value="12:00:00">Horario 3(12:00 am)</option>
-                                    <option value="14:00:00">Horario 4(14:00 pm)</option>
-                                    <option value="16:00:00">Horario 5(16:00 pm)</option>
-                                    <option value="18:00:00">Horario 6(18:00 pm)</option>
-                                    <option value="20:00:00">Horario 7(20:00 pm)</option>
-                                    <option value="22:00:00">Horario 8(22:00 pm)</option>
-                                </select>
-                                <h4>Tipo de Mesa</h4>
-                                <select name="mesa" id="mesa" style="width: 100%;" required>
-                                    <option value="1">2 personas</option>
-                                    <option value="2">4 personas</option>
-                                    <option value="3">6 personas</option>
-                                    <option value="4">8 personas</option>
+                                    <!--innerHtml("hora")-->
                                 </select>
                                 <div style="height: 30px;"></div>
-                                <button onclick="reservar();" type="submit" style="border-style:solid;">Reservar</button>
+                                <button onclick="reservar();" type="submit"
+                                    style="border-style:solid;">Reservar</button>
                             </form>
                         </div>
                     </div>
@@ -56,27 +49,96 @@
         <!-- End of Reservation Section -->
         <?php include('vista/principal/talon.php'); ?>
         <script>
-            var fecha,hora,mesa;
-            fecha=document.getElementById("fecha").value;
-            hora=document.getElementById("hora").value;
-            mesa=document.getElementById("mesa").value;
-            var xhr;
-            function reservar(){
-                alert(fecha)
-                let datitos = new FormData(document.getElementById("picho"));
-                event.preventDefault();
-                xhr= new XMLHttpRequest();
-                xhr.responseType="json";
-                xhr.open("POST","./");
-                xhr.send(datitos);
-                xhr.onloadend = ()=>{
-                    if(xhr.response["exito"]){
-                        location.href="./?mis_reservaciones";
-                    }else{
-                        alert(xhr.response["mensaje"]);
+        var horarios = [];
+        var xrev = [];
+
+        const mesa = <?php echo(json_encode($_mesa));?>;
+        const datosBD = <?php echo(json_encode($_reserva)); ?>;
+
+        function seleccionarDia() {
+            var seleccionMesa = document.querySelector("#mesa");
+
+            var fecha = document.getElementById("fecha").value;
+            xrev = [];
+            datosBD.forEach(datos => {
+                if (datos["reservada_para"].includes(fecha)) {
+                    xrev.push(datos);
+                }
+            })
+            var html = "";
+            var contMesas = 0;
+            mesa.forEach(me => { //MESAS
+                horarios = [" 08", " 10", " 12", " 14", " 16", " 18", " 20", " 22"];
+                horarios.forEach(horario => { //HORARIOS POSIBLES
+                    xrev.forEach(dia => { //HORARIOS EN LOS QUE ESTA OCUPADA LA MESA
+                        //MOSTRAR MESAS QUE NO ESTEN OCUPADAS
+                        if (dia["mesa"] == me["nombre"]) {
+                            if (dia["reservada_para"].includes(horario)) {
+                                contMesas++;
+                            }
+                        }
+                    })
+                })
+                if (contMesas < 8) {
+                    html += "<option value=\"" + me['nombre'] + "\"> Mesa: " + me['nombre'] + "de " + me[
+                        'sillas'] + " sillas </option>";
+                }
+                contMesas = 0;
+            })
+            seleccionMesa.innerHTML = html;
+            seleccionMesa.value="";
+            document.querySelector("#hora").innerHTML="";
+        }
+
+        function seleccionarMesa() {
+            var seleccionHora = document.querySelector("#hora");
+            var mesaSeleccionada = document.getElementById("mesa").value;
+
+            var estaDisp = true;
+            var html="";
+            horarios.forEach(horario => {
+                estaDisp = true;
+                xrev.forEach(Nodisponible => {
+                    if (Nodisponible["mesa"] == mesaSeleccionada) {
+                        if (Nodisponible["reservada_para"].includes(horario)) {
+                            estaDisp = false;
+                        }
                     }
+                })
+                if (estaDisp){
+                    html += "<option value=\""+horario.split(" ")[1]+"\"> Horario: " + horario.split(" ")[1] + ":00:00 </option>";
+                }
+            })
+            seleccionHora.innerHTML=html;
+            seleccionHora.value="";
+        }
+        /*function PonerHorarios() {
+            var horas = document.querySelector("#hora")
+            var timenow = new Date();
+            var html = "";
+            for (var x = 8; x <= 22; x += 2) {
+                if (timenow.getHours() < x) {
+                    html += "<option value=" + x + ">Horario 1 (" + x + ":00)</option>";
                 }
             }
+            horas.innerHTML += html;
+        }*/
+
+        /*function reservar() {
+            event.preventDefault();
+            fecha = new Date(document.getElementById("fecha").value);
+            fecha.setDate(fecha.getDate() + 1);
+            fecha.setHours(document.getElementById("hora").value);
+            nowe = new Date();
+            hola = fecha.getTime() - nowe.getTime();
+            hola = hola / (1000 * 60 * 60);
+            alert("fecha actual: " + nowe + " fecha en milisegundos: " + nowe.getTime());
+            alert("fecha seleccionada: " + fecha + " fecha en milisegundos: " + fecha.getTime());
+            alert(Math.abs(hola));
+            if (Math.floor(Math.abs(hola))<24){
+                alert("es en 24 horas o menos :3");
+            }
+        }*/
         </script>
     </div>
 

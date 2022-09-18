@@ -1,5 +1,5 @@
 <?php
-    require("modelo/conexion.php");
+    require_once("modelo/conexion.php");
 
     class Mesa extends Conexion{
         public function __construct(){

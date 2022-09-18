@@ -32,6 +32,12 @@ else if (isset($_GET["mis_reservaciones"])) {
 }
 else if (isset($_GET["pagar"])) require("vista/principal/payment.php");
 else if (isset($_GET["reservar"])) {
+    require("modelo/cliente/reserva.php");
+    require("modelo/restaurante/mesa.php");
+    $_mesa=new Mesa();
+    $_mesa=$_mesa->leer_todos();
+    $_reserva=new Reserva();
+    $_reserva=$_reserva->leer_todos();
     require("vista/principal/reservation.php");
 }
 else if (isset($_GET["registrarse"])) {
@@ -86,7 +92,14 @@ else if(isset($_POST["fecha"]))
     require("modelo/cliente/reserva.php");
     $_reservacion = new Reserva();
     $_reservacion = $_reservacion->reservar($_POST["mesa"],json_decode($_COOKIE["cliente"])->{"correo"},$_POST["fecha"]." ".$_POST["hora"]);
-    echo("$_reservacion");
+    $_notif=json_decode($_reservacion);
+    echo("<script>alert(\"".$_notif->{"mensaje"}."\");</script>");
+    
+    if ($_notif->{"exito"}){
+        echo('<script>location.href="./?mis_reservaciones";</script>');
+    }else{
+        echo('<script>location.href="./?reservar";</script>');
+    }
 }
 else if(isset($_POST["numeroTarjeta"])){
     require("modelo/cliente/reserva.php");
