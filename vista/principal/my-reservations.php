@@ -9,7 +9,7 @@
         <!-- NAVBAR -->
         <?php include('vista/principal/navbar.php'); ?>
         <!-- Reservation Section -->
-        <section id="gtco-reservation" class="bg-fixed bg-light section-padding">
+        <section id="gtco-reservation" class="bg-fixed bg-light section-padding"style="background: linear-gradient(74deg, rgba(233,166,148,0.5497549361541492) 8%, rgba(237,172,191,0.41530115464154416) 48%, rgba(238,174,202,0.6029762246695554) 86%); margin-bottom:0% !important;">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-3"></div>

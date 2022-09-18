@@ -9,7 +9,7 @@
         <!-- NAVBAR -->
         <?php include('vista/principal/navbar.php'); ?>
         <!-- Menu Section -->
-        <section id="gtco-menu" class="section-padding">
+        <section id="gtco-menu" class="section-padding"style="background: linear-gradient(74deg, rgba(233,166,148,0.5497549361541492) 8%, rgba(237,172,191,0.41530115464154416) 48%, rgba(238,174,202,0.6029762246695554) 86%); border-style:groove; border-radius:30px;">
             <div class="container">
                 <div class="section-content">
                     <?php if(isset($_COOKIE["cliente"]) && isset($_GET["mesa"])){

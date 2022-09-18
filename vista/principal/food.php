@@ -9,7 +9,7 @@
         <!-- NAVBAR -->
         <?php include('vista/principal/navbar.php'); ?>
         <!-- Reservation Section -->
-        <section id="gtco-reservation" class="bg-fixed bg-white section-padding">
+        <section id="gtco-reservation" class="bg-fixed section-padding"style="background: linear-gradient(74deg, rgba(233,166,148,0.5497549361541492) 8%, rgba(237,172,191,0.41530115464154416) 48%, rgba(238,174,202,0.6029762246695554) 86%); margin-bottom:0% !important;">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-3"></div>
@@ -45,9 +45,9 @@ if (items.length == 0) {
             if (x != 0) carrusel.innerHTML += "<div class='item'>" + HTML + "</div>";
             HTML = "";
         }
-        HTML += "<div><h4>" + items[x]["platillo"] + " estado:" + items[x][`estado`] +
-        " mesa: "+ items[x][`mesa`] + " entrega: " + items[x][`entrega`] +
-            "</h4><div style='width: 20px;'></div>";
+        HTML += "<div><h4>Platillo: " + items[x]["platillo"] + "<br>Estado actual: " + items[x][`estado`] +
+        "<br> Mesa: "+ items[x][`mesa`] + "<br> Entrega: " + items[x][`entrega`] +
+            " hs</h4><div style='width: 20px;'></div>";
             HTML += "<button class='btn btn-primary btn-shadow btn-lg' onclick=\"cancelar('" + items[x]["mesa"] +
                 "','" + items[x]["reservada_para"] + "');\">Enzo</button></div><br>";
     }
