@@ -64,7 +64,6 @@ background: linear-gradient(118deg, rgba(215,177,109,0.577468487394958) 3%, rgba
 	font-style:italic;
 	padding:6px 19px;
 	text-decoration:none;
-    float:left;
 }
 .redes:hover {
 	background-color:transparent;
