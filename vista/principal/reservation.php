@@ -137,7 +137,7 @@
                         }
                     }
                 })
-                    controlador = (actual.getHours() > horarioEntero);
+                    controlador = (actual.getHours()+2 > horarioEntero);
 
                 if (actualStr.includes(fechaSeleccionada) && controlador) {
                     estaDisp = false;
