@@ -17,7 +17,7 @@ background: linear-gradient(118deg, rgba(215,177,109,0.577468487394958) 3%, rgba
                             <a class="btn btn-primary btn-shadow btn-lg" href="./?menu" role="button">Explorar Menú</a>
                         </div>
                         <div class="mb-4" style="margin-top: 10%;">
-                            <a class="btn btn-secondary btn-outline-danger btn-shadow btn-lg" href="./?iniciar_sesion" role="button">Iniciar Sesión</a>
+                            <a class="btn btn-secondary btn-outline-danger btn-shadow btn-lg" href="https://www.argentina.gob.ar/sites/default/files/protocolo_covid_gastronomicos.pdf" role="button">Protocolo Covid-19</a>
                         </div>
 
                         <ul class="hero-info list-unstyled d-flex text-center mb-0">
@@ -42,16 +42,16 @@ background: linear-gradient(118deg, rgba(215,177,109,0.577468487394958) 3%, rgba
                         </ul>
 
                     </div>
-                    <div class="col-lg-6 hero-right">
-                        <div class="owl-carousel owl-theme hero-carousel">
+                    <div class="col-lg-6 hero-right" >
+                        <div class="owl-carousel owl-theme hero-carousel" style="border-style:groove; border-radius:30px; margin-left:9%; height:83vh;">
                             <div class="item">
-                                <img class="img-fluid" src="vista/principal/img\nuestras_fotos\WhatsApp Image 2022-08-09 at 21.38.59 (2).jpeg" alt="">
+                                <img class="img-fluid" style="border-style:solid; border-radius:30px; height:83vh;" src="vista/principal/img\nuestras_fotos\WhatsApp Image 2022-08-09 at 21.38.59 (2).jpeg" alt="">
                             </div>
                             <div class="item">
-                                <img class="img-fluid" src="vista/principal/img\nuestras_fotos\WhatsApp Image 2022-08-09 at 21.38.59.jpeg" alt="">
+                                <img class="img-fluid" style="border-style:solid; border-radius:30px;height:83vh;" src="vista/principal/img\nuestras_fotos\WhatsApp Image 2022-08-09 at 21.38.59.jpeg" alt="">
                             </div>
                             <div class="item">
-                                <img class="img-fluid" src="vista/principal/img\nuestras_fotos\WhatsApp Image 2022-08-09 at 21.38.59.jpeg" alt="">
+                                <img class="img-fluid" style="border-style:solid; border-radius:30px;height:83vh;" src="vista/principal/img\nuestras_fotos\WhatsApp Image 2022-08-09 at 21.38.59.jpeg" alt="">
                             </div>
                         </div>
                     </div>

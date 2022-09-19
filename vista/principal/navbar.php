@@ -1,5 +1,5 @@
 <nav id="navbar-header" class="navbar navbar-expand-lg">
-    <div class="container">
+    <div class="container" >
         <a class="navbar-brand navbar-brand-center d-flex align-items-center p-0 only-mobile" href="./">
             <img src="vista/principal/img/nuestras_fotos/restauranteeee.png" alt="">
         </a>
@@ -14,7 +14,8 @@
                         <span class="lnr lnr-menu"></span>
                     </a>
                 </li>
-                <div class="d-flex flex-lg-row flex-column">
+                <div class="d-flex flex-lg-row flex-column " style="background: rgb(63,94,251);
+background: linear-gradient(337deg, rgba(63,94,251,0) 43%, rgba(237,199,169,0) 80%);">
                     <li class="nav-item active">
                         <a id="hola" class="nav-link" href="./">Inicio <span class="sr-only">(actual)</span></a>
                     </li>
@@ -28,7 +29,10 @@
             </ul>
 
             <a class="navbar-brand navbar-brand-center d-flex align-items-center only-desktop" href="./">
-                <img src="vista\principal\img\3aea37c9-2e5b-497f-9b7b-72d23bfcb2fa.png" alt="">
+            <h2 style="font-family: 'Kunstler Script';font-weight:300; font-size:250%; color:black">Sentidos</h2>
+
+            <h6 style="margin-top:5vh; margin-right:-25px; font-family:'Times New Roman', Times, serif;"><br>Resto y casa de Té<br></h6>
+
             </a>
             <ul class="navbar-nav d-flex justify-content-between">
                 <div class="d-flex flex-lg-row flex-column">
@@ -58,10 +62,16 @@ border: 7px ridge #deaeae;
         
     }
     #hola {
-        border-style: solid;
-        border-color: white;
-        border-radius: 15%;
-        margin-left: 2px;
-        background-color: #deaeae;
+        font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-weight: 300;
+        margin-left: 5px;
+        margin-top: 5px;
+        background: rgb(63,94,251);
+background: radial-gradient(circle, rgba(63,94,251,0) 27%, rgba(237,199,169,0.8463760504201681) 83%);
+			font-size: 15px;
+			border: 3px solid #efbdbd;
+			border-radius: 15px;
+			padding: 5px 25px;
+			cursor: pointer
     }
 </style>
