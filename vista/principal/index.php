@@ -17,7 +17,7 @@ background: linear-gradient(118deg, rgba(215,177,109,0.577468487394958) 3%, rgba
                             <a class="btn btn-primary btn-shadow btn-lg" href="./?menu" role="button">Explorar Menú</a>
                         </div>
                         <div class="mb-4" style="margin-top: 10%;">
-                            <a class="btn btn-secondary btn-outline-danger btn-shadow btn-lg" href="https://www.argentina.gob.ar/sites/default/files/protocolo_covid_gastronomicos.pdf" role="button">Protocolo Covid-19</a>
+                            <a class="btn btn-secondary btn-outline-info btn-shadow btn-lg" href="https://www.argentina.gob.ar/sites/default/files/protocolo_covid_gastronomicos.pdf" style ="border-style:dotted; border-width:3px; border-radius:20%; !important"role="button">Protocolo Covid-19</a>
                         </div>
 
                         <ul class="hero-info list-unstyled d-flex text-center mb-0">

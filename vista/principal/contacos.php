@@ -9,7 +9,8 @@
         <!-- NAVBAR -->
         <?php include('vista/principal/navbar.php'); ?>
         <!-- Menu Section -->
-        <section id="gtco-menu" class="section-padding">
+        <section id="gtco-menu" class="section-padding" style=" background: rgb(215,177,109);
+background: linear-gradient(118deg, rgba(215,177,109,0.577468487394958) 3%, rgba(0,0,0,0) 49%, rgba(213,89,217,0.48503151260504207) 90%); border-style:ridge; border-color:#deaeae;">
             <div class="container">
                 <div class="section-content">
                     <div class="row mb-5">
@@ -32,6 +33,7 @@
                             foreach ($_opiniones as $_opinion) {
                                 echo ('<div class="col-lg-12 menu-wrap">');
                                 echo ('<div class="heading-menu">
+                                            <h2>Usuario:</h2>
                                             <h3 class="text-center mb-5">' . $_opinion["nombre"] . '</h3>
                                         </div>');
                                 mostrarElemento($_opinion);

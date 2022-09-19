@@ -88,10 +88,10 @@
                                     </div>
                                 </div>
                                 <div class="row align-items-start">
-                                    <div class="col-8">
+                                    <div class="col-7">
                                         <p><?php echo ($array_Elemento["descripcion"]) ?></p>
                                     </div>
-                                    <div class="col-4">
+                                    <div class="col-5">
                                         <h4 class="text-muted menu-price">
                                             <?php echo ($array_Elemento["tiempo_coccion"]) ?></h4><br>
                                     </div>

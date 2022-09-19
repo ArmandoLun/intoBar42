@@ -6,16 +6,17 @@
 
 <body data-spy="scroll" data-target="#navbar">
     <div id="canvas-overlay"></div>
-    <div class="boxed-page">
+    <div class="boxed-page" style=" background: rgb(215,177,109);
+background: linear-gradient(118deg, rgba(215,177,109,0.577468487394958) 3%, rgba(0,0,0,0) 49%, rgba(213,89,217,0.48503151260504207) 90%); border-style:ridge; border-color:#deaeae;">
         <!-- NAVBAR -->
         <?php include('vista/principal/navbar.php'); ?>
         <!-- Reservation Section -->
-        <section id="gtco-reservation" class="bg-fixed bg-white section-padding overlay" style="background-image: url(vista/principal/img/reservation-bg.jpg);">
+        <section id="gtco-reservation" class=" bg-white section-padding overlay" style="background-image: url(https://lh3.googleusercontent.com/p/AF1QipN3yUhAAcn-rYxGW8O168XbaDYlkifBP6wDvkj2=w1080-h608-p-no-v0); margin:0%;">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-3"></div>
                     <div class="col-lg-6">
-                        <div class="section-content bg-white p-5 shadow">
+                        <div class="section-content p-5 shadow" style="background-color:#FAEFE5;border-radius:30px;border-style:double;">
 
                             <div class="heading-section text-center">
                                 <h2>

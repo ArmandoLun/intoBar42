@@ -14,7 +14,7 @@
                 <div class="row">
                     <div class="col-lg-2"></div>
                     <div class="col-lg-8">
-                        <div class="p-3 mb-2 bg-light text-dark">
+                        <div class="p-3 mb-2 text-dark" style="position:relative;margin-top:20px;">
 
                             <form action="./" method="post"
                                 style="display: flex; justify-content: center; align-items: center; flex-flow: column; border-style:groove; border-radius:30px;">

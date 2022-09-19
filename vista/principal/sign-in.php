@@ -9,12 +9,12 @@
         <!-- NAVBAR -->
         <?php include('vista/principal/navbar.php'); ?>
         <!-- Reservation Section -->
-        <section id="gtco-reservation" class="bg-fixed bg-white section-padding overlay" style="background-image: url(https://lh3.googleusercontent.com/p/AF1QipMn8rwtdzVmulMMEEuQaO9oMFY4wgZg_dC8bDP-=w960-h960-n-o-v1);">
+        <section id="gtco-reservation" class="bg-white section-padding overlay" style="background-image: url(https://lh3.googleusercontent.com/p/AF1QipMn8rwtdzVmulMMEEuQaO9oMFY4wgZg_dC8bDP-=w960-h960-n-o-v1);margin:0%">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-3"></div>
                     <div class="col-lg-6">
-                        <div class="section-content bg-white p-5 shadow">
+                        <div class="section-content p-4 shadow" style="position:absolute;margin-top:-120px;background:#FAEFE5;border-radius:50px;">
 
                             <div class="heading-section text-center">
                                 <h2>
