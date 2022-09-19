@@ -8,7 +8,7 @@
                 <button class="redes"><a href="https://facebook.com">Facebook</a></button>
                 <button class="redes"><a href="https://instagram.com">Instagram</a></button>
                 <button class="redes"><a href="https://twitter.com">Twitter</a></button>
-                <img src="vista/principal/img/innobar42.png" class="img-fluid footer-logo mb-3" alt="" style="width:100%;height:50%;">
+                <img src="vista\principal\img\3aea37c9-2e5b-497f-9b7b-72d23bfcb2fa.png" class="img-fluid footer-logo mb-3" alt="" style="width:100%;height:50%;">
 
             </div>
             <div class="col-lg-4">
