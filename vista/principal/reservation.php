@@ -28,7 +28,8 @@
                                 <input onchange="seleccionarDia();" type="date" name="fecha" id="fecha"
                                     style="width: 100%;" required>
                                 <h4>Tipo de Mesa</h4>
-                                <select onclick="seleccionarMesa();" onchange="seleccionarMesa();" name="mesa" id="mesa" style="width: 100%;">
+                                <select onclick="seleccionarMesa();" onchange="seleccionarMesa();" name="mesa" id="mesa"
+                                    style="width: 100%;">
                                     <!--innerHtml("mesa")-->
                                 </select>
                                 <h4>Hora</h4>
@@ -60,7 +61,7 @@
 
             var fecha = document.getElementById("fecha").value;
             var seleccionHora = document.querySelector("#hora");
-            seleccionHora.value="";
+            seleccionHora.value = "";
             xrev = [];
             datosBD.forEach(datos => {
                 if (datos["reservada_para"].includes(fecha)) {
@@ -88,58 +89,66 @@
                 contMesas = 0;
             })
             seleccionMesa.innerHTML = html;
-            seleccionMesa.value="";
-            seleccionHora.innerHTML="";
+            seleccionMesa.value = "";
+            seleccionHora.innerHTML = "";
         }
 
         function seleccionarMesa() {
             var seleccionHora = document.querySelector("#hora");
             var mesaSeleccionada = document.getElementById("mesa").value;
-            var actual=new Date();
-            actual.setMonth(actual.getMonth()+1);
-            var fechaSeleccionada=document.getElementById("fecha").value;
-            var actualStr="";
-            var horarioEntero=0;
 
-            if(actual.getMonth()<10){
+            var actual = new Date();
+            actual.setMonth(actual.getMonth() + 1);
+            var fechaSeleccionada = document.getElementById("fecha").value;
+            var actualStr = "";
+            var horarioEntero = 0;
+
+            if (actual.getMonth() < 10) {
                 //console.log("hasta aca anda");
-                if(actual.getDate()<10){
+                if (actual.getDate() < 10) {
                     //console.log("Esto no anda");
-                    actualStr=actual.getFullYear()+"-0"+actual.getMonth()+"-"+actual.getDate();
-                }else{
+                    actualStr = actual.getFullYear() + "-0" + actual.getMonth() + "-0" + actual.getDate();
+                } else {
                     //console.log("Esto Tambien Anda");
-                    actualStr=actual.getFullYear()+"-0"+actual.getMonth()+"-"+actual.getDate();
+                    actualStr = actual.getFullYear() + "-0" + actual.getMonth() + "-" + actual.getDate();
                 }
-            }else{
-                if(actual.getDate()<10){
+            } else {
+                if (actual.getDate() < 10) {
                     //console.log("Esto no anda");
-                    actualStr=actual.getFullYear()+"-"+actual.getMonth()+"-0"+actual.getDate();
-                }else{
+                    actualStr = actual.getFullYear() + "-" + actual.getMonth() + "-0" + actual.getDate();
+                } else {
                     //console.log("Esto no anda");
-                    actualStr=actual.getFullYear()+"-"+actual.getMonth()+"-"+actual.getDate();
+                    actualStr = actual.getFullYear() + "-" + actual.getMonth() + "-" + actual.getDate();
                 }
             }
-            //console.log(fechaSeleccionada);
-            //console.log("fecha actual "+actual.getHours()+" dia actual: "+actual.getDate());
-            //console.log(actualStr);
+            var controlador = false;
             var estaDisp = true;
-            var html="";
+            var html = "";
             horarios.forEach(horario => {
-                horarioEntero=parseInt(horario.split(" ")[1],10);
+                horarioEntero = parseInt(horario.split(" ")[1], 10);
                 estaDisp = true;
+                //console.log(xrev);
                 xrev.forEach(Nodisponible => {
+
+                    //console.log("actual incluye fecha seleccionada? =" + (actualStr.includes(fechaSeleccionada)));
                     if (Nodisponible["mesa"] == mesaSeleccionada) {
-                        if (Nodisponible["reservada_para"].includes(horario) || (actualStr.includes(fechaSeleccionada) && actual.getHours()>horarioEntero)) {
+                        if (Nodisponible["reservada_para"].includes(horario)) {
                             estaDisp = false;
                         }
                     }
                 })
-                if (estaDisp){
-                    html += "<option value=\""+horario.split(" ")[1]+"\"> Horario: " + horario.split(" ")[1] + ":00:00 </option>";
+                    controlador = (actual.getHours() > horarioEntero);
+
+                if (actualStr.includes(fechaSeleccionada) && controlador) {
+                    estaDisp = false;
+                }
+                if (estaDisp) {
+                    html += "<option value=\"" + horario.split(" ")[1] + "\"> Horario: " + horario.split(" ")[
+                        1] + ":00:00 </option>";
                 }
             })
-            seleccionHora.innerHTML=html;
-            seleccionHora.value="";
+            seleccionHora.innerHTML = html;
+            seleccionHora.value = "";
         }
         </script>
     </div>

@@ -104,34 +104,38 @@
                                     <div id="<?php echo ($array_Elemento["platillo"]); ?>" class="col-4">
                                     </div>
                                     <div></div>
+                                    <script>
+                                    var actual = new Date();
+                                    var tiempoCoccion = "<?php echo ($array_Elemento["tiempo_coccion"]) ?>";
+                                    var orita = parseInt(tiempoCoccion.split(":")[0], 10);
+                                    var horaReserva = "<?php echo($_GET["fecha_reservada"]); ?>";
+
+                                    
+                                    actual.setHours(actual.getHours() + orita);
+                                    orita = parseInt(tiempoCoccion.split(":")[1], 10);
+                                    actual.setMinutes(actual.getMinutes() + orita);
+
+                                    var [dateValues, timeValues] = horaReserva.split(' ');
+                                    //console.log("asdjasdlk "+dateValues); // 👉️ "09/24/2022"
+                                    //console.log("asdsajklsad "+timeValues); // 👉️ "07:30:14"
+
+                                    var [year, month, day] = dateValues.split('-');
+                                    var [hours, minutes, seconds] = timeValues.split(':');
+
+                                    var datee = new Date(+year, month - 1, +day, +hours, +minutes, +seconds);
+                                    //console.log(datee);
+                                    //var diferencia=datee.getTime()-actual.getTime();
+                                    //diferencia=diferencia/(1000*60*60);
+                                    //console.log("Fecha con el pedido: "+actual+" Esta en time"+actual.getTime()+" Fecha de la reserva: "+datee+"Esta en time: "+datee.getTime()+" Su diferencia"+diferencia);
+                                    if ((datee.getTime() - actual.getTime()) > 0) {
+                                        document.getElementById("<?php echo ($array_Elemento["platillo"]); ?>")
+                                            .innerHTML =
+                                            "<button class='btn btn-primary btn-shadow btn-lg'onclick=\"nuevoPedido('<?php echo($array_Elemento['platillo']); ?>');\">Ordenar</button><br>";
+                                    }
+                                    </script>
                                     <?php } ?>
                                 </div>
-                                <script>
-                                var actual = new Date();
-                                var tiempoCoccion = "<?php echo ($array_Elemento["tiempo_coccion"]) ?>";
-                                var orita = parseInt(tiempoCoccion.split(":")[0], 10);
-                                var horaReserva = "<?php echo($_GET["fecha_reservada"]); ?>";
-                                actual.setHours(actual.getHours() + orita);
-                                orita = parseInt(tiempoCoccion.split(":")[1], 10);
-                                actual.setMinutes(actual.getMinutes() + orita);
 
-                                var [dateValues, timeValues] = horaReserva.split(' ');
-                                //console.log("asdjasdlk "+dateValues); // 👉️ "09/24/2022"
-                                //console.log("asdsajklsad "+timeValues); // 👉️ "07:30:14"
-
-                                var [year, month, day] = dateValues.split('-');
-                                var [hours, minutes, seconds] = timeValues.split(':');
-
-                                var datee = new Date(+year, month - 1, +day, +hours, +minutes, +seconds);
-                                //console.log(datee);
-                                //var diferencia=datee.getTime()-actual.getTime();
-                                //diferencia=diferencia/(1000*60*60);
-                                //console.log("Fecha con el pedido: "+actual+" Esta en time"+actual.getTime()+" Fecha de la reserva: "+datee+"Esta en time: "+datee.getTime()+" Su diferencia"+diferencia);
-                                if ((datee.getTime() - actual.getTime()) > 0) {
-                                    document.getElementById("<?php echo ($array_Elemento["platillo"]); ?>").innerHTML =
-                                        "<button class='btn btn-primary btn-shadow btn-lg'onclick=\"nuevoPedido('<?php echo($array_Elemento['platillo']); ?>');\">Ordenar</button><br>";
-                                }
-                                </script>
                             </div>
                         </div>
                         <?php } ?>
