@@ -15,19 +15,18 @@
                 <div class="footer-widget px-lg-5 px-0">
                     <h3>Horas Abierto</h3>
                     <ul class="list-unstyled open-hours" style="font-size:x-large">
-                        <li class="d-flex justify-content-between"><span>Lunes</span><span>9:00 - 24:00</span>
+                        <li class="d-flex justify-content-between"><span>Lunes</span><span>8:00 - 24:00</span>
                         </li>
-                        <li class="d-flex justify-content-between"><span>Martes</span><span>9:00 - 24:00</span>
+                        <li class="d-flex justify-content-between"><span>Martes</span><span>8:00 - 24:00</span>
                         </li>
-                        <li class="d-flex justify-content-between"><span>Miércoles</span><span>9:00 -
-                                24:00</span></li>
-                        <li class="d-flex justify-content-between"><span>Jueves</span><span>9:00 - 24:00</span>
+                        <li class="d-flex justify-content-between"><span>Miércoles</span><span>8:00 - 24:00</span></li>
+                        <li class="d-flex justify-content-between"><span>Jueves</span><span>8:00 - 24:00</span>
                         </li>
-                        <li class="d-flex justify-content-between"><span>Viernes</span><span>9:00 - 02:00</span>
+                        <li class="d-flex justify-content-between"><span>Viernes</span><span>8:00 - 24:00</span>
                         </li>
-                        <li class="d-flex justify-content-between"><span>Sábado</span><span>9:00 - 02:00</span>
+                        <li class="d-flex justify-content-between"><span>Sábado</span><span>8:00 - 24:00</span>
                         </li>
-                        <li class="d-flex justify-content-between"><span>Domingo</span><span> Cerrado</span>
+                        <li class="d-flex justify-content-between"><span>Domingo</span><span>8:00 - 24:00</span>
                         </li>
                     </ul>
                 </div>

@@ -95,14 +95,41 @@
         function seleccionarMesa() {
             var seleccionHora = document.querySelector("#hora");
             var mesaSeleccionada = document.getElementById("mesa").value;
+            var actual=new Date();
+            actual.setMonth(actual.getMonth()+1);
+            var fechaSeleccionada=document.getElementById("fecha").value;
+            var actualStr="";
+            var horarioEntero=0;
 
+            if(actual.getMonth()<10){
+                //console.log("hasta aca anda");
+                if(actual.getDate()<10){
+                    //console.log("Esto no anda");
+                    actualStr=actual.getFullYear()+"-0"+actual.getMonth()+"-"+actual.getDate();
+                }else{
+                    //console.log("Esto Tambien Anda");
+                    actualStr=actual.getFullYear()+"-0"+actual.getMonth()+"-"+actual.getDate();
+                }
+            }else{
+                if(actual.getDate()<10){
+                    //console.log("Esto no anda");
+                    actualStr=actual.getFullYear()+"-"+actual.getMonth()+"-0"+actual.getDate();
+                }else{
+                    //console.log("Esto no anda");
+                    actualStr=actual.getFullYear()+"-"+actual.getMonth()+"-"+actual.getDate();
+                }
+            }
+            //console.log(fechaSeleccionada);
+            //console.log("fecha actual "+actual.getHours()+" dia actual: "+actual.getDate());
+            //console.log(actualStr);
             var estaDisp = true;
             var html="";
             horarios.forEach(horario => {
+                horarioEntero=parseInt(horario.split(" ")[1],10);
                 estaDisp = true;
                 xrev.forEach(Nodisponible => {
                     if (Nodisponible["mesa"] == mesaSeleccionada) {
-                        if (Nodisponible["reservada_para"].includes(horario)) {
+                        if (Nodisponible["reservada_para"].includes(horario) || (actualStr.includes(fechaSeleccionada) && actual.getHours()>horarioEntero)) {
                             estaDisp = false;
                         }
                     }
@@ -114,17 +141,6 @@
             seleccionHora.innerHTML=html;
             seleccionHora.value="";
         }
-        /*function PonerHorarios() {
-            var horas = document.querySelector("#hora")
-            var timenow = new Date();
-            var html = "";
-            for (var x = 8; x <= 22; x += 2) {
-                if (timenow.getHours() < x) {
-                    html += "<option value=" + x + ">Horario 1 (" + x + ":00)</option>";
-                }
-            }
-            horas.innerHTML += html;
-        }*/
         </script>
     </div>
 
