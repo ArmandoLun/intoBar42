@@ -34,39 +34,46 @@ background: linear-gradient(118deg, rgba(215,177,109,0.577468487394958) 3%, rgba
                                     para que disfrute
                                     de un momento de bienestar, en total armonía.</p>
                                 <br><br>
-                                <h3 class="mt-5">Nuestros servicios</h3>
+                                <h3 class="mt-5" style="margin-left:25%;">Nuestros servicios</h3>
+                                <br><br>
                                 <div class="row">
                                     <div class="col-4">
-                                        <a href="#" class="thumb-menu">
+                                        <a  class="thumb-menu">
                                             <img class="img-fluid img-cover"
-                                                src="vista/principal/img\nuestras_fotos\photo-1523906630133-f6934a1ab2b9.jpg" />
-                                            <h5>Té</h5>
+                                                src="vista/principal/img\nuestras_fotos\photo-1523906630133-f6934a1ab2b9.jpg" style=" border: 5px solid #e4c795;
+                border-radius: 40px;" />
+                                            <h5>&nbsp;&nbsp;&nbsp;&nbsp;Casa de Té</h5>
                                         </a>
                                     </div>
                                     <div class="col-4">
-                                        <a href="#" class="thumb-menu">
+                                        <a  class="thumb-menu" style="margin-left:100%">
                                             <img class="img-fluid img-cover"
-                                                src="vista/principal/img\nuestras_fotos\WhatsApp Image 2022-08-09 at 21.38.59 (1).jpeg" />
-                                            <h5>Resto</h5>
+                                                src="vista/principal/img\nuestras_fotos\WhatsApp Image 2022-08-09 at 21.38.59 (1).jpeg" style=" border: 5px solid #e4c795;
+                border-radius: 40px;" />
+                                            <h5 style="margin-left:125%;">Resto</h5>
                                         </a>
                                     </div>
                                     <div class="col-4">
-                                        <a href="#" class="thumb-menu">
-                                            <img class="img-fluid img-cover"
-                                                src="vista/principal/img\nuestras_fotos\WhatsApp Image 2022-08-09 at 21.39.00.jpeg" />
-                                            <h5>Catering</h5>
-                                        </a>
+                                      
                                         <br><br>
                                         <br><br>
                                     </div>
-
-                                    <h2 style="text-align:center;">Para saber más sobre nosotros</h2>
-                                    <h5 style="text-align:center;">Visite nuestra página empresarial!</h5>
-
+                                    
+                                    
                                 </div>
+                                <br><br>
+                                        <br><br>
+                                <h3>Para saber más sobre nosotros</h3>
+                                <h5 >Visite nuestra página empresarial!</h5>
+
                                 <a class="MiBoton" href="https://lucafbergamaschi.wixsite.com/empresa-innobar42"
                                     type="button" name="visitar">Click aquí</a>
+                                    <br><br>
+                                    <h3>Te gusto el servicio? Opina sobre nosotros!</h3>
                                 <a class="MiBoton" href="./?contacos" type="button" name="visitar">Opiniones</a>
+                                        <br><br>
+                                <h1>Ubicanos en el mapa!<br><br></h1>
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1770.29281574699!2d-58.981320736523465!3d-27.4510217!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94450cf0c80be0d3%3A0xc9f9278c74810912!2sUTN%20-%20Facultad%20Regional%20Resistencia!5e0!3m2!1ses-419!2sar!4v1663678812854!5m2!1ses-419!2sar" width="500" height="450" style="border:10;border-style:outset;border-radius:10%" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                             </div>
                         </div>
                     </div>
@@ -76,8 +83,8 @@ background: linear-gradient(118deg, rgba(215,177,109,0.577468487394958) 3%, rgba
         <div>
             <style>
             .MiBoton {
-                color: #ffffff;
-                background-color: #e0bdbd;
+                color:black;
+                background-color:#D586FF;
                 font-size: 25px;
                 border: 5px solid #e4c795;
                 border-radius: 40px;
@@ -90,6 +97,8 @@ background: linear-gradient(118deg, rgba(215,177,109,0.577468487394958) 3%, rgba
                 background-color: #ecadf0;
 
             }
+           
+            
             </style>
         </div>
         <!-- End of Welcome Section -->

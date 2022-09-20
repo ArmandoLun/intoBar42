@@ -15,18 +15,18 @@
                 <div class="footer-widget px-lg-5 px-0">
                     <h3>Horas Abierto</h3>
                     <ul class="list-unstyled open-hours" style="font-size:x-large">
-                        <li class="d-flex justify-content-between"><span>Lunes</span><span>8:00 - 24:00</span>
+                        <li class="d-flex justify-content-between"><span>Lunes</span><span>8:00 - 23:00</span>
                         </li>
-                        <li class="d-flex justify-content-between"><span>Martes</span><span>8:00 - 24:00</span>
+                        <li class="d-flex justify-content-between"><span>Martes</span><span>8:00 - 23:00</span>
                         </li>
-                        <li class="d-flex justify-content-between"><span>Miércoles</span><span>8:00 - 24:00</span></li>
-                        <li class="d-flex justify-content-between"><span>Jueves</span><span>8:00 - 24:00</span>
+                        <li class="d-flex justify-content-between"><span>Miércoles</span><span>8:00 - 23:00</span></li>
+                        <li class="d-flex justify-content-between"><span>Jueves</span><span>8:00 - 23:00</span>
                         </li>
-                        <li class="d-flex justify-content-between"><span>Viernes</span><span>8:00 - 24:00</span>
+                        <li class="d-flex justify-content-between"><span>Viernes</span><span>8:00 - 23:00</span>
                         </li>
-                        <li class="d-flex justify-content-between"><span>Sábado</span><span>8:00 - 24:00</span>
+                        <li class="d-flex justify-content-between"><span>Sábado</span><span>8:00 - 23:00</span>
                         </li>
-                        <li class="d-flex justify-content-between"><span>Domingo</span><span>8:00 - 24:00</span>
+                        <li class="d-flex justify-content-between"><span>Domingo</span><span>8:00 - 23:00</span>
                         </li>
                     </ul>
                 </div>
@@ -55,7 +55,7 @@ background: linear-gradient(118deg, rgba(215,177,109,0.577468487394958) 3%, rgba
     }
     .redes {
 	background-color:transparent;
-	border:2px solid #d83526;
+	border:2px groove rgb(215,177,109);
 	display:inline-block;
 	cursor:pointer;
 	color:#ffffff;
@@ -63,7 +63,8 @@ background: linear-gradient(118deg, rgba(215,177,109,0.577468487394958) 3%, rgba
 	font-size:17px;
 	font-style:italic;
 	padding:6px 19px;
-	text-decoration:none;
+	text-decoration:dotted;
+    border-radius: 20%;
 }
 .redes:hover {
 	background-color:transparent;
