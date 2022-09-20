@@ -42,22 +42,29 @@ background: linear-gradient(118deg, rgba(215,177,109,0.577468487394958) 3%, rgba
                         </ul>
 
                     </div>
-                    <div class="col-lg-6 hero-right" >
-                        <div class="owl-carousel owl-theme hero-carousel" style="border-style:groove; border-radius:30px; margin-left:0%; max-height:50%;">
+                    <div class="col-lg-6">
+                        <div class="owl-carousel owl-theme hero-carousel" style="">
                             <div class="item">
-                                <img class="img-fluid" style="border-style:solid; border-radius:30px; height:83vh;" src="vista/principal/img\nuestras_fotos\WhatsApp Image 2022-08-09 at 21.38.59 (2).jpeg" alt="">
+                                <img class="img-fluid" style="border-style:solid;border-radius:100%;" src="vista/principal/img\nuestras_fotos\WhatsApp Image 2022-08-09 at 21.38.59 (2).jpeg" alt="">
                             </div>
                             <div class="item">
-                                <img class="img-fluid" style="border-style:solid; border-radius:30px;height:83vh;" src="vista/principal/img\nuestras_fotos\WhatsApp Image 2022-08-09 at 21.38.59.jpeg" alt="">
+                                <img class="img-fluid" style="border-style:solid;border-radius:100%;position:absolute;" src="vista/principal/img\nuestras_fotos\WhatsApp Image 2022-08-09 at 21.38.59.jpeg" alt="">
                             </div>
                             <div class="item">
-                                <img class="img-fluid" style="border-style:solid; border-radius:30px;height:83vh;" src="vista\principal\img\nuestras_fotos\WhatsApp Image 2022-08-09 at 21.39.00.jpeg" alt="">
+                                <img class="img-fluid" style="border-style:solid;border-radius:100%;position:absolute;" src="vista\principal\img\nuestras_fotos\WhatsApp Image 2022-08-09 at 21.39.00.jpeg" alt="">
                             </div>
+                           
                         </div>
+                        
                     </div>
+                    
                 </div>
+                
             </div>
+            
         </div>
+        
+        
         <!-- End of Reservation Section -->
         <?php include('vista/principal/talon.php'); ?>
     </div>

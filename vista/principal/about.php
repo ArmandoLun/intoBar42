@@ -15,7 +15,7 @@ background: linear-gradient(118deg, rgba(215,177,109,0.577468487394958) 3%, rgba
                 <div class="section-content">
                     <div class="row">
                         <div class="col-sm-5 img-bg d-flex shadow align-items-center justify-content-center justify-content-md-end img-2"
-                            style="background-image: url(https://static.cdn.cadena3.com/admin/playerswf/fotos/ARCHI_842637.jpg); border-style:ridge;">
+                            style="background-image: url(https://static.cdn.cadena3.com/admin/playerswf/fotos/ARCHI_842637.jpg); border-style:ridge; ">
 
                         </div>
                         <div class="col-sm-7 py-5 pl-md-0 pl-4">
