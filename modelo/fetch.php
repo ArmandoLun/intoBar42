@@ -15,7 +15,7 @@
                 $array = $row; //json
             }
             
-            echo "{\"data\"",json_encode($array),"}";
+            echo '{"data"',json_encode($array),'}';
         }else{
             echo "No se encontro ningun usuario con ese ID";
         }
