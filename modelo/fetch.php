@@ -12,9 +12,11 @@
         $this->data = $input; 
     }
 }
-        
+        echo json_encode(new foo("qa"));
         
         //usuarioprueba WHERE id = '$id'
+        
+        /*
         $query = "SELECT * FROM menu";
         
         $result = $mysql -> query($query);
@@ -29,4 +31,6 @@
         }
 
         $mysql->close(); 
+        */
+        
     }
