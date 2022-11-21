@@ -2,15 +2,17 @@
     if($_SERVER['REQUEST_METHOD'] == 'GET'){
         
         require_once("bd.php");
-
-        class foo {
-            $data;
-            function __construct($input) {
-                $data = $input;
-            }
-            
-        }
-
+        
+        class foo
+        
+{
+    public $data = [];
+    function __construct($input)
+    {
+        $this->data = $input; 
+    }
+}
+        
         
         //usuarioprueba WHERE id = '$id'
         $query = "SELECT * FROM menu";
@@ -21,7 +23,6 @@
             while($row = $result->fetch_all(MYSQLI_ASSOC)){
                 $array = $row; //json
             }
-            
             echo json_encode(new foo($array));
         }else{
             echo "No se encontro ningun usuario con ese ID";
