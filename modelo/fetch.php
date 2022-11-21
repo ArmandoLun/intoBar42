@@ -14,7 +14,8 @@
             while($row = $result->fetch_all(MYSQLI_ASSOC)){
                 $array = $row; //json
             }
-            echo json_encode($array);
+            
+            echo "{\"data\"",json_encode($array),"}";
         }else{
             echo "No se encontro ningun usuario con ese ID";
         }
