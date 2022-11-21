@@ -3,7 +3,14 @@
         
         require_once("bd.php");
 
-        
+        class foo {
+            $data;
+            function __construct($input) {
+                $data = $input;
+            }
+            
+        }
+
         
         //usuarioprueba WHERE id = '$id'
         $query = "SELECT * FROM menu";
@@ -15,7 +22,7 @@
                 $array = $row; //json
             }
             
-            echo '{"data"',json_encode($array),'}';
+            echo json_encode(new foo($array));
         }else{
             echo "No se encontro ningun usuario con ese ID";
         }
