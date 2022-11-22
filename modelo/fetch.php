@@ -4,21 +4,8 @@
         require_once("bd.php");
 
         
-        
-        //usuarioprueba WHERE id = '$id'
-        $query = "SELECT * FROM menu";
-        
-        $result = $mysql -> query($query);
-
-        if ($mysql->affected_rows > 0){
-            while($row = $result->fetch_all(MYSQLI_ASSOC)){
-                $array = $row; //json
-            }
-            echo json_encode($array);
-        }else{
-            echo "No se encontro ningun usuario con ese ID";
-        }
-
+        echo (json_encode ($mysql->query("SELECT platillo, tiempo_coccion, precio, tipo, descripcion
+                FROM menu INNER JOIN tiposplatillos ON id_tiposPlatillos = tiposplatillos.id")->fetch_all()));
         $mysql->close(); 
     }
 
