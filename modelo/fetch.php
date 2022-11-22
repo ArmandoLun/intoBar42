@@ -12,7 +12,7 @@
     }
    }
         
-        echo (json_encode ((new foo(($mysql->query("SELECT id, platillo, tiempo_coccion, precio, tipo, descripcion
+        echo (json_encode ((new foo(($mysql->query("SELECT id, platillo, tiempo_coccion, precio, tipo, descripcion, recomendar
                 FROM menu INNER JOIN tiposplatillos ON id_tiposPlatillos = tiposplatillos.id")->fetch_all(MYSQLI_ASSOC))))));
         $mysql->close(); 
     }
